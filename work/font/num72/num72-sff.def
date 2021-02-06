@@ -1,0 +1,92 @@
+[Output]
+ ;Filename of the SFF file to create (required).
+filename = font/num72.sff
+
+[Option]
+ ;Directory containing source files.
+;input.dir =
+ ;Use compression for medium and large fonts.
+sprite.compress.5 = lz5
+sprite.compress.8 = rle8
+sprite.compress.24 = png24
+sprite.compress.32 = png32
+ ;Decompressed when loaded from disk.
+sprite.decompressonload = 0
+ ;0 - Detect identical files only through filename.
+sprite.detectduplicates = 0
+ ;0 - Do not auto-crop sprites (default).
+sprite.autocrop = 0
+ ;0 - Detect identical files only through filename.
+pal.detectduplicates = 0
+ ;0 - Do not discard duplicate palettes (default).
+pal.discardduplicates = 0
+
+[Option]
+sprite.usepal = -1
+
+;Sprites
+;group,itemno, fname, axisx, axisy
+[Sprite]
+;For font sprites, group,itemno should be 0,ASCII-code (See reference at bottom).
+;Sorry, no UTF-8 support!
+; Bank 0 - yellow
+0, 48, num72.png,  0, 0           ? crop=0,0,69,70
+0, 49, num72.png, 70, 0           ? crop=70,0,139,70
+0, 50, num72.png,140, 0           ? crop=140,0,209,70
+0, 51, num72.png,210, 0           ? crop=210,0,279,70
+0, 52, num72.png,280, 0           ? crop=280,0,349,70
+0, 53, num72.png,350, 0           ? crop=350,0,419,70
+0, 54, num72.png,420, 0           ? crop=420,0,489,70
+0, 55, num72.png,490, 0           ? crop=490,0,559,70
+0, 56, num72.png,560, 0           ? crop=560,0,629,70
+0, 57, num72.png,630, 0           ? crop=630,0,699,70
+0, 111,num72.png,700, 0           ? crop=700,0,783,70
+; Bank 1 - blue
+1, 48, num72-blue.png,  0, 0           ? crop=0,0,69,70
+1, 49, num72-blue.png, 70, 0           ? crop=70,0,139,70
+1, 50, num72-blue.png,140, 0           ? crop=140,0,209,70
+1, 51, num72-blue.png,210, 0           ? crop=210,0,279,70
+1, 52, num72-blue.png,280, 0           ? crop=280,0,349,70
+1, 53, num72-blue.png,350, 0           ? crop=350,0,419,70
+1, 54, num72-blue.png,420, 0           ? crop=420,0,489,70
+1, 55, num72-blue.png,490, 0           ? crop=490,0,559,70
+1, 56, num72-blue.png,560, 0           ? crop=560,0,629,70
+1, 57, num72-blue.png,630, 0           ? crop=630,0,699,70
+1, 111,num72-blue.png,700, 0           ? crop=700,0,783,70
+
+;ASCII code table
+;Printable characters are in the range 32-126
+;Char  Dec | Char  Dec | Char  Dec | Char  Dec  
+;---------------------------------------------
+;(nul)   0 | (sp)   32 | @      64 | `      96
+;(soh)   1 | !      33 | A      65 | a      97
+;(stx)   2 | "      34 | B      66 | b      98
+;(etx)   3 | #      35 | C      67 | c      99
+;(eot)   4 | $      36 | D      68 | d     100
+;(enq)   5 | %      37 | E      69 | e     101
+;(ack)   6 | &      38 | F      70 | f     102
+;(bel)   7 | '      39 | G      71 | g     103
+;(bs)    8 | (      40 | H      72 | h     104
+;(ht)    9 | )      41 | I      73 | i     105
+;(nl)   10 | *      42 | J      74 | j     106
+;(vt)   11 | +      43 | K      75 | k     107
+;(np)   12 | ,      44 | L      76 | l     108
+;(cr)   13 | -      45 | M      77 | m     109
+;(so)   14 | .      46 | N      78 | n     110
+;(si)   15 | /      47 | O      79 | o     111
+;(dle)  16 | 0      48 | P      80 | p     112
+;(dc1)  17 | 1      49 | Q      81 | q     113
+;(dc2)  18 | 2      50 | R      82 | r     114
+;(dc3)  19 | 3      51 | S      83 | s     115
+;(dc4)  20 | 4      52 | T      84 | t     116
+;(nak)  21 | 5      53 | U      85 | u     117
+;(syn)  22 | 6      54 | V      86 | v     118
+;(etb)  23 | 7      55 | W      87 | w     119
+;(can)  24 | 8      56 | X      88 | x     120
+;(em)   25 | 9      57 | Y      89 | y     121
+;(sub)  26 | :      58 | Z      90 | z     122
+;(esc)  27 | ;      59 | [      91 | {     123
+;(fs)   28 | <      60 | \      92 | |     124
+;(gs)   29 | =      61 | ]      93 | }     125
+;(rs)   30 | >      62 | ^      94 | ~     126
+;(us)   31 | ?      63 | _      95 | (del) 127

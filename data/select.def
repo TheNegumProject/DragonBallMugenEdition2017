@@ -1,0 +1,179 @@
+;---------------------------------------------------------------------
+[Characters]
+ ;How to add characters
+ ;---------------------
+ ;Use the format:
+ ;    charname, stagefilename
+ ;
+ ;eg. For a player with filename "kfm",
+ ;    and stage filename "stages/mybg.def"
+ ;type (without the semicolon):
+ ;    kfm, stages/mybg.def
+ ;
+ ;If you want to load a different def file, you can enter it
+ ;as a directory plus the def file. This example loads up
+ ;chars/kfm/alt-kfm.def:
+ ;    kfm/alt-kfm.def, stages/mybg.def
+ ;
+ ;If you put "random" as the stagefilename, then a random stage will
+ ;be selected for that player. eg.
+ ;    kfm, random
+ ;
+ ;Zipped characters are also supported.
+ ;Place the ZIP file in the chars/ directory. The syntax is as
+ ;follows:
+ ;    zipname.zip:defname.def, stages/mybg.def
+ ;For example, if you have newsuave.def in suave.zip, the syntax is:
+ ;    suave.zip:newsuave.def, stages/mybg.def
+ ;If your def file has the same name as the zip file (eg. suave.def
+ ;in suave.zip), you can just put the name of the zip file alone:
+ ;    suave.zip, stages/mybg.def
+ ;
+ ;Optional parameters may follow on the same line, separated
+ ;by commas. Each parameter has the form:
+ ;    paramname = paramvalue
+ ;where paramname is the name of the parameter type, and
+ ;paramvalue is the value to assign that parameter.
+ ;The optional parameters are:
+ ;
+ ; - music
+ ;   Set the paramvalue to the name of the music file to use
+ ;   as the BGM for that character. This overrides the bgmusic
+ ;   parameter in the stage's .def file, so you can re-use the
+ ;   same stage for multiple characters, but have a different
+ ;   BGM playing for each person.
+ ;
+ ; - includestage
+ ;   Set the paramvalue to 0 to avoid including this stage
+ ;   in the stage select list (in VS, training modes, etc)
+ ;
+ ; - order
+ ;   Set the paramvalue to the ordering priority to give the
+ ;   character. Valid values are from 1 to 30. A smaller value
+ ;   means you will fight the character sooner. You will never
+ ;   fight an order 2 character before an order 1 character,
+ ;   and never an order 3 character before an order 2 one.
+ ;   For example, you might want to set your boss character
+ ;   to have order=3. The default order value is 1 if you omit
+ ;   this param. See *.maxmatches under [Options] for how to
+ ;   limit the number of matches per order priority.
+ ;
+ ;   Some examples:
+ ;        kfm, stages/mybg.def, includestage=0
+ ;        kfm, stages/mybg.def, music=sound/song.mp3
+ ;        kfm, stages/mybg.def, music=sound/song.mp3, includestage=0
+ ;        kfm, stages/mybg.def, order=3
+ ;
+ ;You can also add a randomize icon to the select screen. To do
+ ;this, put the word "randomselect" on a line of its own, with no
+ ;extra parameters.
+ ;
+ ;Insert your characters below.
+Black Goku
+Goku
+Goku GT
+Goku Transform
+Goku SSJ3
+Goku SSJ4
+Goku SSJ God
+Goku Transform 2
+Goku fukkatsu no f
+Vegeta Transform
+Vegeta SSJ3
+Majin Vegeta SSJ2
+Vegeta SSJ God
+Vegeta Transform 2
+Vegeta FNF SSGSS
+Mystic Gohan
+Trunks
+Trunks SSJ2
+Gogeta Normal V2
+Gold_Frieza
+Hit
+kyabe
+LordBeerus
+Bills
+Whis
+Evil Goku normal
+BrolyNormal
+Ba'Janemba'J-DBZ
+;-----------------------
+[ExtraStages]
+ ;Put extra stages here. They will be available in VS and Watch modes.
+ ;For example, you can insert "stages/mybg.def".
+stages/stage0-720.def
+stages/God_Tournament.def
+stages/dbz1-starrynight.def
+stages/Planeta_de_Bills_HR.def
+stages/Kaioh_Sama_Stage_HR.def
+stages/Battle_Saiyan.def
+stages/BardockStage.def
+stages/raditz_arrived.def
+stages/CELL_GAMES.def
+stages/City_Destroyed.def
+stages/CityDestroyed_Night_Rain.def
+stages/Namekusein.def
+stages/Island.def
+stages/kamehouse.def
+stages/Kamis_Lookout.def
+stages/Mountain_Road.def
+stages/satan_challanger.def
+stages/Planeta Supremo.def
+stages/Desert-Battle.def
+stages/Planet Zun.def
+stages/Janemba.def
+stages/Tree_Of_Might.def
+stages/inferno.def
+stages/hiperbolic.def
+stages/Kame House.def
+stages/Dr.Slump_House.def
+stages/King_Piccolo.def
+stages/Goku's House.def
+stages/ozharu_night.def
+stages/Earth_Rocks.def
+stages/Snakeway.def
+stages/SnakewayN.def
+stages/kingkai.def
+stages/dbz_frieza_spaceship2.def
+stages/dbnamek.def
+stages/Nameku.def
+stages/Vegeta_Death.def
+stages/Destroyed_Namek.def
+stages/Capsule_Corp_HR.def
+stages/in the Road.def
+stages/Cell's Galaxy.def
+stages/City_Temple.def
+stages/karintemple.def
+stages/Céu.def
+stages/dbz_babadi_ship.def
+stages/Time_Chamber_HR.def
+stages/The_Hopes_Gone.def
+stages/Arctic.def
+stages/SAIYAN_PRIDE.def
+stages/tenkaichiHR.def
+stages/Tournament.def
+stages/Torneio A Noite.def
+stages/PlanetaKaioshin.def
+stages/DM_supreme_kais_planet.def
+stages/Terra de Buu.def
+stages/Mountain Road.def
+stages/Rocks_Earth_Kai.def
+stages/Volcano-GelboPlanetHR.def
+stages/GarlicJr-Lookout.def
+stages/SB2-snowy_aurora_borealis.def
+stages/World Janemba.def
+stages/Gohan's_Death.def
+;---------------------------------------------------------------------
+[Options]
+ ;Here you set the maximum number of matches to fight before game ends
+ ;in Arcade Mode. The first number is the number of matches against
+ ;characters with order=1, followed by order=2 and order=3 respectively.
+ ;For example, for 4,3,1 you will fight up to 4 randomly-picked
+ ;characters who have order=1, followed by 3 with order=2 and 1 with
+ ;order=3.
+ ;Up to 30 entries allowed.
+arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0
+
+ ;Maximum number of matches to fight before game ends in Team Mode.
+ ;Like arcade.maxmatches, but applies to Team Battle.
+team.maxmatches = 4,1,1,0,0,0,0,0,0,0

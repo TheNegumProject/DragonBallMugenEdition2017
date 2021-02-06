@@ -1,0 +1,242 @@
+
+[Info]
+name ="Rocks_Earth_Kai"
+displayname="Rocks_Earth_Kai"
+Autor = "=Tapion=DBZ TeamOS="
+versiondate=01/05/2012
+mugenversion=04,14,2001
+
+;=======================================
+;            Especial thanks
+;=======================================
+
+;=======================================
+
+;----------------------------------------------------------------------------------------
+
+[Camera]
+startx =0
+starty =0
+boundleft  = -250
+boundright = 250
+boundhigh  = -180
+boundlow   = 0
+verticalfollow = .75
+floortension = 90
+tension = 50
+
+
+[PlayerInfo]
+p1startx =-70
+p1starty =0
+p1startz =0
+p1facing =1
+
+p2startx =70
+p2starty =0
+p2startz =0
+p2facing =-1
+
+leftbound =-1000
+rightbound =1000
+topbound =0
+botbound =0
+
+
+[Scaling]
+topz =0
+botz =50
+topscale =1
+botscale =1.2
+
+
+[Bound]
+screenleft  = 20
+screenright = 20
+
+
+[StageInfo]
+zoffset  = 223
+autoturn = 1
+resetBG  = 0
+hires = 1
+
+
+[Shadow]
+intensity = 95
+yscale =.2
+
+
+
+
+[Music]
+bgmusic  =   sound/04 - Festa de Morado.mp3
+bgvolume = 255
+;----------------------------------------------------------------------
+[BGdef]
+spr = Rocks_Earth_Kai.sff
+
+debugbg = 0
+
+[BG 0]
+type = normal
+spriteno =0,0
+start = 0,80
+delta = 1.7,1.5 ;Å¶
+mask =0
+tile = 1,0
+velocity = 0.050,0
+
+
+[BG 0]
+type =normal
+spriteno =0,6
+start = 0,163
+delta = 1.8,1.6 ;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.078,0
+
+[BG 0]
+type =normal
+spriteno =0,4
+start = 0,200
+delta = 1.8,1.6 ;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.090,0
+
+
+
+[BG 0]
+type =normal
+spriteno =0,2
+start = 0,300
+delta = 1.7,1.9;Å¶
+mask =1
+tile = 1,0
+
+
+[BG 0]
+type =normal
+spriteno =0,4
+start = 0,385
+delta = 1.8,1.7 ;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.099,0
+tilespacing = 0
+
+
+[BG 0]
+type =normal
+spriteno =0,1
+start = -250,600
+delta = 2,2
+mask =1
+tile = 1,0
+
+
+
+
+
+[BG Polvo]
+type=anim
+actionno=1
+delta= 2,2
+start = 0,480
+velocity = 0.099,0
+tile = 1,0
+tilespacing = 500
+
+[BG 0]
+type =normal
+spriteno =1,1
+start = 0,430
+delta = 1.7,1.8;Å¶mask =1
+tile = 1,1
+trans = add
+velocity = 6,0
+tilespacing = 0
+layerno= 1
+
+[BG 0]
+type =normal
+spriteno =1,0
+start = 0,650
+delta = 2,2;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 1.5,0
+tilespacing = 0
+
+
+[BG 0 captus]
+type =normal
+spriteno =2,0
+start = -800,480
+delta = 2,2
+mask =1
+tile = 0,0
+layerno= 1
+
+[BG 0]
+type =normal
+spriteno =2,2
+start = -760,530
+delta = 2,2
+mask =1
+tile = 0,0
+layerno= 1
+
+[BG 0]
+type =normal
+spriteno =2,1
+start = 715,510
+delta = 2,2
+mask =1
+tile = 0,0
+layerno= 1
+
+
+[BG 0]
+type =normal
+spriteno =2,1
+start = 500,630
+delta = 2,2
+mask =1
+tile = 0,0
+layerno= 1
+
+[BG 0]
+type =normal
+spriteno =1,1
+start = 0,430
+delta = 2,2;Å¶
+mask =1
+tile = 1,1
+trans = add
+velocity = 10,0
+tilespacing = 0
+layerno= 1
+
+
+[Begin Action 1]
+-1,-1, 0,0, 500,,
+1,0, 0,0, 1,,AS250D256
+1,0, 0,0, 1,,AS225D256
+1,0, 0,0, 1,,AS200D256
+1,0, 0,0, 1,,AS175D256
+1,0, 0,0, 1,,AS150D256
+1,0, 0,0, 1,,AS125D256
+1,0, 0,0, 1,,AS100D256
+1,0, 0,0, 1,,AS75D256
+1,0, 0,0, 1,,AS50D256
+1,0, 0,0, 1,,AS25D256
+1,0, 0,0, 1,,
+1,-1, 0,0, 500,,
+

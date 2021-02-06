@@ -1,0 +1,607 @@
+;--------------------------------------------------------
+[Info]
+
+name ="In The Road"
+
+displayname="In The Road"
+
+versiondate=25/01/2010
+
+mugenversion=04,14,2001
+
+author= "Tapion-Team OS"
+
+;         Agradecimientos:
+;<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>
+
+;-Alien: por el rip del background de SSW2.
+;-Sawady:Por el FX que utilice para el sol.
+;-A Mugenfan2005: Por los rips del Budokai 3.
+;-A Bandai: por hacer el juego de DBZ de Sega Genesis donde saque la carretera.
+;-A Mugenhero: por la idea de la stage y por la base que utilice para hacer el camion.
+;-A todos mis compañeros Del Team por su apoyo y ayuda en cada proyecto.
+;-A todas aquellas personas que lanzan sus trabajo abiertamente para que todos
+;puedan utilizarlos sin ningun tipo de problema.
+;- Y A ti por descargar esta Stage.
+
+
+;--------------------------------------------------------
+[Camera]
+ ;Camera starting position: Usually 0 for both
+ ;***
+startx = 0
+starty = 0
+
+ ;Left and right bound of camera
+ ;You may want to fiddle a bit with these values to make sure the
+ ;background doesn't move too far or too little
+ ;***
+boundleft = -93
+boundright = 370
+
+ ;High and low bound of camera
+ ;High is a negative number. Make is more negative if you want to
+ ;camera to be able to move higher.
+ ;Low should usually be 0.
+ ;If omitted, defaults to -25 and 0 respectively
+ ;***
+boundhigh = -50
+boundlow = 0
+
+ ;This is how much the camera will move vertically towards the
+ ;highest player. Valid values are from 0 to 1. A value of 0 will mean
+ ;the camera does not move up at all. A value of 1 will makes the camera
+ ;follow the highest player.
+ ;Typically .2 for normal-sized backgrounds. You may need to pull this
+ ;value up for taller backgrounds.
+verticalfollow = .01
+
+ ;Minimum vertical distance the highest player has to be from the floor,
+ ;before the camera starts to move up to follow him. For extremely
+ ;tall stages, a floor tension of about 20-30 coupled with a
+ ;vertical-follow of .8 allows the camera to follow the action.
+floortension = 30
+
+ ;Horizontal distance player is from edge before camera starts to move
+ ;left or right. Typically 50 or 60.
+tension = 20
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+ ;p1startx is typically -70 and p2startx is 70.
+ ;p1starty and p1startz should be 0.
+p1startx = -70        ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+ ;Distance from left/right edge of screen that player can move to
+ ;Typically 15
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+ ;Z offset for drawing
+ ;Adjust this value to move the ground level up/down in the screen.
+ ;It's the position where the players stand at.
+ ;Up - smaller, Down - larger
+ ;***
+zoffset = 165
+
+ ;Leave this at 1. It makes the players face each other
+autoturn = 1
+
+ ;Set the following to 1 to have the background be reset between
+ ;rounds.
+resetBG = 1
+
+hires = 1
+
+;--------------------------------------------------------
+[Shadow]
+ ;This is the shadow color given in r,g,b. Valid values for each
+ ;range from 0 (lightest) to 255 (darkest).
+ ;Defaults to 92,92,92 if omitted.
+color = 0,0,0
+
+ ;This is the scale factor of the shadow. Use a big scale factor
+ ;to make the shadow longer. You can use a NEGATIVE scale factor
+ ;to make the shadow fall INTO the screen.
+ ;Defaults to 0.4 if omitted.
+yscale = 0.02
+
+fade.range = 3,3
+
+ ;Set to 1 to draw "reflection" shadows. Defaults to 0.
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+ ;Put a filename for a MOD, MP3 or MIDI here, or just leave it
+ ;blank if you don't want music. If an invalid filename is
+ ;given, then no music will play. To play CD audio, put
+ ;the track number followed by ".da". Using a track number of
+ ;0 will play a random audio track. For example, to play
+ ;track 3 from a music CD, use:
+ ;  bgmusic = 3.da
+bgmusic = sound/Vegeta Super Saiyan.mp3
+
+ ;Adjust the volume. 0 is normal, negative for softer, and
+ ;positive for louder (only for mp3, mods and CDA)
+bgvolume = 0
+
+;========================================================
+;--------------------------------------------------------
+; Background definition
+; ***
+;-------------------------------------
+; [BG x]
+; type = ?       "Normal"/"Parallax"/"Height"  (def: "normal")
+; spriteno = ?, ? Sprite group and number: groupno, imgno  (req'd)
+; start = ?, ?   Starting location (integer)  (def: 0, 0)
+; delta = ?, ?   Change in location per camera unit moved (float)  (def: 1,1)
+; trans = ?      Transparency settings: "none"/"add"/"sub"/"avg" (def: "none")
+; mask = ?       Masking (int): 0 - off, 1 - on  (def: 0)
+; velocity = ?, ? Velocity: x, y (float): speed background moves (def: 0, 0)
+; tile = ?, ?    Tiling: xtile, ytile (int): 0 - off, 1 - infinite,
+;                        >1 - tile that number of times  (def: 0, 0)
+; tilespacing = ?, ? Tiling: x, y (int) : space between tiles (def: 0, 0)
+;  Parallax-only:
+; xscale = ?, ?    Top xscale, bottom xscale (float) (if used, then no tiling)
+; width = ?, ?     Top width, bottom width (int)  (if used, then tiles;
+;                             use either this or above, but not both)
+; yscalestart = ?  Starting y-scale (float, in percent)  (def: 100)
+; yscaledelta = ?  Change in y-scale per unit (float, in percent)  (def: 0)
+;-------------------------------------
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+ ;Filename of sprite data
+spr = in the Road.sff
+
+ ;Set to 1 if you want to clear the screen to magenta before
+ ;drawing layer 0 (the default background). Good for spotting "holes"
+ ;in your background.
+ ;Remember to turn this off when you are done debugging the background,
+ ;because it slows down performance.
+debugbg = 1
+
+;-----------------------------------------------------------------------------
+;                                   Backgrounds
+;-----------------------------------------------------------------------------
+
+
+[BG cielo]
+type  = normal
+start = -200,130
+mask  = 0
+spriteno = 2,0
+delta = 0, 0
+velocity = .05, 0
+mask  = 0,
+trans = none
+tile = 1, 0
+
+[BG sol]
+type  = Anim
+actionno = 10
+layerno = 0
+start = 30,30
+delta = 0, 0
+trans =  add
+mask  = 1
+tile  = 0, 0
+
+[BG nubes]
+type  = normal
+start = -200,130
+mask  = 0
+spriteno = 1,0
+delta = 0, 0
+velocity = .1, 0
+mask  = 0,
+trans = add
+tile = 1, 0
+
+[BG montañas]
+type  = normal
+spriteno = 0, 2
+start = -230, 127
+delta = 0.05, 1
+mask = 1
+trans = none
+velocity =  0.03, 0
+xscale = 1.425,1
+yscalestart = 100
+yscaledelta = -1.0
+tile = 1,0
+id= 3
+
+[BG suelo]
+type  = normal
+spriteno = 0, 1
+start = 12, 240
+delta = 0, 1
+mask = 1
+velocity = 15, 0
+xscale = 1.425,1
+yscalestart = 100
+yscaledelta = -1.0
+tile = 1, 0
+sin.y= -2,100
+id = 2
+
+
+[BG coche rojo]
+type  = normal
+spriteno = 20,0
+start = 0, 300
+delta = 0, 1
+mask = 1
+trans = none
+velocity = 20, 0
+tile = 1,0
+tilespacing = 10000
+sin.y= -2,100
+Id= 4
+
+[BG coche amarillo]
+type  = normal
+spriteno = 20,2
+start = 3000, 300
+delta = 0, 1
+mask = 1
+trans = none
+velocity = 20, 0
+tile = 1,0
+tilespacing = 10000
+sin.y= -2,100
+Id= 4
+
+[BG coche azul]
+type  = normal
+spriteno = 20,4
+start = 6000, 300
+delta = 0, 1
+mask = 1
+trans = none
+velocity = 20, 0
+tile = 1,0
+tilespacing = 10000
+sin.y= -2,100
+Id= 4
+
+[BG coche os]
+type  = normal
+spriteno = 20,6
+start = 9000, 300
+delta = 0, 1
+mask = 1
+trans = none
+velocity = 20, 0
+tile = 1,0
+tilespacing = 10000
+sin.y= -2,100
+Id= 4
+
+
+
+[BG camion]
+type  = normal
+spriteno = 3, 0
+start = -230, 127
+delta = 1, 1
+mask = 1
+trans = none
+velocity = 0, 0
+tile = 0,0
+id = 1
+
+
+[BG DestelloA]
+type  = normal
+spriteno = 15,0
+layerno = 1
+start = 140, -115
+delta = 0.21, 2.2
+trans = add
+tile  = 0, 0
+
+[BG DestelloB]
+type  = normal
+spriteno = 16,0
+layerno = 1
+start = 96, -96
+delta = 0.135, 1.76
+trans = add
+tile  = 0, 0
+
+[BG DestelloC]
+type  = normal
+spriteno = 17,0
+layerno = 1
+start = 72, -50
+delta = 0.085, 1.52
+trans = add
+tile  = 0, 0
+
+[BG DestelloD]
+type  = normal
+spriteno = 18,0
+layerno = 1
+start = 48, -48
+delta = 0.048, 1.28
+trans = add
+tile  = 0, 0
+
+
+[BG Destello4]
+type  = normal
+spriteno = 13,0
+layerno = 1
+start = -27, 90
+delta = -0.125, 0.48
+trans = add
+tile  = 0, 0
+
+[BG Destello3]
+type  = normal
+spriteno = 12,0
+layerno = 1
+start = -15, 85
+delta = -0.165, 0.24
+trans = add
+tile  = 0, 0
+
+[BG Destello2]
+type  = normal
+spriteno = 11,0
+layerno = 1
+start = -87, 160
+delta = -0.4, -0.5
+trans = add
+tile  = 0, 0
+
+[BG Destello]
+type  = normal
+spriteno = 14,0
+layerno = 1
+start = -180, 150
+delta = -1, -1
+trans = add
+tile  = 0, 0
+
+;-----------------------------------------------------------------------------
+;                                 Animaciones
+;-----------------------------------------------------------------------------
+
+
+[Begin Action 10]
+10,3, 0,0, 3,,A
+10,4, 0,0, 3,,A
+10,5, 0,0, 3,,A
+10,6, 0,0, 3,,A
+10,7, 0,0, 3,,A
+10,8, 0,0, 3,,A
+10,9, 0,0, 3,,A
+10,10, 0,0, 3,,A
+10,11, 0,0, 3,,A
+10,12, 0,0, 3,,A
+10,13, 0,0, 3,,A
+10,14, 0,0, 3,,A
+10,15, 0,0, 3,,A
+10,16, 0,0, 3,,A
+10,17, 0,0, 3,,A
+10,18, 0,0, 3,,A
+10,19, 0,0, 3,,A
+10,20, 0,0, 3,,A
+10,21, 0,0, 3,,A
+10,22, 0,0, 3,,A
+10,23, 0,0, 3,,A
+10,24, 0,0, 3,,A
+10,25, 0,0, 3,,A
+10,26, 0,0, 3,,A
+10,27, 0,0, 3,,A
+10,28, 0,0, 3,,A
+10,29, 0,0, 3,,A
+10,30, 0,0, 3,,A
+10,31, 0,0, 3,,A
+10,32, 0,0, 3,,A
+10,33, 0,0, 3,,A
+10,34, 0,0, 3,,A
+10,35, 0,0, 3,,A
+10,36, 0,0, 3,,A
+10,37, 0,0, 3,,A
+10,38, 0,0, 3,,A
+10,39, 0,0, 3,,A
+10,40, 0,0, 3,,A
+10,41, 0,0, 3,,A
+10,42, 0,0, 3,,A
+10,43, 0,0, 3,,A
+10,44, 0,0, 3,,A
+10,45, 0,0, 3,,A
+10,46, 0,0, 3,,A
+10,47, 0,0, 3,,A
+10,48, 0,0, 3,,A
+10,49, 0,0, 3,,A
+10,50, 0,0, 3,,A
+10,51, 0,0, 3,,A
+10,52, 0,0, 3,,A
+10,53, 0,0, 3,,A
+10,54, 0,0, 3,,A
+10,55, 0,0, 3,,A
+10,56, 0,0, 3,,A
+10,57, 0,0, 3,,A
+
+[Begin Action 20]
+20,0, 0,0, 1
+20,1, 0,0, 1
+
+[Begin Action 21]
+20,2, 0,0, 1
+20,3, 0,0, 1
+[Begin Action 22]
+20,4, 0,0, 1
+20,5, 0,0, 1
+[Begin Action 23]
+20,6, 0,0, 1
+20,7, 0,0, 1
+
+
+;-----------------------------------------------------------------------------
+;                                supercontroles
+;-----------------------------------------------------------------------------
+
+;Baches en la carretera (Temblor en el camion)
+; Code By lEe
+
+[BgCtrlDef 1]
+looptime    = 1000
+CtrlId      = 1
+
+[BgCtrl 1.0]
+type        = sinY
+time        = 310
+value       = 1,3
+[BgCtrl 1.1]
+type        = sinY
+time        = 240
+value       = 1,3
+[BgCtrl 1.2]
+type        = sinY
+time        = 460
+value       = 0
+[BgCtrl 1.3]
+type        = sinY
+time        = 760
+value       = 1,4
+[BgCtrl 1.4]
+type        = sinY
+time        = 860
+value       = 0
+[BgCtrl 1.5]
+type        = sinY
+time        = 960
+value       = 1,3
+[BgCtrl 1.6]
+type        = sinY
+time        = 1061
+value       = 1,2
+[BgCtrl 1.7]
+type        = sinY
+time        = 1260
+value       = 1,3
+[BgCtrl 1.8]
+type        = sinY
+time        = 1280
+value       = 0
+
+
+;--------------------
+;Velocidad
+
+[BGctrldef 2]
+ctrlID=2
+
+[BGctrl 2,vel]
+type=velset
+time=100
+x= 5
+
+[BGctrl 2,vel]
+type=velset
+time=150
+x= 10
+
+[BGctrl 2,vel]
+type=velset
+time=200
+x= 15
+
+[BGctrl 2,vel]
+type=velset
+time=250
+x= 18
+
+[BGctrl 2,vel]
+type=velset
+time=300
+x= 20
+
+[BGctrldef 2]
+ctrlID=3
+
+[BGctrl 3,vel]
+type=velset
+time=300
+x= 0.08
+
+
+[BGctrldef 4]
+ctrlID=4
+
+[BGctrl 4,vel]
+type=velset
+time=300
+x= 25
+
+
+
+;--------------------
+;baja velocidad
+
+[BGctrldef 2]
+looptime    = 1400
+ctrlID=2
+
+
+[BGctrl 2,vel]
+type=velset
+time=2400
+x= 0
+
+[BGctrldef 2]
+ctrlID=3
+
+[BGctrl 3,vel]
+type=velset
+time=2400
+x= 0
+
+
+[BGctrldef 4]
+ctrlID=4
+
+[BGctrl 4,vel]
+type=velset
+time=2400
+x= 0
+

@@ -1,0 +1,144 @@
+ Autor = VEGETADEVIL
+
+[Info]
+name ="Supreme Kai's Stage"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -29
+boundright = 34
+boundhigh = -35
+boundlow = -5
+
+[PlayerInfo]
+p1startx = -70         
+p1starty = 0            
+p1startz = 0            
+p1facing = 1           
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  500 
+topbound  =  0     
+botbound  =  0     
+
+verticalfollow = .2
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70          
+p1starty = 0            
+p1startz = 0            
+p1facing = 1            
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0     
+botbound  =  0     
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1   
+botscale = 1.2   
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15 
+screenright = 15 
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 22,22,22
+yscale = .3
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/Intros.mp3
+bgvolume = 255
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = stages/PlanetaKaioshin.sff
+debugbg = 0
+[BG 0]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = -0, 0
+delta = 1, 1
+trans = none
+mask  = 0
+tile  = 1, 0
+tilespacing = 0,0
+window = 0,0, 319, 239
+
+[BG 1]
+type  = anim
+actionno = 1
+layerno = 0
+start = 12,-310
+trans = add
+scale = 0.3,0.3
+
+[Begin Action 1]
+1,0,0,0,5,,A
+1,1,0,0,5,,A
+1,2,0,0,5,,A
+1,3,0,0,5,,A
+1,4,0,0,5,,A
+1,5,0,0,5,,A
+1,6,0,0,5,,A
+1,7,0,0,12,,A
+1,6,0,0,5,,A
+1,5,0,0,5,,A
+1,4,0,0,5,,A
+1,3,0,0,5,,A
+1,2,0,0,5,,A
+1,1,0,0,5,,A
+
+
+[BG 2]
+type  = normal
+start = -200,130
+mask  = 0
+spriteno = 2,0
+delta = 1.0, 1.0
+velocity = .5, 0
+mask  = 0,
+trans = add
+tile = 1, 0
+
+[BG 3]
+type  = anim
+actionno = 3
+layerno = 0
+start = -110,118
+trans = add
+
+[Begin Action 3]
+3,0,0,0,5,,A
+3,1,0,0,5,,A
+3,2,0,0,12,,A
+3,1,0,0,5,,A

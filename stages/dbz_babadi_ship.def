@@ -1,0 +1,262 @@
+[Info]
+name="Babadi's Ship"
+author="Chunky"
+
+
+;Lightly Edited by Stig87
+;email = b_blue34@yahoo.com
+;Mugendream.com
+
+[Camera]
+startx=0
+starty=0
+boundleft=-160
+boundright=160
+boundhigh=-47
+verticalfollow=.7
+floortension=0
+tension=50
+
+[PlayerInfo]
+p1startx=-80
+p1starty=0
+p1startz=0
+p1facing=1
+
+p2startx=80
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.2
+
+[Bound]
+screenleft=24
+screenright=24
+
+[StageInfo]
+zoffset=210
+autoturn=1
+resetBG=1
+
+[Shadow]
+intensity=96
+yscale=.3
+[Reflection]
+
+[Music]
+bgmusic =sound/Babidi Cast Spell.mp3
+bgvolume =255
+
+
+[BGdef]
+spr=dbz_babadi_ship.sff
+
+[BG a]
+type=normal
+spriteno=1,0
+delta=0,1
+id=1
+
+[BG f]
+type=normal
+spriteno=1,1
+tile=1
+id=1
+
+[BG d]
+type=normal
+spriteno=1,2
+mask=1
+id=1
+
+[BG s]
+type=normal
+spriteno=1,3
+mask=1
+id=1
+
+[BG s]
+type=normal
+spriteno=1,4
+mask=1
+id=1
+
+[BGCtrlDef 1]
+CtrlID=1
+looptime=-1
+
+[BGCtrl 1]
+type=Visible
+time=0
+value=1
+
+[BGCtrl 2]
+type=Visible
+time=1098
+value=0
+
+[BG sky]
+type=normal
+spriteno=6,6
+tile=1
+velocity=.1
+id=3
+
+[BG f]
+type=normal
+spriteno=3,1
+tile=1
+id=3
+
+[BG h]
+type=normal
+spriteno=3,2
+mask=1
+id=3
+
+[BG r]
+type=normal
+spriteno=3,3
+trans=sub
+mask=1
+id=3
+
+[BGCtrlDef 3]
+CtrlID=3
+looptime=-1
+
+[BGCtrl 1]
+type=Visible
+time=0
+value=0
+
+[BGCtrl 2]
+type=Visible
+time=1098
+value=1
+
+[BGCtrl 3]
+type=Visible
+time=3294
+value=0
+
+[BG s]
+type=normal
+spriteno=6,6
+tile=1
+velocity=-.5
+id=4
+
+[BG h]
+type=normal
+spriteno=4,0
+mask=1
+id=4
+
+[BG D]
+type=normal
+spriteno=4,1
+mask=1
+id=4
+
+[BGCtrlDef 4]
+CtrlID=4
+looptime=-1
+
+[BGCtrl 1]
+type=Visible
+time=0
+value=0
+
+[BGCtrl 2]
+type=Visible
+time=3294
+value=1
+
+[BG B]
+type=anim
+actionno=0
+delta=0,0
+id=9
+
+[BGCtrlDef 9]
+CtrlID=9
+looptime=-1
+
+[BGCtrl 1]
+type=Visible
+time=0
+value=1
+
+[BGCtrl 2]
+type=Visible
+time=4294
+value=0
+
+[BG d]
+type=normal
+spriteno=1,5
+mask=1
+
+[Begin Action 0]
+9,9,,,1000
+9,8,,,4,,AS0D250
+9,8,,,4,,AS0D240
+9,8,,,4,,AS0D230
+9,8,,,4,,AS0D220
+9,8,,,4,,AS0D210
+9,8,,,4,,AS0D200
+9,8,,,4,,AS0D190
+9,8,,,4,,AS0D180
+9,8,,,4,,AS0D170
+9,8,,,4,,AS0D160
+9,8,,,4,,AS0D150
+9,8,,,4,,AS0D140
+9,8,,,4,,AS0D130
+9,8,,,4,,AS0D120
+9,8,,,4,,AS0D110
+9,8,,,4,,AS0D100
+9,8,,,4,,AS0D90
+9,8,,,4,,AS0D80
+9,8,,,4,,AS0D70
+9,8,,,4,,AS0D60
+9,8,,,4,,AS0D50
+9,8,,,4,,AS0D40
+9,8,,,4,,AS0D30
+9,8,,,4,,AS0D20
+9,8,,,4,,AS0D10
+9,8,,,4,,AS0D20
+9,8,,,4,,AS0D30
+9,8,,,4,,AS0D40
+9,8,,,4,,AS0D50
+9,8,,,4,,AS0D60
+9,8,,,4,,AS0D70
+9,8,,,4,,AS0D80
+9,8,,,4,,AS0D90
+9,8,,,4,,AS0D100
+9,8,,,4,,AS0D110
+9,8,,,4,,AS0D120
+9,8,,,4,,AS0D130
+9,8,,,4,,AS0D140
+9,8,,,4,,AS0D150
+9,8,,,4,,AS0D160
+9,8,,,4,,AS0D170
+9,8,,,4,,AS0D180
+9,8,,,4,,AS0D190
+9,8,,,4,,AS0D200
+9,8,,,4,,AS0D210
+9,8,,,4,,AS0D220
+9,8,,,4,,AS0D230
+9,8,,,4,,AS0D240
+9,8,,,4,,AS0D250
+9,9,,,1000

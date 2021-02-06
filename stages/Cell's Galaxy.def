@@ -1,0 +1,118 @@
+[Info]
+name ="Cell's Galaxy"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -80
+boundright = 80
+boundhigh = -0
+boundlow = 0
+[State 0, Explod]
+type = Explod
+trigger1 =anim
+anim =6
+ID =6
+pos = 0,0
+postype = p1  ;p2,front,back,left,right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 0,0
+accel = 0,0
+random = 0,0
+removetime = 20000000000000000000
+supermove
+pausemove
+scale = 1,1
+sprpriority = 0
+ontop = 0
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 0
+;ignorehitpause =
+;persistent =
+
+[PlayerInfo]
+p1startx = -70         ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+verticalfollow = .2
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1.0   ;Scale to use at top
+botscale = 1.4   ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 10 ;Dist from left of screen that player can move to
+screenright = 10 ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 214
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 22,22,22
+yscale = .3
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic =sound/Gohan's Anger.mp3 
+bgvolume = 255
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = stages/Cell's Galaxy.sff
+debugbg = 0
+[BG 0]
+type  = normal
+spriteno = 0, 0
+spriteno = 0, 1
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+trans = none
+mask  = 0
+tile  = 1, 0
+tilespacing = 0,0
+window = 0,0, 319, 239

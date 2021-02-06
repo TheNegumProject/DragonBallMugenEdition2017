@@ -1,0 +1,852 @@
+;========================================================
+;Mountain Road By Crazy Logic
+;Especial Thanks to Hitomi DGZ member
+;========================================================
+[Info]
+name = "Mountain Road"
+author= "Crazy_Logic"
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -130
+boundright = 130
+boundhigh = -290
+boundlow = 0
+verticalfollow = .9
+floortension = 0
+tension = 50
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -500
+rightbound =  500
+topbound  =  0
+botbound  =  0
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 195
+autoturn = 1
+resetBG = 1
+Hires = 1
+;--------------------------------------------------------
+[Shadow]
+intensity = 40
+color = 40,40,40
+yscale = .2
+fade.range = 0,0
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+;--------------------------------------------------------
+[Music]
+bgmusic =sound/Cassie.mp3
+bgvolume = 255
+;========================================================
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = Mountain Road.sff
+debugbg = 0
+;----------
+[BG 0]
+type  = normal
+spriteno = 1,0
+layerno = 0
+delta =1.8,1.7
+velocity = .1,0
+start = 0,-60
+tile  = 1,1
+xscale = .5
+yscale = .9
+
+[BG 1]
+type  = normal
+spriteno = 1, 1
+layerno = 0
+start = 0,200
+mask  = 1
+trans = add
+velocity = .5
+delta = 1.7,1.7
+tile = 1,0
+tilespacing = 0,0
+
+[BG 2]
+type  = normal
+spriteno = 1, 1
+layerno = 0
+start = 0,210
+mask  = 1
+trans = add
+velocity = .2
+delta = 1.7,1.7
+tile = 1,0
+tilespacing = 0,0
+
+
+[BG Montaña]
+type  = normal
+spriteno = 0, 8
+layerno = 0
+start = -30,270
+mask  = 1
+delta = 1.7,1.7
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG agua]
+type  = normal
+spriteno = 0, 17
+layerno = 0
+start = -30,270
+mask  = 1
+delta = 1.7,1.7
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG agua trans]
+type  = normal
+spriteno = 0, 18
+trans = add
+velocity = .1
+start = -30,270
+mask  = 1
+delta = 1.7,1.7
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG agua trans]
+type  = normal
+spriteno = 0, 19
+trans = add
+velocity = -.1
+start = -30,270
+mask  = 1
+delta = 1.7,1.7
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG bird I]
+type     = anim
+actionno = 32
+start    = 190,-190
+delta    = 2,2
+mask     = 1
+
+[BG bird II]
+type     = anim
+actionno = 32
+start    = 280,-250
+delta    = 2,2
+mask     = 1
+
+[BG bird III]
+type     = anim
+actionno = 32
+start    = -490,-190
+delta    = 2,2
+mask     = 1
+
+[BG 2]
+type  = normal
+spriteno =0,1
+layerno = 0
+start = 0,-30
+mask  = 1
+trans = add
+velocity = .2
+delta = 1.7,1.7
+tile = 1,0
+tilespacing = 0,0
+
+[BG pinos]
+type  = normal
+spriteno = 0, 16
+layerno = 0
+start = -30,300
+mask  = 1
+delta = 1.7,1.8
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG pinos]
+type  = normal
+spriteno = 0, 16
+layerno = 0
+start = 0,300
+mask  = 1
+delta = 1.8,1.8
+tile  = 1, 0
+tilespacing = 20,0
+
+[BG pinos]
+type  = normal
+spriteno = 0, 16
+layerno = 0
+start = -30,300
+mask  = 1
+delta = 1.9,1.9
+tile  = 1, 0
+tilespacing = 10,0
+
+[BG 3]
+type  = normal
+spriteno = 0, 10
+layerno = 0
+start = 183,-180
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 4]
+type  = normal
+spriteno = 0, 15
+start = -650,-125
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+
+[BG 5]
+type  = normal
+spriteno = 0, 5
+layerno = 0
+start = 390,230
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 6]
+type  = normal
+spriteno = 0, 5
+layerno = 0
+start = -400,220
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 7]
+type  = normal
+spriteno = 0, 5
+layerno = 0
+start = -540,140
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+
+[BG bird V]
+type     = anim
+actionno = 32
+start    = -680,-250
+delta    = 2,2
+mask     = 1
+
+
+[BG 8]
+type  = normal
+spriteno = 0, 5
+layerno = 0
+start = 280,250
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+
+[BG 9]
+type  = normal
+spriteno = 0, 9
+layerno = 0
+start = -520,-180
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 10]
+type  = normal
+spriteno = 0, 7
+layerno = 0
+start = -650,-50
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 11]
+type  = normal
+spriteno = 0, 4
+layerno = 0
+start = 0,280
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 12]
+type  = normal
+spriteno = 0, 5
+layerno = 0
+start = 130,315
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 13]
+type  = normal
+spriteno = 1, 1
+layerno = 0
+start = 0,330
+mask  = 1
+trans = add
+delta = 2,2
+tile = 1,0
+velocity = -.2
+tilespacing = 0,0
+
+[BG 14]
+type  = normal
+spriteno = 1, 2
+layerno = 0
+start = -200,-350
+mask  = 1
+trans = add
+delta = 1.8,1.8
+tilespacing = 0,0
+
+[BG 15]
+type  = normal
+spriteno = 0, 15
+start = -600,-30
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 16]
+type  = normal
+spriteno = 0, 15
+start = 400,-20
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 17]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = -30,280
+mask  = 1
+delta = 2,2
+tile  = 0, 0
+tilespacing = 0,0
+
+[BG 18]
+type  = normal
+spriteno = 0, 2
+layerno = 0
+start = -30,280
+mask  = 1
+delta = 2,2
+tile  = 1, 0
+
+
+[BG 31]
+type  = normal
+spriteno = 1, 3
+start = -300,350
+mask  = 1
+delta = 2,2
+tilespacing = 0,0
+
+[BG 19]
+type  = normal
+spriteno = 0, 1
+start = 0,270
+mask  = 1
+trans = add
+velocity = .2
+delta = 2,2
+tile = 1,0
+tilespacing = 0,0
+
+[BG 20]
+type  = normal
+spriteno = 0, 11
+layerno = 0
+start = -30,325
+mask  = 1
+delta = 2,2
+tile  = 1, 0
+
+
+[BG 21]
+type  = normal
+spriteno = 0, 14
+start = -300,350
+mask  = 1
+delta = 2,2
+tile  = 0, 0
+
+[BG 22]
+type  = normal
+spriteno = 0, 6
+layerno = 0
+start = -500,410
+mask  = 1
+delta = 2,2
+layerno = 1
+tilespacing = 0,0
+
+[BG 23]
+type  = normal
+spriteno = 0, 6
+layerno = 0
+start = -600,400
+mask  = 1
+delta = 2,2
+layerno = 1
+tilespacing = 0,0
+
+[BG 24]
+type  = normal
+spriteno = 0, 3
+layerno = 0
+start = -30,275
+mask  = 1
+delta = 2.2,2
+tile  = 1, 0
+
+[BG 25]
+type  = normal
+spriteno = 0, 1
+start = 0,350
+mask  = 1
+trans = add
+velocity = .4
+delta = 2,2
+tile = 1,0
+layerno = 1
+tilespacing = 0,0
+
+[BG 26]
+type  = normal
+spriteno = 0, 6
+layerno = 1
+start = 300,510
+mask  = 1
+delta = 2,2
+layerno = 1
+tilespacing = 0,0
+
+[BG 27]
+type  = normal
+spriteno = 0, 12
+layerno = 1
+start = 400,520
+mask  = 1
+delta = 2,2
+layerno = 1
+tilespacing = 0,0
+
+[BG 28]
+type  = normal
+spriteno = 0, 13
+start = -425,470
+mask  = 1
+layerno = 1
+delta = 2.1,2
+tile  = 0, 0
+
+[BG 29]
+type  = normal
+spriteno = 0, 6
+layerno = 1
+start = 400,520
+mask  = 1
+delta = 2,2
+layerno = 1
+tilespacing = 0,0
+
+[BG 30]
+type  = normal
+spriteno = 0, 6
+layerno = 1
+start = -400,500
+mask  = 1
+delta = 2,2
+layerno = 1
+tilespacing = 0,0
+
+[BG 31]
+type  = normal
+spriteno = 0, 6
+layerno = 1
+start = -600,480
+mask  = 1
+delta = 2,2
+layerno = 1
+tilespacing = 0,0
+
+[BG logo trans]
+type  = anim
+actionno = 7001
+layerno = 1
+mask = 1
+start = 0,240
+
+[BG crazy]
+type  = anim
+actionno = 7000
+layerno = 1
+mask = 1
+start = 0,240
+
+[BG crazy marco]
+type  = anim
+actionno = 7002
+layerno = 1
+mask = 1
+start = 0,240
+
+;========================================================
+; BG ANIMATIONS
+;========================================================
+[Begin action 32]
+100,0,0,0,5
+100,1,0,0,5
+100,2,0,0,5
+100,3,0,0,5
+100,4,0,0,5
+100,5,0,0,5
+100,6,0,0,5
+100,7,0,0,5
+100,8,0,0,5
+100,9,0,0,5
+100,10,0,0,5
+100,11,0,0,5
+100,12,0,0,5
+100,13,0,0,5
+100,14,0,0,5
+100,15,0,0,5
+100,16,0,0,5
+100,17,0,0,5
+100,18,0,0,5
+100,19,0,0,5
+100,20,0,0,5
+100,21,0,0,5
+100,22,0,0,5
+100,23,0,0,5
+100,24,0,0,5
+100,25,0,0,5
+100,26,0,0,5
+100,27,0,0,5
+100,28,0,0,5
+100,29,0,0,5
+100,30,0,0,5
+100,31,0,0,5
+100,32,0,0,5
+100,33,0,0,5
+100,34,0,0,5
+100,35,0,0,5
+100,36,0,0,5
+100,37,0,0,5
+100,38,0,0,5
+100,39,0,0,5
+100,40,0,0,5
+100,41,0,0,5
+100,42,0,0,5
+100,43,0,0,5
+100,44,0,0,5
+100,45,0,0,5
+100,46,0,0,5
+100,47,0,0,5
+100,48,0,0,5
+100,49,0,0,5
+100,50,0,0,5
+100,51,0,0,5
+100,52,0,0,5
+100,53,0,0,5
+100,54,0,0,5
+100,55,0,0,5
+100,56,0,0,5
+100,57,0,0,5
+100,58,0,0,5
+100,59,0,0,5
+100,60,0,0,5
+100,61,0,0,5
+100,62,0,0,5
+100,63,0,0,5
+100,64,0,0,5
+100,65,0,0,5
+100,66,0,0,5
+100,67,0,0,5
+100,68,0,0,5
+100,69,0,0,5
+100,70,0,0,5
+100,71,0,0,5
+100,72,0,0,5
+100,73,0,0,5
+100,74,0,0,5
+100,75,0,0,5
+100,76,0,0,5
+100,77,0,0,5
+100,78,0,0,5
+100,79,0,0,5
+100,80,0,0,5
+100,81,0,0,5
+100,82,0,0,5
+100,83,0,0,5
+100,84,0,0,5
+100,85,0,0,5
+100,86,0,0,5
+100,87,0,0,5
+100,88,0,0,5
+100,89,0,0,5
+100,90,0,0,5
+100,91,0,0,5
+100,92,0,0,5
+100,93,0,0,5
+100,94,0,0,5
+100,95,0,0,5
+100,96,0,0,5
+100,97,0,0,5
+100,98,0,0,5
+100,99,0,0,5
+100,100,0,0,5
+100,101,0,0,5
+100,102,0,0,5
+100,103,0,0,5
+100,104,0,0,5
+100,105,0,0,5
+100,106,0,0,5
+100,107,0,0,5
+100,108,0,0,5
+100,109,0,0,5
+100,110,0,0,5
+100,111,0,0,5
+100,112,0,0,5
+100,113,0,0,5
+100,114,0,0,5
+100,115,0,0,5
+100,116,0,0,5
+100,117,0,0,5
+100,118,0,0,5
+100,119,0,0,5
+100,120,0,0,5
+100,121,0,0,5
+100,122,0,0,5
+100,123,0,0,5
+100,124,0,0,5
+100,125,0,0,5
+100,126,0,0,5
+100,127,0,0,5
+100,128,0,0,5
+100,129,0,0,5
+100,130,0,0,5
+100,131,0,0,5
+100,132,0,0,5
+100,133,0,0,5
+100,134,0,0,5
+100,135,0,0,5
+100,136,0,0,5
+100,137,0,0,5
+100,138,0,0,5
+100,139,0,0,5
+100,140,0,0,5
+100,141,0,0,5
+100,142,0,0,5
+100,143,0,0,5
+100,144,0,0,5
+100,145,0,0,5
+100,146,0,0,5
+100,147,0,0,5
+100,148,0,0,5
+100,149,0,0,5
+100,150,0,0,5
+100,151,0,0,5
+100,152,0,0,5
+100,153,0,0,5
+100,154,0,0,5
+100,155,0,0,5
+100,156,0,0,5
+100,157,0,0,5
+100,158,0,0,5
+100,159,0,0,5
+100,160,0,0,5
+100,161,0,0,5
+100,162,0,0,5
+100,163,0,0,5
+100,164,0,0,5
+100,165,0,0,5
+100,166,0,0,5
+100,167,0,0,5
+100,168,0,0,5
+100,169,0,0,5
+100,170,0,0,5
+100,171,0,0,5
+100,172,0,0,5
+100,173,0,0,5
+100,174,0,0,5
+100,175,0,0,5
+100,176,0,0,5
+100,177,0,0,5
+100,178,0,0,5
+100,179,0,0,5
+100,180,0,0,5
+100,181,0,0,5
+100,182,0,0,5
+100,183,0,0,5
+100,184,0,0,5
+100,185,0,0,5
+100,186,0,0,5
+100,187,0,0,5
+100,188,0,0,5
+100,189,0,0,5
+100,190,0,0,5
+100,191,0,0,5
+100,192,0,0,5
+100,193,0,0,5
+100,194,0,0,5
+100,195,0,0,5
+100,196,0,0,5
+100,197,0,0,5
+100,198,0,0,5
+100,199,0,0,5
+100,200,0,0,5
+100,201,0,0,5
+100,202,0,0,5
+100,203,0,0,5
+100,204,0,0,5
+100,205,0,0,5
+100,206,0,0,5
+100,207,0,0,5
+100,208,0,0,5
+100,209,0,0,5
+100,210,0,0,5
+100,211,0,0,5
+100,212,0,0,5
+100,213,0,0,5
+100,214,0,0,5
+100,215,0,0,5
+100,216,0,0,5
+100,217,0,0,5
+100,218,0,0,5
+100,219,0,0,5
+100,220,0,0,5
+100,221,0,0,5
+100,222,0,0,5
+100,223,0,0,5
+100,224,0,0,5
+100,225,0,0,5
+100,226,0,0,5
+100,227,0,0,5
+100,228,0,0,5
+100,229,0,0,5
+100,230,0,0,5
+100,231,0,0,5
+100,232,0,0,5
+100,233,0,0,5
+100,234,0,0,5
+100,235,0,0,5
+100,236,0,0,5
+100,237,0,0,5
+100,238,0,0,5
+100,239,0,0,5
+100,240,0,0,5
+100,241,0,0,5
+100,242,0,0,5
+100,243,0,0,5
+100,244,0,0,5
+100,245,0,0,5
+100,246,0,0,5
+100,247,0,0,5
+100,248,0,0,5
+100,249,0,0,5
+100,250,0,0,5
+100,251,0,0,5
+100,252,0,0,5
+100,253,0,0,5
+100,254,0,0,5
+100,255,0,0,5
+100,256,0,0,5
+100,257,0,0,5
+100,258,0,0,5
+100,259,0,0,5
+100,260,0,0,5
+100,261,0,0,5
+100,262,0,0,5
+100,263,0,0,5
+100,264,0,0,5
+100,265,0,0,5
+100,266,0,0,5
+100,267,0,0,5
+100,268,0,0,5
+100,269,0,0,5
+
+[Begin Action 7000]
+7000,0, 0,0, 4, , AS0D220
+7000,0, 0,0, 4, , AS50D150
+7000,0, 0,0, 4, , AS70D120
+7000,0, 0,0, 4, , AS100D100
+7000,0, 0,0, 4, , AS150D70
+7000,0, 0,0, 4, , AS200D50
+7000,0, 0,0, 200, , AS255D0
+7000,0, 0,0, 4, , AS200D50
+7000,0, 0,0, 4, , AS150D70
+7000,0, 0,0, 4, , AS100D100
+7000,0, 0,0, 4, , AS70D120
+7000,0, 0,0, 4, , AS50D150
+7000,0, 0,0, 4, , AS0D220
+-1,0,0,0,-1
+
+[Begin Action 7002]
+7002,0, 0,0, 4, , AS0D255
+7002,0, 0,0, 4, , AS50D255
+7002,0, 0,0, 4, , AS70D255
+7002,0, 0,0, 4, , AS90D255
+7002,0, 0,0, 4, , AS130D255
+7002,0, 0,0, 4, , AS150D255
+7002,0, 0,0, 200, , AS155D255
+7002,0, 0,0, 4, , AS150D255
+7002,0, 0,0, 4, , AS130D255
+7002,0, 0,0, 4, , AS90D255
+7002,0, 0,0, 4, , AS70D255
+7002,0, 0,0, 4, , AS50D255
+7002,0, 0,0, 4, , AS0D255
+-1,0,0,0,-1
+
+[Begin Action 7001]
+7001,0, 0,0, 4, , AS0D255
+7001,0, 0,0, 4, , AS50D255
+7001,0, 0,0, 4, , AS70D255
+7001,0, 0,0, 4, , AS90D255
+7001,0, 0,0, 4, , AS130D255
+7001,0, 0,0, 4, , AS150D255
+7001,0, 0,0, 200, , AS255D255
+7001,0, 0,0, 4, , AS150D255
+7001,0, 0,0, 4, , AS130D255
+7001,0, 0,0, 4, , AS90D255
+7001,0, 0,0, 4, , AS70D255
+7001,0, 0,0, 4, , AS50D255
+7001,0, 0,0, 4, , AS0D255
+-1,0,0,0,-1
+

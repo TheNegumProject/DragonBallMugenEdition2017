@@ -1,0 +1,118 @@
+
+;========================================================;
+[Info]			
+name        = "Inferno"	
+author	    = "RistaR87"
+
+;========================================================;
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -20
+boundright =20
+boundhigh = -75
+boundlow = 0
+verticalfollow = .7
+;floortension = 160
+tension = 50
+
+[PlayerInfo]
+p1startx = -70         
+p1starty = 0            
+p1startz = 0            
+p1facing = 1           
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;Common
+leftbound  = -1000
+rightbound =  1000 
+topbound  =  0    
+botbound  =  0     
+
+[Scaling]
+topz     = 0      
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+[Bound]
+screenleft = 20  
+screenright =20   
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+Hires = 1
+
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/DBZ_Pikkon's_Theme.mp3
+bgvolume = 10
+
+[BGdef]
+spr =inferno.sff
+debugbg = 0
+;--------------------------------------------------------
+
+;--------------------------------------------------------
+[BG clouds]
+type = normal
+spriteno =1,0
+start = 0,30
+delta = 2, 2
+mask =1
+tile = 1,1
+velocity = -1
+
+;--------------------------------------------------------
+[BG city]
+type  = normal
+spriteno = 2, 0
+start = 0, 210
+delta = 2, 2
+mask = 1
+velocity = 0, 0
+tile = 0, 0
+tilespacing = 0, 0
+
+;----------------
+
+;-------
+[BG 23]
+type     = normal
+spriteno = 1,2
+layerno  = 0
+start    = 0,85
+delta    = 1.5,1.6
+mask     = 1
+trans    = add
+tile     = 0,0
+tilespacing = 0, 0
+
+
+[BG fog]
+type  = normal
+spriteno = 3, 0
+layerno = 1
+start = 0, 210
+delta = 1, 1
+trans = add
+mask  = 1
+tile  = 1, 0
+velocity = -0.5,0
+
+;--------------------------------------------------------

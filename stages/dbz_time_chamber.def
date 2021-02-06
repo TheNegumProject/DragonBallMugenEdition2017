@@ -1,0 +1,135 @@
+;author = stig87
+;name = Hyperbolic Time Chamber
+;Date = 12-9-06
+;email = b_blue34@yahoo.com
+;Mugendream.bravehost.com
+;Mugendream.angelfire.com
+
+
+[Info]
+name = "Hyperbolic Time Chamber"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -352
+boundright = 352
+boundhigh = -300
+boundlow = 0
+verticalfollow = .7
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  = 0
+botbound  = 0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 24
+screenright = 24
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 0,0,0
+yscale = .3
+reflect = 0
+
+[Music]
+bgmusic =stages/dbz_time_chamber.mp3
+bgvolume =255
+[BGdef]
+spr =stages/dbz_time_chamber.sff
+DEBUGBG=0
+DEBUG=0
+
+[BG fond]
+type = normal
+spriteno = 0,0
+start = 0, 0
+delta = .818181,.699999
+mask = 1
+
+[BG decor]
+type = normal
+spriteno = 1,0
+start = 0, 0
+delta = 1,1
+mask = 1
+
+
+
+[BG Hour galss]
+type= anim
+actionno = 4
+start = 0, 0
+delta = 1,1
+mask = 1
+
+[BG Clock]
+type= anim
+actionno = 6
+start = 0, 0
+delta = 1,1
+mask = 1
+
+
+[BG Hour galss2]
+type= anim
+actionno = 4
+start = 547, 0
+delta = 1,1
+mask = 1
+
+
+[Begin action 4]
+4,0, 0,0, 15
+4,1, 0,0, 15
+4,2, 0,0, 15
+4,3, 0,0, 15
+4,4, 0,0, 15
+4,5, 0,0, 15
+4,6, 0,0, 15
+
+[Begin action 5]
+4,0, 0,0, 15, H
+4,1, 0,0, 15, H
+4,2, 0,0, 15, H
+4,3, 0,0, 15, H
+4,4, 0,0, 15, H
+4,5, 0,0, 15, H
+4,6, 0,0, 15, H
+
+[Begin action 6]
+5,0, 0,0, 10
+5,1, 0,0, 10
+5,2, 0,0, 10
+5,3, 0,0, 10
+5,4, 0,0, 10
+5,3, -1,0, 10, H
+5,2, -1,0, 10, H
+5,1, -1,0, 10, H
+
+
+

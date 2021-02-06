@@ -1,0 +1,153 @@
+;========================================================
+;Satan Challanger By Nachonal (Dgz TEAM) 2011 (www.gmugen.com)
+;========================================================
+;Thanks to:
+;Darunia for rips this awesome sprites
+;Dbz Warrior for clean some sprites!
+;enjoy!
+;--------------------------------------------------------
+[Info]
+name 		= "Satan Challenger"
+author 		= "Nachonal"
+
+[Camera]
+startx 		= 0
+starty 		= 0
+boundleft 	= -96
+boundright 	= 96
+boundhigh 	= -256
+boundlow 	= 0
+tension 	= 50
+verticalfollow 	= .75
+floortension 	= 90
+
+[PlayerInfo]
+p1startx 	= -70
+p1starty 	= 0
+p1startz 	= 0
+p1facing 	= 1
+p2startx 	= 70
+p2starty 	= 0
+p2startz 	= 0
+p2facing 	= -1
+leftbound 	= -1000
+rightbound 	= 1000
+topbound  	= 0
+botbound  	= 0
+
+[Bound]
+screenleft 	= 10
+screenright 	= 10
+
+[StageInfo]
+zoffset 	= 160
+autoturn 	= 1
+resetBG 	= 0
+Hires		= 1
+
+[Scaling]
+topz     	= 0
+botz     	= 50
+topscale 	= 1
+botscale 	= 1.2
+
+[Shadow]
+color 		= 0,0,0
+yscale 		= .2
+
+[Music]
+bgmusic 	= sound/We're All To Blame.mp3
+bgvolume 	= 300
+
+[BGdef]
+spr 		= stages/satan_challanger.sff
+debugbg 	= 0
+
+[BG image]
+type  		= normal
+spriteno 	= 8, 0
+start 		= 0,-512
+delta 		= 2,2
+Mask = 1
+
+[BG image]
+type  		= normal
+spriteno 	= 1, 0
+start 		= 0,-512
+delta 		= 2,2
+Mask = 1
+
+[BG image]
+type  		= anim
+actionno = 1
+start 		= 0,-512
+delta 		= 2,2
+mask = 1
+
+[BG image]
+type  		= anim
+actionno = 2
+start 		= 0,-512
+delta 		= 2,2
+mask = 1
+
+[BG image]
+type  		= anim
+actionno = 3
+start 		= 0,-512
+delta 		= 2,2
+mask = 1
+
+[BG image]
+type  		= anim
+actionno = 4
+start 		= 0,-512
+delta 		= 2,2
+mask = 1
+
+[BG image]
+type  		= normal
+spriteno 	= 2, 0
+start 		= 0,-512
+delta 		= 2,2
+Mask = 1
+
+[BG image]
+type  		= normal
+spriteno 	= 9, 0
+start 		= 0,-512
+delta 		= 2,2
+Mask = 1
+
+[BG image]
+type  		= normal
+spriteno 	= 3, 0
+start 		= 0,-512
+delta 		= 2,2
+Mask = 1
+
+[Begin action 1]
+4,0,0,0,10
+4,1,0,0,10
+4,2,0,0,10
+4,3,0,0,10
+
+[Begin action 2]
+5,0,0,0,10
+5,1,0,0,10
+5,2,0,0,10
+5,3,0,0,10
+
+[Begin action 3]
+6,0,0,0,10
+6,1,0,0,10
+6,2,0,0,10
+6,3,0,0,10
+6,4,0,0,10
+
+[Begin action 4]
+7,0,0,0,10
+7,1,0,0,10
+7,2,0,0,10
+7,3,0,0,10
+7,4,0,0,10

@@ -1,0 +1,263 @@
+; BackGround - DBZ1-HighRes Starry Night
+; Sprites: Roken
+; Programming: Chrono_Strife
+; E-Mail: chronostrifeff7h@hotmail.com
+
+; Web: FFFury 3.0 - http://members.multimania.co.uk/cstrife
+; Ripped: Super Butouden 2/3
+
+;--------------------------------------------------------
+[Info]
+;Name of the stage.
+name = "CS_SB3_HR_StarryNightv1"
+displayname = "Starry Night"
+versiondate = 02.27.2011
+mugenversion = 1.1
+author = "Chrono_Strife and Roken"
+
+[Camera]
+startx = 0
+starty = 0
+
+boundleft =  -1000
+boundright = 1000
+boundhigh = -230
+boundlow = 0
+
+tension = 50
+tensionhigh = 60
+tensionlow = 60
+
+zoomout = 0.5
+zoomin = 1
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1400
+rightbound =  1400
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset   = 215
+autoturn  = 1
+HIres = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 108,108,108
+yscale = 0.5
+
+;--------------------------------------------------------
+[Music]
+ bgmusic = sound\Starlight_Zone_Dance_Remix.mp3;Touhou-taste-Sleepless.mp3
+ bgvolume = 255
+
+;========================================================
+
+; Main background definition
+[BGdef]
+spr = dbz1-starrynight.sff
+debugbg = 1
+
+[BG Sky]
+type  = normal
+spriteno = 9,0
+layerno = 0
+start = 0, 245
+delta = 0.2, 1.4
+velocity = 0,0
+trans = none
+mask  = 1
+tile  = 1, 0
+
+[BG SkyGradient]
+type  = normal
+spriteno = 8,0
+layerno = 0
+start = 0, 265
+delta = 0, 1.4
+velocity = 0,0
+trans = none
+mask  = 1
+tile  = 1, 0
+
+[BG Shooting_Star1]
+type  = anim
+actionno = 50
+layerno = 0
+start = 700, -1500
+velocity = -55, 10
+delta = 0.1, 1.4
+tile  = 1, 1
+tilespacing = 10308,6300
+
+[BG Shooting_Star2]
+type  = anim
+actionno = 51
+layerno = 0
+start = 5750, -4500
+velocity = 55, 10
+delta = 0.1, 1.4
+tile  = 1, 1
+tilespacing = 10308,6300
+
+[BG Clouds]
+type  = normal
+spriteno = 11,0
+layerno = 0
+start = 0, 575
+delta = 0.2, 1.4
+velocity = 0.25,0
+trans = add
+alpha = 120,256
+mask  = 1
+tile  = 1, 0
+
+[BG DistantMountains]
+type  = normal
+spriteno = 6, 0
+layerno = 0                
+start = 0, 257
+delta = 0.4, 1.4
+trans = none
+mask  = 1
+tile  = 1, 0
+
+[BG MidMountains-Back]
+type  = normal
+spriteno = 5, 0
+layerno = 0                
+start = -200, 303
+delta = 0.9, 1.5
+trans = none
+mask  = 1
+tile  = 1, 0
+alpha = 220,0
+scalestart= 0.8,0.8
+
+[BG MistBG2]
+type  = normal
+spriteno = 15,0
+layerno = 0
+start = 0, 223
+delta = 1.05, 1.55
+velocity = 0.1,0
+trans = add
+alpha = 60,256
+mask  = 1
+tile  = 1, 0
+scalestart = 0.5,0.5
+
+[BG MidMountains-Front]
+type  = normal
+spriteno = 4, 0
+layerno = 0                
+start = 0, 310
+delta = 1.2, 1.6
+trans = none
+mask  = 1
+tile  = 1, 0
+
+[BG MistBG]
+type  = normal
+spriteno = 15,0
+layerno = 0
+start = 0, 248
+delta = 1.35, 1.67
+velocity = 0.15,0
+trans = add
+alpha = 80,256
+mask  = 1
+tile  = 1, 0
+scalestart = 0.75,0.75
+
+[BG MidMountains-Hills]
+type  = normal
+spriteno = 3, 0
+layerno = 0                
+start = 0, 310
+delta = 1.5, 1.75
+trans = none
+mask  = 1
+tile  = 1, 0
+
+[BG Bushes]
+type  = normal
+spriteno = 1, 0
+layerno = 0                
+start = 0, 490
+delta = 1.8, 2
+trans = none
+mask  = 1
+tile  = 1, 0
+
+[BG Ground]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = 0, 490
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 1, 0
+
+[BG Mist]
+type  = normal
+spriteno = 15,0
+layerno = 1
+start = 0, 420
+delta = 2.3, 2.2
+velocity = 0.2,0
+trans = add
+alpha = 100,256
+mask  = 1
+tile  = 1, 0
+
+[BG ForeGround]
+type  = normal
+spriteno = 20,0
+layerno = 1
+start = 0, 457
+delta = 2.5, 2.3
+trans = none
+mask  = 1
+tile  = 1, 0
+
+;----------------------------------------------------------------------
+;-=Animations=-
+[Begin Action 50]
+50,0, 0,0, 40,,AS256D256,0.8,0.2,10
+[Begin Action 51]
+50,1, 0,0, 40,,AS200D256,0.8,0.2,170
+
+

@@ -1,0 +1,504 @@
+; Definition of stage 0 (training stage)
+; *** denotes values you should change/check for each stage.
+; The term "background" is used to mean both backgrounds and foregrounds.
+
+;--------------------------------------------------------
+[Info]
+ ;Name of the stage.
+name = "Kaioh Sama Stage"
+displayname = "Kaioh Sama Stage"        ;Name to display
+versiondate = 09,30,2009    ;Version date of stage (MM,DD,YYYY or X.XX)
+mugenversion = 1.1          ;Version of M.U.G.E.N stage works on (X.XX)
+author = "ALXVE"            ;Stage author name
+
+;--------------------------------------------------------
+[Camera]
+ ;Camera starting position: Usually 0 for both
+startx = 0
+starty = 0
+
+ ;Left and right bound of camera
+ ;You may want to fiddle a bit with these values to make sure the
+ ;background doesn't move too far or too little
+ ;***
+boundleft = -86
+boundright = 86
+
+ ;High and low bound of camera
+ ;High is a negative number. Make is more negative if you want to
+ ;camera to be able to move higher.
+ ;Low should usually be 0.
+ ;If omitted, defaults to -25 and 0 respectively
+ ;***
+boundhigh = -250
+boundlow = 0
+
+ ;This is how much the camera will move vertically towards the
+ ;highest player. Valid values are from 0 to 1. A value of 0 will mean
+ ;the camera does not move up at all. A value of 1 will makes the camera
+ ;follow the highest player.
+ ;Typically .2 for normal-sized backgrounds. You may need to pull this
+ ;value up for taller backgrounds.
+;verticalfollow = .85
+
+ ;Minimum vertical distance the highest player has to be from the floor,
+ ;before the camera starts to move up to follow him. For extremely
+ ;tall stages, a floor tension of about 20-30 coupled with a
+ ;vertical-follow of .8 allows the camera to follow the action.
+;floortension = 200
+
+ ;Horizontal distance player is from edge before camera starts to move
+ ;left or right. Typically 50 or 60.
+;tension = 200
+
+;overdrawhigh = 120
+;overdrawlow = 120
+;cuthigh = 0
+;cutlow = 0
+
+verticalfollow = .85
+floortension = 50
+tension = 100
+tensionhigh = 100
+tensionlow = 200
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 0
+cutlow = 0
+zoomin = 1.1
+zoomout = .6
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+p1startx = -70         ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2facing = -1
+
+;--- Player 3 ---
+p3startx = -400
+p3starty = 0
+p3facing = 1
+
+;--- Player 4 ---
+p4startx = 400
+p4starty = 0
+p4facing = -1
+
+;--- Common ---
+leftbound  = -4000 ;Left bound (x-movement)
+rightbound =  4000 ;Right bound
+
+;--------------------------------------------------------
+[Bound]
+ ;Distance from left/right edge of screen that player can move to
+ ;Typically 15
+screenleft = 60    ;Dist from left of screen that player can move to
+screenright = 60   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+ ;"Ground" level where players stand at, measured in pixels from the
+ ;top of the screen.
+ ;Adjust this value to move the ground level up/down in the screen.
+ ;***
+zoffset = 210
+zoffsetlink = 1
+
+ ;Leave this at 1. It makes the players face each other
+autoturn = 1
+
+ ;Set the following to 1 to have the background reset itself between
+ ;rounds.
+resetBG = 1
+
+ ;Width and height of the local coordinate space of the stage.
+;localcoord = 1280, 720
+
+ ;Horizontal and vertical scaling factor for drawing.
+;xscale = 1
+;yscale = 1
+hires = 1
+
+;--------------------------------------------------------
+[Shadow]
+ ;This is the shadow darkening intensity. Valid values range from
+ ;0 (lightest) to 256 (darkest). Defaults to 128 if omitted.
+intensity = 0
+
+ ;This is the shadow color given in r,g,b. Valid values for each
+ ;range from 0 (lightest) to 255 (darkest).
+ ;Defaults to 0,0,0 if omitted.
+ ;intensity and color's effects add up to give the final shadow
+ ;result.
+color = 0,0,0
+
+ ;This is the scale factor of the shadow. Use a big scale factor
+ ;to make the shadow longer. You can use a NEGATIVE scale factor
+ ;to make the shadow fall INTO the screen.
+ ;Defaults to 0.4 if omitted.
+yscale = .3
+
+ ;This parameter lets you set the range over which the shadow is
+ ;visible. The first value is the high level, and the second is
+ ;the middle level. Both represent y-coordinates of the player.
+ ;A shadow is invisible if the player is above the high level,
+ ;and fully visible if below the middle level. The shadow is
+ ;faded in between the two levels. This gives an effect of the
+ ;shadow fading away as the player gets farther away from the
+ ;ground. If omitted, defaults to no level effects (shadow is
+ ;always fully visible).
+fade.range = 0,0
+
+;--------------------------------------------------------
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+ ;Put a filename for a MOD, MP3 or MIDI here, or just leave it
+ ;blank if you don't want music. If an invalid filename is
+ ;given, then no music will play. To play CD audio, put
+ ;the track number followed by ".da". Using a track number of
+ ;0 will play a random audio track. For example, to play
+ ;track 3 from a music CD, use:
+ ;  bgmusic = 3.da
+bgmusic = sound/Wild Soul.mp3
+
+;bgmloopstart = <sample number>
+;bgmloopend = <sample number>
+
+ ;Adjust the volume. 100 is for 100%.
+bgmvolume = 100
+
+;========================================================
+;--------------------------------------------------------
+; Background definition
+; ***
+;-------------------------------------
+; [BG x]
+; type = ?       "Normal"/"Parallax"  (def: "normal")
+; spriteno = ?, ? Sprite group and number: groupno, imgno  (req'd)
+; start = ?, ?   Starting location (integer)  (def: 0, 0)
+; delta = ?, ?   Change in location per camera unit moved (float)  (def: 1,1)
+; trans = ?      Transparency settings: "none"/"add"/"add1"/"sub"" (def: "none")
+; mask = ?       Masking (int): 0 - off, 1 - on  (def: 0)
+; velocity = ?, ? Velocity: x, y (float): speed background moves (def: 0, 0)
+; tile = ?, ?    Tiling: xtile, ytile (int): 0 - off, 1 - infinite,
+;                        >1 - tile that number of times  (def: 0, 0) - only for Normal BG
+; tilespacing = ?, ? Tiling: x, y (int) : space between tiles (def: 0, 0)
+;  Parallax-only:
+; xscale = ?, ?    Top xscale, bottom xscale (float)
+; width = ?, ?     Top width, bottom width (int)  (use either this or above, but not both)
+; yscalestart = ?  Starting y-scale (float, in percent)  (def: 100)
+; yscaledelta = ?  Change in y-scale per unit (float, in percent)  (def: 0)
+;-------------------------------------
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+ ;Filename of sprite data
+spr = Kaioh_Sama_Stage_HR.sff
+
+ ;Set to 1 if you want to clear the screen to magenta before
+ ;drawing layer 0 (the default background). Good for spotting "holes"
+ ;in your background.
+ ;Remember to turn this off when you are done debugging the background,
+ ;because it slows down performance.
+debugbg = 0
+
+
+;----------
+; Start each background element with the following:
+; Make sure it's "[BG n]", where n is anything you like (it's only used to
+; report errors.) For example, you could use:  [BG TheFloor]
+; Specify as many as you like. This is an example of a normal background:
+
+;----------
+
+;cielo rosado
+[BG 1]
+type = normal
+spriteno = 1, 0
+layerno = 0       
+start = 0,-512
+delta = 1, 1
+mask = 0
+velocity = 0, 0
+tile = 1, 1
+tilespacing = 0, 0
+zoomdelta = 1
+
+;nubes amarillas
+[BG 2]
+type  = anim
+actionno = 6
+layerno = 0
+start = -600,103
+delta = 1, 1
+tile  = 0,0
+trans = none
+mask  = 1
+zoomdelta = 0.9
+
+;arbol
+[BG 3]
+type = normal
+;actionno = 0
+spriteno = 7, 0
+layerno = 0       
+start = 620,-80
+delta = 1,1
+trans = none
+mask = 1
+zoomdelta = 1
+
+;arbol
+[BG 3]
+type = normal
+;actionno = 0
+spriteno = 7, 0
+layerno = 0       
+start = -605,-135
+delta = 1,1
+trans = none
+mask = 1
+zoomdelta = 1
+
+;planeta de kaio
+[BG 3]
+type = normal
+;actionno = 0
+spriteno = 0, 0
+layerno = 0       
+start = 0,87
+delta = 1,1
+trans = none
+mask = 1
+zoomdelta = 1
+
+;arbol
+[BG 3]
+type = normal
+;actionno = 0
+spriteno = 7, 0
+layerno = 0       
+start = 50,-130
+delta = 1,1
+trans = none
+mask = 1
+zoomdelta = 1
+
+;bodega
+[BG 3]
+type = normal
+;actionno = 0
+spriteno = 3, 0
+layerno = 0       
+start = -470,40
+delta = 1,1
+trans = none
+mask = 1
+zoomdelta = 1
+
+;casa
+[BG 3]
+type = normal
+;actionno = 0
+spriteno = 2, 0
+layerno = 0       
+start = -160,-10
+delta = 1,1
+trans = none
+mask = 1
+zoomdelta = 1
+
+;La vinchuca verde de kaio..
+[BG 4]
+type  = anim
+actionno = 5
+layerno = 0
+start = -170,145
+delta = 1,1
+mask = 1
+zoomdelta = 1
+
+;no me acuerdo como se llamaba el monito xD!
+[BG 5]
+type  = anim
+actionno = 4
+layerno = 0
+start = -170,145
+delta = 1,1
+mask = 1
+zoomdelta = 1
+
+;kaioh sama
+[BG 6]
+type  = anim
+actionno = 3
+layerno = 0
+start = -250,120
+delta = 1,1
+mask = 1
+zoomdelta = 1
+
+;wiss
+[BG 3]
+type = normal
+;actionno = 0
+spriteno = 4, 0
+layerno = 0       
+start = 440,20
+delta = 1,1
+trans = none
+mask = 1
+zoomdelta = 1
+
+[Begin action 3]
+6,0,0,0,10
+6,1,0,0,10
+
+[Begin action 4]
+0,3,0,0,10
+0,4,0,0,10
+0,5,0,0,10
+0,6,0,0,10
+0,5,0,0,10
+0,4,0,0,10
+
+[Begin action 5]
+10,0,0,0,15
+10,1,0,0,15
+10,2,0,0,15
+10,1,0,0,15
+10,0,0,0,15
+
+[Begin action 6]
+5,0,0,0,5
+5,1,0,0,5
+5,2,0,0,5
+5,3,0,0,5
+5,4,0,0,5
+5,5,0,0,5
+5,6,0,0,5
+5,7,0,0,5
+5,8,0,0,5
+5,9,0,0,5
+5,10,0,0,5
+5,11,0,0,5
+5,12,0,0,5
+5,13,0,0,5
+5,14,0,0,5
+5,15,0,0,5
+5,16,0,0,5
+5,17,0,0,5
+5,18,0,0,5
+5,19,0,0,5
+5,20,0,0,5
+5,21,0,0,5
+5,22,0,0,5
+5,23,0,0,5
+5,24,0,0,5
+5,25,0,0,5
+5,26,0,0,5
+5,27,0,0,5
+5,28,0,0,5
+5,29,0,0,5
+5,30,0,0,5
+5,31,0,0,5
+5,32,0,0,5
+5,33,0,0,5
+5,34,0,0,5
+5,35,0,0,5
+5,36,0,0,5
+5,37,0,0,5
+5,38,0,0,5
+5,39,0,0,5
+5,40,0,0,5
+5,41,0,0,5
+5,42,0,0,5
+5,43,0,0,5
+5,44,0,0,5
+5,45,0,0,5
+5,46,0,0,5
+5,47,0,0,5
+5,48,0,0,5
+5,49,0,0,5
+5,50,0,0,5
+5,51,0,0,5
+5,52,0,0,5
+5,53,0,0,5
+5,54,0,0,5
+5,55,0,0,5
+5,56,0,0,5
+5,57,0,0,5
+5,58,0,0,5
+5,59,0,0,5
+5,58,0,0,5
+5,57,0,0,5
+5,56,0,0,5
+5,55,0,0,5
+5,55,0,0,5
+5,54,0,0,5
+5,53,0,0,5
+5,52,0,0,5
+5,51,0,0,5
+5,50,0,0,5
+5,49,0,0,5
+5,48,0,0,5
+5,47,0,0,5
+5,46,0,0,5
+5,45,0,0,5
+5,44,0,0,5
+5,43,0,0,5
+5,42,0,0,5
+5,41,0,0,5
+5,40,0,0,5
+5,39,0,0,5
+5,38,0,0,5
+5,37,0,0,5
+5,36,0,0,5
+5,35,0,0,5
+5,34,0,0,5
+5,33,0,0,5
+5,32,0,0,5
+5,31,0,0,5
+5,30,0,0,5
+5,29,0,0,5
+5,28,0,0,5
+5,27,0,0,5
+5,26,0,0,5
+5,25,0,0,5
+5,24,0,0,5
+5,23,0,0,5
+5,22,0,0,5
+5,21,0,0,5
+5,20,0,0,5
+5,19,0,0,5
+5,18,0,0,5
+5,17,0,0,5
+5,16,0,0,5
+5,15,0,0,5
+5,14,0,0,5
+5,13,0,0,5
+5,12,0,0,5
+5,11,0,0,5
+5,10,0,0,5
+5,9,0,0,5
+5,8,0,0,5
+5,7,0,0,5
+5,6,0,0,5
+5,5,0,0,5
+5,4,0,0,5
+5,3,0,0,5
+5,2,0,0,5
+5,1,0,0,5

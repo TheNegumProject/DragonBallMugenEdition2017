@@ -1,0 +1,225 @@
+; BackGround - Kami's Lookout
+
+; Creator: Chrono_Strife
+; E-Mail: chronostrifeff7h@hotmail.com
+; Created: February 2008
+
+; Web: FFFury 3.0 - http://members.lycos.co.uk/cstrife
+; Ripped: Hyper Dimension, Super Butouden 3, and MvC
+
+;--------------------------------------------------------
+[Info]
+ ;Name of the stage.
+name = "Kami's Lookout"
+
+[Camera]
+startx = 0
+starty = 0
+
+boundleft =  -95
+boundright = 95
+boundhigh = -325
+boundlow = 0
+
+verticalfollow = 0.7
+tension = 50
+floortension = 30
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 20
+screenright = 20
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset   = 205
+autoturn  = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 108,108,108
+yscale = 0.4
+intensity = 64
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+ bgmusic = sound/DBZ-3.mp3
+ bgvolume = 255
+
+;========================================================
+
+; Main background definition
+[BGdef]
+spr = Kamis_Lookout.sff
+
+[BG Sky]
+type  = parallax
+spriteno = 2, 0
+layerno = 0                
+start = -10, 160
+delta = 0.2, 1
+trans = none
+mask  = 1
+tile  = 1, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+[BG Clouds]
+type  = Anim
+actionno = 3
+layerno = 0
+start = 0, 120
+velocity = 0.2, 0
+delta = 0.6, 1
+trans = none
+mask  = 1
+tile  = 1, 0
+tilespacing = 512
+
+[BG Domes]
+type  = parallax
+spriteno = 0, 1
+layerno = 0                
+start = 256, 177
+delta = 0.8, 1
+trans = none
+mask  = 1
+tile  = 1, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+[BG Arena and Buildings]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+trans = none
+mask  = 1
+tile  = 1, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;[BG ForeGround-Tree1]
+type  = normal
+spriteno = 5, 0
+layerno = 1                
+start = -120, 245
+delta = 1.2, 1
+trans = none
+mask  = 1
+tile  = 0, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;[BG ForeGround-Tree2]
+type  = normal
+spriteno = 5, 0
+layerno = 1                
+start = -140, 270
+delta = 1.2, 1
+trans = none
+mask  = 1
+tile  = 0, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;[BG ForeGround-Tree3]
+type  = normal
+spriteno = 5, 0
+layerno = 1                
+start = -160, 295
+delta = 1.2, 1
+trans = none
+mask  = 1
+tile  = 0, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;[BG ForeGround-TreeA]
+type  = normal
+spriteno = 5, 1
+layerno = 1                
+start = 120, 245
+delta = 1.2, 1
+trans = none
+mask  = 1
+tile  = 0, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;[BG ForeGround-TreeB]
+type  = normal
+spriteno = 5, 1
+layerno = 1                
+start = 140, 270
+delta = 1.2, 1
+trans = none
+mask  = 1
+tile  = 0, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;[BG ForeGround-TreeC]
+type  = normal
+spriteno = 5, 1
+layerno = 1                
+start = 160, 295
+delta = 1.2, 1
+trans = none
+mask  = 1
+tile  = 0, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;----------------------------------------------------------------------
+;-=Animations=-
+;----------------------------------------------------------------------
+[Begin Action 3]
+3,0, 0,0, -1,,AS190D256

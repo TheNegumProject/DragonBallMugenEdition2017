@@ -1,0 +1,100 @@
+[Info]
+ ;Name of the stage.
+name = "Dr. Slump House"
+author= "Sonic Stage"
+
+[Camera] 
+
+startx      = 0
+starty      = 0
+
+boundleft   = -30
+boundright  = 25
+
+boundhigh   = -500
+boundlow    = 0
+
+verticalfollow = .2
+floortension = 30
+tension     = 60
+
+[PlayerInfo]
+p1startx    = -90
+p1starty    = 0
+p1startz    = 0
+p1facing    = 1
+
+p2startx    = 90
+p2starty    = 0
+p2startz    = 0
+p2facing    = -1
+
+leftbound   = -1000
+rightbound  =  1000
+topbound    =  0
+botbound    =  0
+
+[Scaling]
+topz        = 0
+botz        = 50
+topscale    = 1
+botscale    = 1.2
+
+[Bound]
+screenleft  = 15
+screenright = 15
+
+[StageInfo]
+zoffset     = 200
+
+autoturn    = 1
+
+resetBG     = 1
+[Shadow]
+
+intensity   = 100
+
+color       = 0,0,0
+
+yscale      = .2
+
+fade.range  = -400,-100
+
+[Reflection]
+
+intensity   = 0
+
+
+[Music]
+bgmusic = sound\Arale chan.mp3
+
+
+[BGdef]
+
+spr = Dr.Slump_House.sff
+debug = 0
+
+[BG 0]
+
+type = normal
+spriteno    = 0, 0
+layerno     = 0                
+start       = 0,70
+trans       = none
+mask        = 0
+tile        = 0, 0
+tilespacing = 0,0
+
+
+
+
+
+
+
+
+
+
+
+
+
+

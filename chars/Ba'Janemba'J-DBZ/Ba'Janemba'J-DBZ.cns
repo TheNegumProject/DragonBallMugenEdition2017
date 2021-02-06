@@ -1,0 +1,345 @@
+================================================================
+Karakter neve:	 Uchiha Madara
+Anime neve:      Naruto Shippuuden
+Készítõ neve:    Shinrashi
+Verzió szám:     1.0
+Készítés ideje:  2014.11.01.
+================================================================
+ALAP FUNKCIÓK
+===========
+
+[Data]
+life = 1000
+power = 5000		
+attack = 100
+defence = 100		
+fall.defence_up = 50	
+liedown.time = 60		
+airjuggle = 15		
+sparkno = 2			
+guard.sparkno = 40	
+KO.echo = 0			
+volume = 0			
+IntPersistIndex = 60	
+FloatPersistIndex = 40  
+  				
+  				
+  			  		
+[Size]
+xscale = 1
+yscale = 1
+ground.back = 15		
+ground.front = 16		
+air.back = 12		
+air.front = 12		
+height = 60			
+attack.dist = 160		
+proj.attack.dist = 90	
+proj.doscale = 0		   
+head.pos = -5, -90	
+mid.pos = -5, -60		
+shadowoffset = 0		
+draw.offset = 0,0		
+
+
+
+[Velocity]
+walk.fwd  = 1.8		
+walk.back = -1.8		
+run.fwd  = 4.6, 0		
+run.back = -4.5,-3.8	
+jump.neu = 0,-8.4		
+jump.back = -2.55		
+jump.fwd = 2.5		
+runjump.back = -2.55,-8.1
+runjump.fwd = 4,-8.1	
+airjump.neu = 0,-8.1	
+airjump.back = -2.55	
+airjump.fwd = 2.5		
+
+[Movement]
+airjump.num = 1		
+airjump.height = 35	
+yaccel = .44		
+stand.friction = .85	
+crouch.friction = .82	
+
+;==================
+;=======LOSE=======
+;==================
+[Statedef 170]
+type = S
+ctrl = 0
+anim = 170
+velset = 0,0
+
+[State 0]
+type = Explod
+trigger1 = Time = 5
+anim = 4402
+ID = 4402
+pos = 0,0
+vel = 0,0
+sprpriority = 8
+bindtime = -1
+removetime = -2
+scale = .375,.375
+ownpal = 1
+ontop = 1
+removeongethit = 1
+
+[State 0]
+type = PlaySnd
+trigger1 = time=5
+value = S3999,0
+volume = 200
+
+[State 0]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+;=================
+;=======WIN=======
+,=================
+[Statedef 180]
+type = S
+ctrl = 0
+anim = 180
+velset = 0,0
+
+[State 0]
+type = PlaySnd
+trigger1 = time = 30
+value = S180,0
+volume = 500
+
+[State 0]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+;==================
+;=======INTRO======
+;==================
+[Statedef 190]
+type = S
+movetype = I
+physics = S
+anim = 190
+sprpriority = 1
+ctrl = 0
+
+[State 190]
+type = PlaySnd
+trigger1 = time= 0
+value = S190,0
+volume = 100
+
+[State 190]
+type = AssertSpecial
+trigger1 = 1
+flag = intro
+
+[State 190]
+type = ChangeAnim
+trigger1 = RoundState = 0
+value = 190
+
+[State 0, ChangeState]
+type = ChangeState
+trigger1 = animtime=0
+value = 0
+
+;-------------
+;ENERGIA TÖLTÉS
+;-------------
+[Statedef 110]
+type    = S
+movetype= I
+physics = S
+juggle  = 4
+poweradd= 0
+ctrl = 0
+velset = 0,0
+anim = 110
+
+[State 111]
+type = Explod
+trigger1 = Time = 0
+anim = 111
+ID = 1028
+pos = 0,0
+vel = 0,0
+sprpriority = 8
+bindtime = -1
+removetime = -1
+scale = .5,.25
+ownpal = 1
+ontop = 1
+removeongethit = 1
+
+[State 111]
+type = Explod
+trigger1 = Time = 0
+anim = 112
+ID = 1028
+pos = 0,0
+vel = 0,0
+sprpriority = 8
+bindtime = -1
+removetime = -1
+scale = 1.1,1.1
+ownpal = 1
+ontop = 1
+removeongethit = 1
+
+[State 111]
+type = Explod
+trigger1 = Time = 0
+anim = 113
+ID = 1028
+pos = 0,0
+vel = 0,0
+sprpriority = 8
+bindtime = -1
+removetime = -1
+scale = .65,.65
+ownpal = 1
+ontop = 1
+removeongethit = 1
+
+[State 111]
+type = Explod
+trigger1 = Time = 0
+anim = 114
+ID = 1028
+pos = 0,-50
+vel = 0,0
+sprpriority = -2
+bindtime = -1
+removetime = -1
+scale = .5,.5
+ownpal = 1
+ontop = 1
+removeongethit = 1
+
+[State 111]
+type = Explod
+trigger1 = Time = 0
+anim = 116
+ID = 1028
+pos = -25,0
+vel = 0,0
+sprpriority = -2
+bindtime = -1
+removetime = -1
+scale = .5,.5
+ownpal = 1
+ontop = 1
+removeongethit = 1
+
+[State 111]
+type = Explod
+trigger1 = Time = 0
+anim = 117
+ID = 1028
+pos = 25,0
+vel = 0,0
+sprpriority = -2
+bindtime = -1
+removetime = -1
+scale = .5,.5
+ownpal = 1
+ontop = 1
+removeongethit = 1
+
+[State 111]
+type = Explod
+trigger1 = Time = 0
+anim = 118
+ID = 1028
+pos = 0,0
+vel = 0,0
+sprpriority = -2
+bindtime = -1
+removetime = -1
+scale = 1,1
+ownpal = 1
+ontop = 1
+removeongethit = 1
+
+[State 111]
+type = PlaySnd
+trigger1 = time = 1
+value = S113,0
+volume = 200
+
+[State 111]
+type = PlaySnd
+trigger1 = time = 10
+value = S113,1
+volume = 200
+channel = 0
+loop = 1
+
+[State 111]
+type = StopSnd
+trigger1= (Command != "hold_c"||Power >= 6000)
+channel = 0
+
+[State 111]
+type = ChangeState
+trigger1 = (Command != "hold_c"||Power >= 6000)
+value = 111
+ctrl = 1
+
+[State 111]
+type = EnvShake
+trigger1 = timemod=7,0
+time = 10
+freq = 100
+ampl = 3
+phase = 100
+
+[State 111]
+type = PowerAdd
+trigger1 = (command = "hold_c")
+value = 20
+;---------------------------------------------------------
+[Statedef 111]
+type    = S
+movetype= I
+physics = S
+juggle  = 5
+poweradd= 0
+velset = 0,0
+ctrl = 0
+anim = 115
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = Time = 0
+id = 1028
+
+[State 221, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+
+
+
+;---------------------------------------------------------------------------
+; Override common states (use same number to override) :
+;---------------------------------------------------------------------------
+[Statedef -2]
+[State -2, GetHitSound]
+type = PlaySnd
+trigger1 = movetype=H && (stateno!=[120,155]) && !time && HitOver=0 && random%3=0
+value = 5000, random%4
+
+
+;-------------- Generated by Fighter Factory -------------
+

@@ -1,0 +1,27 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Majin Vegeta"
+displayname ="Majin Vegeta SSJ2"
+versiondate =2014.02.02
+mugenversion =1.0
+author ="LegendTTA"
+pal.defaults =1,2
+
+; Files for the player
+[Files]
+cmd     =Vegeta.cmd
+cns     =Vegeta.cns
+st      =Vegeta.cns
+stcommon =common1.cns
+sprite  =Vegeta.sff
+anim    =Vegeta.air
+sound   =Vegeta.snd
+pal1=Vegeta.act
+pal2=Vegeta.act
+st1=others.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=..\data\final.def

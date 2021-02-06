@@ -1,0 +1,709 @@
+[Statedef -3]
+
+
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 801
+channel = 5
+
+
+[State -3, AI]
+type = varset
+triggerall = var(59) = 0
+Triggerall = RoundState = [1,2]
+trigger1 = Command = "AI0"
+trigger2 = Command = "AI1"
+trigger3 = Command = "AI2"
+trigger4 = Command = "AI3"
+trigger5 = Command = "AI4"
+trigger6 = Command = "AI5"
+trigger7 = Command = "AI6"
+trigger8 = Command = "AI7"
+trigger9 = Command = "AI8"
+trigger10 = Command = "AI9"
+trigger11 = Command = "AI10"
+trigger12 = Command = "AI11"
+trigger13 = Command = "AI12"
+trigger14 = Command = "AI13"
+trigger15 = Command = "AI14"
+trigger16 = Command = "AI15"
+trigger17 = Command = "AI16"
+trigger18 = Command = "AI17"
+trigger19 = Command = "AI18"
+trigger20 = Command = "AI19"
+trigger21 = Command = "AI20"
+trigger22 = Command = "AI21"
+trigger23 = Command = "AI22"
+trigger24 = Command = "AI23"
+trigger25 = Command = "AI24"
+trigger26 = Command = "AI25"
+trigger27 = Command = "AI26"
+trigger28 = Command = "AI27"
+trigger29 = Command = "AI28"
+trigger30 = Command = "AI29"
+trigger31 = Command = "AI30"
+trigger32 = Command = "AI31"
+trigger33 = Command = "AI32"
+trigger34 = Command = "AI33"
+trigger35 = Command = "AI34"
+trigger36 = Command = "AI35"
+trigger37 = Command = "AI36"
+trigger38 = Command = "AI37"
+trigger39 = Command = "AI38"
+trigger40 = Command = "AI39"
+trigger41 = Command = "AI40"
+trigger42 = Command = "AI41"
+trigger43 = Command = "AI42"
+trigger44 = Command = "AI43"
+trigger45 = Command = "AI44"
+trigger46 = Command = "AI45"
+trigger47 = Command = "AI46"
+trigger48 = Command = "AI47"
+trigger49 = Command = "AI48"
+trigger50 = Command = "AI49"
+trigger51 = Command = "AI50"
+trigger52 = 0
+V = 59
+Value = 1
+[State -3,¶×·À]
+type = ChangeState
+value = 131 
+triggerall = var(59) >= 1 
+TriggerAll=RoundState=2
+triggerall = statetype !=A 
+triggerall = p2statetype = C 
+triggerall = ctrl && p2statetype !=A 
+trigger1 = inguarddist 
+trigger2 = p2bodydist x < 0 && p2movetype = A 
+trigger3 = enemynear,hitdefattr = SC,AT
+[State -3,Á¢·À]
+type = ChangeState
+value = 130
+triggerall = var(59) >= 1 
+TriggerAll=RoundState=2
+triggerall = statetype !=A
+triggerall = p2statetype != C
+triggerall = ctrl
+trigger1 = inguarddist 
+trigger2 = p2bodydist x < 0 && p2movetype = A 
+trigger3 = enemynear,hitdefattr = SC,AT
+[State -3,¿Õ·À]
+type = ChangeState
+value = 132
+triggerall = var(59) >= 1
+TriggerAll=RoundState=2
+triggerall = statetype = A 
+trigger1 = inguarddist
+trigger2 = p2bodydist x < 0 && p2movetype = A
+trigger3 = enemynear,hitdefattr = SC,AT
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = p2life > 0
+triggerall = power < 3000
+triggerall = alive
+triggerall = var(59) >= 1
+triggerall = StateType = S
+triggerall = var(35) >= var(36)
+triggerall = var(37) < 1
+trigger1 = p2bodydist X > 120
+value = 800
+[state -3]
+type = changestate
+triggerall = p2life > 0
+triggerall = alive
+triggerall = var(59) >= 1 && power >= 100
+triggerall = ctrl
+triggerall = StateType != A
+triggerall = P2StateType != A
+trigger1 = P2bodydist X >= 100
+trigger1 = random >= 499
+trigger1 = stateno = 200 && movecontact
+trigger2 = stateno = 210 && movecontact
+trigger3 = stateno = 300 && movecontact
+trigger4 = stateno = 310 && movecontact
+trigger5 = stateno = 320 && movecontact
+trigger6 = stateno = 330 && movecontact
+trigger7 = stateno = 340 && movecontact
+trigger8 = stateno = 350 && movecontact
+value = 900
+[State -1]
+type = ChangeState
+value = 730
+triggerall=var(59)>=1
+triggerall = p2life > 0
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger1 = random >= 900
+trigger1 = P2bodydist X >= 50
+trigger2=(stateno=200)&& movecontact
+trigger3=(stateno=210)&& movecontact
+trigger4=(stateno=300)&& movecontact
+trigger5=(stateno=310)&& movecontact
+trigger6=(stateno=320)&& movecontact
+trigger7=(stateno=330)&& movecontact
+trigger8=(stateno=340)&& movecontact
+trigger9=(stateno=350)&& movecontact
+[State -3]
+type = ChangeState
+trigger9 = random >= 800
+value = 460
+triggerall=var(59)>=1
+triggerall = p2life > 0
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger1 = random >= 900
+trigger1 = P2bodydist X <= 40
+trigger2 = stateno = 200 && movecontact
+trigger3 = stateno = 210 && movecontact
+trigger4 = stateno = 300 && movecontact
+trigger5 = stateno = 310 && movecontact
+trigger6 = stateno = 320 && movecontact
+trigger7 = stateno = 330 && movecontact
+trigger8 = stateno = 340 && movecontact
+trigger9 = stateno = 350 && movecontact
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = p2life > 0
+triggerall = var(59) >= 1
+triggerall = StateType != A
+triggerall = p2StateType != A
+trigger1 = stateno = 200 && movecontact
+trigger2 = stateno = 210 && movecontact
+trigger3 = stateno = 300 && movecontact
+trigger4 = stateno = 310 && movecontact
+trigger5 = stateno = 320 && movecontact
+trigger6 = stateno = 330 && movecontact
+trigger7 = stateno = 340 && movecontact
+trigger8 = stateno = 350 && movecontact
+trigger9 = random >= 450
+value = 2500
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = p2life > 0
+triggerall = var(59) >= 1
+triggerall = alive
+triggerall = StateType != A
+triggerall = p2StateType != A
+trigger1 = stateno = 200 && movecontact
+trigger2 = stateno = 210 && movecontact
+trigger3 = stateno = 300 && movecontact
+trigger4 = stateno = 310 && movecontact
+trigger5 = stateno = 320 && movecontact
+trigger6 = stateno = 330 && movecontact
+trigger7 = stateno = 340 && movecontact
+trigger8 = stateno = 350 && movecontact
+trigger9 = random >= 450
+value = 4600
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = p2life > 0
+triggerall = var(59) >= 1
+triggerall = alive
+triggerall = StateType != A
+triggerall = p2StateType != A
+trigger1 = stateno = 200 && movecontact
+trigger2 = stateno = 210 && movecontact
+trigger3 = stateno = 300 && movecontact
+trigger4 = stateno = 310 && movecontact
+trigger5 = stateno = 320 && movecontact
+trigger6 = stateno = 330 && movecontact
+trigger7 = stateno = 340 && movecontact
+trigger8 = stateno = 350 && movecontact
+trigger9 = random >= 450
+value = 2010
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = alive
+triggerall = statetype = A
+triggerall = var(59) >= 1
+triggerall = ctrl
+trigger1 = p2statetype != C
+trigger1 = P2bodydist X <= 20
+trigger2 = stateno = 560 && movecontact && random = 900
+trigger3 =(stateno=730)&& movecontact
+value = 550
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = p2life > 0
+;triggerall = random <= 299
+triggerall = var(59) >= 1
+triggerall = alive
+triggerall = StateType != A
+triggerall = power >= 300
+trigger1 = P2bodydist X >= 60
+trigger1 = stateno = 200 && movecontact
+trigger2 = stateno = 210 && movecontact
+trigger3 = stateno = 300 && movecontact
+trigger4 = stateno = 310 && movecontact
+trigger5 = stateno = 320 && movecontact
+trigger6 = stateno = 330 && movecontact
+trigger7 = stateno = 340 && movecontact
+trigger8 = stateno = 350 && movecontact
+trigger9 = stateno = 2011 && movecontact;; = 9
+trigger10 = stateno = 2510 && movecontact;; = 8
+value = 909
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = Ctrl
+triggerall = random = 300
+triggerall = var(59) >= 1
+triggerall = alive
+triggerall = StateType = S
+triggerall = p2StateType != A
+triggerall = power >= 1000
+trigger1 = stateno = 200 && movecontact && random = 300
+trigger2 = stateno = 210 && movecontact && random = 300
+trigger3 = stateno = 300 && movecontact && random = 300
+trigger4 = stateno = 310 && movecontact && random = 300
+trigger5 = stateno = 320 && movecontact && random = 300
+trigger6 = stateno = 330 && movecontact && random = 300
+trigger7 = stateno = 340 && movecontact && random = 300
+trigger8 = stateno = 350 && movecontact && random = 300
+trigger9 = stateno = 909 && movecontact && random = 300
+value = 3600
+
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = alive
+triggerall = p2life > 0
+triggerall = random = 200
+triggerall = var(59) >= 1
+triggerall = StateType = S
+triggerall = p2StateType != A
+triggerall = power >= 1000
+trigger1 = stateno = 200 && movecontact && random = 200
+trigger2 = stateno = 210 && movecontact && random = 200
+trigger3 = stateno = 300 && movecontact && random = 200
+trigger4 = stateno = 310 && movecontact && random = 200
+trigger5 = stateno = 320 && movecontact && random = 200
+trigger6 = stateno = 330 && movecontact && random = 200
+trigger7 = stateno = 340 && movecontact && random = 200
+trigger8 = stateno = 350 && movecontact && random = 200
+trigger9 = stateno = 909 && movecontact && random = 200
+value = 3500
+
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = p2life > 0
+triggerall = random = 100
+triggerall = var(59) >= 1
+triggerall = alive
+triggerall = StateType = S
+triggerall = p2StateType != A
+triggerall = power >= 2000
+trigger1 = stateno = 200 && movecontact && random = 100
+trigger2 = stateno = 210 && movecontact && random = 100
+trigger3 = stateno = 300 && movecontact && random = 100
+trigger4 = stateno = 310 && movecontact && random = 100
+trigger5 = stateno = 320 && movecontact && random = 100
+trigger6 = stateno = 330 && movecontact && random = 100
+trigger7 = stateno = 340 && movecontact && random = 100
+trigger8 = stateno = 350 && movecontact && random = 100
+trigger9 = stateno = 909 && movecontact && random = 100
+value = 3700
+
+
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = p2life > 0
+triggerall = random = 339
+triggerall = var(59) >= 1
+triggerall = alive
+triggerall = StateType != A
+trigger1 = power >= 300
+trigger1 = stateno = 200 && movecontact && random = 339
+trigger2 = stateno = 210 && movecontact && random = 339
+trigger3 = stateno = 300 && movecontact && random = 339
+trigger4 = stateno = 310 && movecontact && random = 339
+trigger5 = stateno = 320 && movecontact && random = 339
+trigger6 = stateno = 330 && movecontact && random = 339
+trigger7 = stateno = 340 && movecontact && random = 339
+trigger8 = stateno = 350 && movecontact && random = 339
+trigger9 = stateno = 909 && movecontact && random = 339
+value = 7200
+
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = p2life > 0
+triggerall = var(59) >= 1
+triggerall = StateType != A
+triggerall = alive
+trigger1 = P2bodydist X >= 60
+trigger1 = power >= 300
+trigger1 = random >= 449
+trigger1 = stateno = 200 && movecontact
+trigger2 = stateno = 210 && movecontact
+trigger3 = stateno = 300 && movecontact
+trigger4 = stateno = 310 && movecontact
+trigger5 = stateno = 320 && movecontact
+trigger6 = stateno = 330 && movecontact
+trigger7 = stateno = 340 && movecontact
+trigger8 = stateno = 350 && movecontact
+trigger9 = stateno = 909 && movecontact
+value = 2000
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = alive
+triggerall = P2bodydist X <= 15
+triggerall = statetype = S
+triggerall = var(59) >= 1
+triggerall = ctrl
+trigger1 = p2statetype ! = A
+trigger2 = stateno = 300 && movecontact && random = 900
+value = 200
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = P2bodydist X <= 15
+triggerall = statetype = S
+triggerall = alive
+triggerall = var(59) >= 1
+triggerall = ctrl
+trigger1 = p2statetype ! = A
+trigger2 = stateno = 200 && movecontact && random = 900
+trigger3 = stateno = 350 && movecontact && random = 900
+value = 210
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = P2bodydist X <= 15
+triggerall = statetype = S
+triggerall = var(59) >= 1
+triggerall = ctrl
+triggerall = alive
+trigger1 = p2statetype ! = A
+trigger2 = stateno = 210 && movecontact && random = 900
+value = 340
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = P2bodydist X <= 15
+triggerall = statetype = S
+triggerall = var(59) >= 1
+triggerall = ctrl
+triggerall = alive
+trigger1 = p2statetype ! = A
+trigger2 = stateno = 200 && movecontact && random = 900
+value = 300
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = P2bodydist X <= 15
+triggerall = statetype = S
+triggerall = var(59) >= 1
+triggerall = ctrl
+trigger1 = p2statetype ! = A
+trigger2 = stateno = 300 && movecontact && random = 900
+trigger3 = stateno = 320 && movecontact && random = 900
+value = 310
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = P2bodydist X <= 15
+triggerall = statetype = S
+triggerall = var(59) >= 1
+triggerall = ctrl
+triggerall = alive
+trigger1 = p2statetype ! = A
+trigger2 = stateno = 300 && movecontact && random = 900
+value = 320
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = P2bodydist X <= 15
+triggerall = statetype = S
+triggerall = var(59) >= 1
+triggerall = ctrl
+triggerall = alive
+trigger1 = p2statetype ! = A
+trigger2 = stateno = 310 && movecontact && random = 900
+value = 330
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = P2bodydist X <= 15
+triggerall = statetype = S
+triggerall = var(59) >= 1
+triggerall = ctrl
+triggerall = alive
+trigger1 = p2statetype ! = A
+trigger2 = stateno = 200 && movecontact && random = 900
+value = 350
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = alive
+triggerall = statetype = C
+triggerall = var(59) >= 1
+triggerall = ctrl
+trigger1 = p2statetype != A
+trigger1 = P2bodydist X <= 10
+value = 405
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = alive
+triggerall = statetype = C
+triggerall = var(59) >= 1
+triggerall = ctrl
+trigger1 = p2statetype != A
+trigger1 = P2bodydist X <= 10
+trigger2 = stateno = 405 && movecontact
+value = 400
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = statetype = C
+triggerall = var(59) >= 1
+triggerall = alive
+triggerall = ctrl
+trigger1 = p2statetype != A
+trigger1 = P2bodydist X <= 10
+value = 420
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = alive
+triggerall = statetype = C
+triggerall = var(59) >= 1
+triggerall = ctrl
+trigger1 = p2statetype != A
+trigger1 = P2bodydist X <= 10
+trigger2 = stateno = 420 && movecontact
+value = 600
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = alive
+triggerall = statetype = A
+triggerall = var(59) >= 1
+triggerall = ctrl
+trigger1 = p2statetype != C
+trigger2 = stateno = 500 && movecontact
+trigger3 = stateno = 510 && movecontact
+trigger4 = stateno = 560 && movecontact
+trigger5 = stateno = 550 && movecontact
+value = 540
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = statetype = A
+triggerall = var(59) >= 1
+triggerall = ctrl
+triggerall = alive
+trigger1 = p2statetype != C
+trigger2 = stateno = 560 && movecontact
+value = 500
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = statetype = A
+triggerall = var(59) >= 1
+triggerall = ctrl
+triggerall = alive
+trigger1 = p2statetype != C
+trigger2 = stateno = 500 && movecontact
+value = 510
+
+[State -3]
+type = ChangeState
+triggerall = p2life > 0
+triggerall = alive
+triggerall = statetype = A
+triggerall = var(59) >= 1
+triggerall = ctrl
+trigger1 = p2statetype != C
+trigger2 = stateno = 500 && movecontact
+value = 560
+
+[State -3]
+type = ChangeState
+triggerall = Ctrl
+triggerall = alive
+triggerall = p2life > 0
+triggerall = power >= 100
+triggerall = var(59) >= 1
+triggerall = StateType != C
+trigger1 = p2bodydist X > 80
+trigger1 = random <= 350
+value = 336
+
+;[State -3]
+;type = ChangeState
+;triggerall = Ctrl
+;triggerall = p2life > 0
+;triggerall = random = 450
+;triggerall = var(59) >= 1
+;triggerall = power >= 100
+;triggerall = movetype = H
+;triggerall = alive
+;trigger1 = 1;p2movetype = A
+;trigger2 = stateno = 5000 && random = 450
+;trigger3 = stateno = 5001 && random = 450
+;trigger4 = stateno = 5002 && random = 450
+;trigger5 = stateno = 5010 && random = 450
+;trigger6 = stateno = 5011 && random = 450
+;trigger7 = stateno = 5012 && random = 450
+;trigger8 = stateno = 5020 && random = 450
+;trigger9 = stateno = 5021 && random = 450
+;trigger10 = stateno = 5022 && random = 450
+;trigger11 = stateno = 5110 && random = 450
+;trigger12 = stateno = 5120 && random = 450
+;trigger13 = stateno = 5110 && random = 450
+;trigger14 = stateno = 5035 && random = 450
+;trigger15 = stateno = 5030 && random = 450
+;trigger16 = stateno = 5050 && random = 450
+;trigger17 = stateno = 5040 && random = 450
+;trigger18 = stateno = 5071 && random = 450
+;value = 337
+
+[State -3]
+type = VarSet
+triggeall = Roundstate = 2
+trigger1 = Enemynear,Movetype != A
+trigger1 = Root,Inguarddist = 0
+trigger1 = (Enemynear,Stateno =[5000,6000)) || Enemynear,Stateno = [0,200)
+trigger1 = Root,Stateno != [120,160)
+trigger1 = Root,Stateno != [5000,5300]
+trigger1 = Root,Movetype != H
+trigger1 = Root,Hitpausetime = 0 && Enemynear,Hitpausetime = 0
+V = 35
+Value = Enemynear,Numhelper
+IgnoreHitPause = 1
+[State -3]
+type = VarSet
+trigger1 = Enemynear,Movetype = A
+V = 36
+Value = Enemynear,Numhelper
+IgnoreHitPause = 1
+[State -3]
+type = VarSet
+trigger1 = 1
+V = 37
+Value = Enemynear,NumProj
+IgnoreHitPause = 1
+[State -1, Taunt]
+type = ChangeState
+value = 195
+trigger1 = win
+trigger1 = statetype != A
+trigger1 = ctrl
+;-------------- Generated by Fighter Factory -------------
+
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = name = "Hit"
+trigger1 = authorname = "joe flizz,Team SB"
+v = 2
+value = 1
+
+[State 0, ChangeState]
+type = LifeSet
+trigger1 = var(2) != 1
+value = 0
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = stateno != 6001
+id = 6001
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 6001
+channel = 1
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 6036
+channel = 2
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 6081
+channel = 3
+
+;--------------------- Variable List ----------------------
+
+; Var(0) - StateDef 5300
+; Var(1) - StateDef 5300
+; Var(2) - StateDef 1500
+; Var(8) - StateDef 9160, 9501
+; Var(9) - StateDef 9165
+; Var(15) - StateDef 6001
+; Var(35) - Enemynear,Movetype != A Enemynear,Numhelper
+; Var(36) - Enemynear,Movetype = A Enemynear,Numhelper
+; Var(36) - Enemynear,NumProj
+; Var(59) - ai
+
+;--------------------- Float Variable List ----------------------
+
+[statedef -2]
+[State -1]
+type = selfstate;ChangeState
+value = 336
+triggerall = Power >= 100
+triggerall = var(59) >= 1
+triggerall = random >= 399
+triggerall = alive
+Trigger1 = movetype = H
+trigger2 = stateno = 5000
+trigger2 = (power >= 100)
+trigger3 = stateno = 5001
+trigger3 = (power >= 100)
+trigger4 = stateno = 5002
+trigger4 = (power >= 100)
+trigger5 = stateno = 5010
+trigger5 = (power >= 100)
+trigger6 = stateno = 5011
+trigger6 = (power >= 100)
+trigger7 = stateno = 5012
+trigger7 = (power >= 100)
+trigger8 = stateno = 5020
+trigger8 = (power >= 100)
+trigger9 = stateno = 5021
+trigger9 = (power >= 100)
+trigger10 = stateno = 5022
+trigger10 = (power >= 100)
+trigger11 = stateno = 5110
+trigger11 = (power >= 100)
+trigger12 = stateno = 5120
+trigger12 = (power >= 100)
+trigger13 = stateno = 5110
+trigger13 = (power >= 100)
+trigger14 = stateno = 5035
+trigger14 = (power >= 100)
+trigger15 = stateno = 5030
+trigger15 = (power >= 100)
+trigger16 = stateno = 5050
+trigger16 = (power >= 100)
+trigger17 = stateno = 5040
+trigger17 = (power >= 100)

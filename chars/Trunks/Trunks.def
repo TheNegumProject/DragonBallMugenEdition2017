@@ -1,0 +1,32 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "trunks do futuro by FRS GAMES"
+displayname = "Trunks "
+versiondate = 12,09,2007
+mugenversion = 06,14,2003
+author = "FRS GAMES; edit sprites mephistopheles"
+pal.defaults = 1,2,3,4,5,6,7
+
+[Files]
+sprite = trunks.sff
+anim = trunks.air
+sound = trunks.snd
+cmd = trunks.cmd
+cns = trunks.cns
+stcommon = common1.cns
+st = trunks.cns
+pal1 = trunks.act
+;pal2 = trunks2.act
+;pal3 = trunks3.act
+;pal4 = trunks4.act
+;pal5 = trunks5.act
+;pal6 = trunks6.act
+;pal7 = trunks7.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = final\final.def

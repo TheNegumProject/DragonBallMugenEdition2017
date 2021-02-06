@@ -1,0 +1,238 @@
+|--------------------------------------------------------------------|
+|-------------|Future Trunks 99.9%b By Deadman 01/25/2005|-----------|
+|--------------------------------------------------------------------|  
+  
+* Profile
+* How To Play
+* Specials
+* Hypers
+* Meteors
+* SSJ2 Transformation Motion
+* Combo System
+* Special Thanks
+* Comments, Questions?
+  
+-----------------------------------------------------------------------  
+                             Profile
+-----------------------------------------------------------------------
+Name: Trunks
+Gender: Male
+Age: 17 Years
+Race: Half Saiyan - Half Terran
+Father: Vegeta
+Mother: Bulma
+Sister: Bra
+Height: 120 lbs.
+Weight: 5'10
+Hair: Lavender
+Eyes: Blue
+Important Object: Tapion's Sword            
+  
+-----------------------------------------------------------------------  
+                          How To Play
+-----------------------------------------------------------------------  
+  
+      UB  U  UF         Z = Draw-Remove Sword     Y = Heavy Punch/Stab         X = Weak Punch/Weak Slash
+        \ | /          
+     B ---o--- F   
+        / | \           C = Fireball/Heavy Slash  B = Heavy Kick/Medium Slash  A = Weak Kick/Long Slash
+      DB  D  DF  
+  
+Start = Hold to Carry KI  
+
+-----------------------------------------------------------------------
+
++ = Moves that can be done standing
+* = Moves that can be done flying
+^ = Moves that can be done jumping
+
+-----------------------------------------------------------------------  
+                            Specials  
+-----------------------------------------------------------------------  
+
++*^ Fly = x+y (do it flying to land)
++*^ Ki Burn = b+c (can counter at level 1)
++*^ Zanzoken = a+b (chooses F, B, or U)
+
+------------------------
+  | Hands Techniques |
+------------------------
+ 
++ ^ Throw = (close) Hold F + a
+
++   Seeker Ball Trip = (close) Hold F + b
+  
+ *^ Aerial Kick 1 = D, DF, F + a
+
+ *^ Aerial Kick 2 = D, DF, F + b
+  
++   Slide Attack = D, DF, F + a
+
++*  Dashing Combo = D, DB, B + a
+
++   Bakuhatsu Ha = D, DF, F + b
+
++*  Palm Attack = D, DB, B + b
+
++*  Triple Fireball = D, DF, F + c
+
++*  Seeker Fireball = D, DB, B + c
+
++*  Genesis Combo 1 = D, DF, F + x 
+
++   Knee Attack (low) = D, DB, B + x
+
++*  Genesis Combo 2 = D, DF, F + y
+
++   Knee Attack (high) = D, DB, B + y
+
+------------------------
+  | Sword Techniques |
+------------------------
+
++*  Final Slash (recover move) = Hold U + c (while in laydown)
+
++*  Quick Dash Blade = c (while Running)
+
++   Stab Sword = (close) Hold F + a
+
++*  Multi-Slash = D, DF, F + a
+
++   Geyser Sword = D, DB, B + a
+
++*  Dashing Multi-Slash = D, DF, F + b
+
++ ^ Lighting Explosion = D, DB, B + b
+
++*^ Demon Hammer = D, DF, F + c
+
++   Spining Blade = D, DB, B + c
+
++*^ Forward Spining Sword = D, DF, F + x 
+
++*  Dash Blade = D, DB, B + x
+
+ *^ Dash Blade (down) = D, DB, B + x
+
++*  Sonic Sword = D, DF, F + y
+
++ ^ Dash Blade (up) = D, DB, B + y
+
+-----------------------------------------------------------------------
+                               Hypers  
+-----------------------------------------------------------------------
+
+------------------------
+  | Hands Techniques |
+------------------------
+
+  ^ Super Aerial Kick = D, DB, B, F, + a (Level 1)
+
++*  Finish Buster = D, DB, B, F, + a  ( Choose Up or Down ) (Level 1)
+
++*  Masenko = D, DF, F, B, + a (Level 1)
+
++*  Super Finish Buster = D, DB, B, F, + b ( Choose Up or Down ) (Level 2)
+
++*  Legends Burner Attack = D, DF, F, B, + b (Level 1/5)
+  
++*  Mega Finish Buster = D, DB, B, F, + c ( Choose Up or Down ) (Level 3)
+
++   Rising Kick Kamikaze = D, DF, F, B, + c (Level 3)
+  
++*  Burner attack = D, DB, B, F, + x ( Choose Up or Down ) (Level 2)
+
++*  Renzokus = D, DF, F, B, + x (Level 1/5)
+
++*  Super Burner attack = D, DB, B, F, + y ( Choose Up or Down ) (Level 3)
+
++   Finishing Punch = D, DF, F, B, + y (Level 1/5)
+
+------------------------
+  | Sword Techniques |
+------------------------
+
+  ^ Falcon Flight = D, DB, B, F, + a (Level 1)
+
++*  Super Multi-Slash = D, DB, B, F, + a (Level 1)
+
++*  Hyper Sonic Sword = D, DF, F, B, + a (Level 1)
+
++*  Critical Blade = D, DB, B, F, + b (Level 1/5)
+
++*  Wind Cutter = D, DF, F, B, + b (Level 2)
+ 
++   Omega Demon Hammer = D, DB, B, F, + c (Level 3)
+
++*  Dragon Edge = D, DF, F, B, + c (Level 3)
+
++*  Final Slash = D, DB, B, F, + x (Level 1/5)
+
++*  Double Super Multi-Slash = D, DF, F, B, + x (Level 2)
+
++*  Double Final Slash = D, DB, B, F, + y (Level 3)
+
++   Meteors Shower = D, DF, F, B, + y (Level 3)
+
+-----------------------------------------------------------------------
+                               Meteors
+-----------------------------------------------------------------------
+
+------------------------
+  | Hands Techniques |
+------------------------
+
++   Trunks Fury = a+c (Level 3) (opponent less than 1000 life needed)
+
+------------------------
+  | Sword Techniques |
+------------------------
+
++   Final Cut = a+c (Level 3) (opponent less than 1000 life needed)
+
+-----------------------------------------------------------------------
+                       SSJ2 Transformation Motion  
+-----------------------------------------------------------------------
+
++   SSJ2 Transform = Hold z for 3 seconds (Level 3) (Without Sword)
+
+- When in SSJ2:
+     - Your attack and defense increseases.
+     - You can use the meteors everytime you are in level 3 power
+
+-----------------------------------------------------------------------  
+                             Combo System
+-----------------------------------------------------------------------
+
+Hands - You may combine as you wish, I mean, just hit the bottons and Trunks
+	will combine the hits. There are some specials that can be combined too.
+	Master this Combo System to make your own combos! 
+
+Sword - In Sword State, the Combo System works hitting the same botton, if you hit
+	quickly the same botton, Trunks will start combining slashes, this Combo
+	System only have one combo per attack botton.
+
+-----------------------------------------------------------------------  
+                            Special Thanks
+-----------------------------------------------------------------------
+
+Ssonic - For some programation and sprites.
+
+Next - For the only and diferent Palette, Thanks, that makes him a better char.
+
+Generacion Mugen - For posting my character.
+
+Miguel - For all his support on the making of this char.
+
+Nadamix - For uploading my char on the internet.
+
+Elecbyte - For making this super game program, Thanks!!!.
+
+-----------------------------------------------------------------------  
+                         Comments, Questions?
+-----------------------------------------------------------------------
+
+-For any comment or question, E-mail me at: Dude4Ever21@hotmail.com
+
+Enjoy this Super Character!
+  - Deadman

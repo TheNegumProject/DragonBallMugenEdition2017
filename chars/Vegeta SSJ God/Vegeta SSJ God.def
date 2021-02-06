@@ -1,0 +1,30 @@
+; Vegeta SSJ God - Edit by RistaR87
+
+[Info]
+name="[Dizzy]'s Super Vegeta"
+displayname="Vegeta SSJ God"
+versiondate=05.10.2003
+mugenversion=04.14.2002
+author="Dizzy"
+pal.defaults=1,2,3,4,5,6,11,12
+
+[Files]
+cns=Vegita.st
+cmd=Vegita.cmd
+stcommon=common1.cns
+sprite=Vegita.sff
+anim=Vegita.air
+st=Vegita.st
+sound=Vegita.snd
+pal1=00.Act
+pal2=11.Act
+pal3=03.Act
+pal4=01.Act
+pal5=05.Act
+pal6=06.Act
+pal7=02.Act
+pal8=12.Act
+st1=Vegita.st2
+[Arcade]
+intro.storyboard=
+ending.storyboard=..\data\final.def

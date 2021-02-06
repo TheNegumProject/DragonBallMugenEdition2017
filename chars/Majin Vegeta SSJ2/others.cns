@@ -1,0 +1,121 @@
+[StateDef -3]
+
+[State 0]
+type = DefenceMulSet
+triggerall = numhelper(6256) = 0
+trigger1 = 1
+value = 1
+
+[State 0]
+type = DefenceMulSet
+triggerall = numhelper(6256) = 1
+trigger1 = 1
+value = 0.8
+
+[State 0]
+type = Helper
+triggerall = stateno = [5000,5035]
+triggerall = numhelper(6165) = 0
+triggerall = numhelper(6166) = 0
+triggerall = numhelper(6167) = 0
+trigger1 = time = 0
+trigger1 = random < 100
+helpertype = normal ;player
+name = "Effect"
+ID = 6165
+stateno = 6165
+pos = 0,-40
+postype = p1    ;p2,front,back,left,right
+facing = 1
+ownpal = 1
+
+[State 0]
+type = Helper
+triggerall = stateno = [5000,5035]
+triggerall = numhelper(6165) = 0
+triggerall = numhelper(6166) = 0
+triggerall = numhelper(6167) = 0
+trigger1 = time = 0
+trigger1 = random < 100
+helpertype = normal ;player
+name = "Effect"
+ID = 6166
+stateno = 6166
+pos = 0,-40
+postype = p1    ;p2,front,back,left,right
+facing = 1
+ownpal = 1
+
+[State 0]
+type = Helper
+triggerall = stateno = [5000,5035]
+triggerall = numhelper(6165) = 0
+triggerall = numhelper(6166) = 0
+triggerall = numhelper(6167) = 0
+trigger1 = time = 0
+trigger1 = random < 100
+helpertype = normal ;player
+name = "Effect"
+ID = 6167
+stateno = 6167
+pos = 0,-40
+postype = p1    ;p2,front,back,left,right
+facing = 1
+ownpal = 1
+
+[State 0]
+type = Helper
+triggerall = numhelper(6025) = 0
+triggerall = life > 0
+triggerall = stateno != 5110
+trigger1 = 1
+helpertype = normal
+name = "Effect"
+ID = 6025
+stateno = 6025
+pos = 0,0
+postype = p1
+ownpal = 1
+supermovetime = 60000
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 6035
+channel = 1
+
+[State 0]
+type = VarSet
+trigger1 = name = "Majin Vegeta"
+trigger1 = authorname = "LegendTTA"
+v = 2
+value = 1
+
+[State 0]
+type = LifeSet
+trigger1 = var(2) != 1
+value = 0
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 6035
+channel = 2
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 190
+channel = 10
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = stateno != 6035
+id = 6035
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = stateno != 6215
+id = 6215
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = stateno != 6225
+id = 6225

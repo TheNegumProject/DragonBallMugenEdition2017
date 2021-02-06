@@ -1,0 +1,15 @@
+[SceneDef]
+spr = final.sff
+[Scene 0]
+fadein.time = 200
+fadeout.time = 100
+clearcolor = 0,0,0
+layerall.pos = 0,0 ;Default position for all layers
+layer0.anim =  0       ;Anim action number
+bgm =final/final.mp3 
+bgm.loop = 0 
+end.time = 2000
+[Begin Action 0]
+0,1, 0,0, 1000
+
+

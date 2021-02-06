@@ -1,0 +1,96 @@
+credits:
+ace-sama for coding
+team os for frieza's sprites
+z_ane_666 for zarbon's sprites
+tapion for dodoria's sprites
+MGSSJ2 for some superpause fx
+Master SSJ For DEATH BALL FX
+FLOSSR3 for beta testing 
+
+here is my fourth char frieza by ace-sama
+
+if you want to learn coding go here
+
+www.csmugen.ucoz.com
+
+
+movelist:
+
+;-|basics|---------------------------------------------------------
+walk = F or B
+RUN = FF or BB(in air too)
+Jump = U
+a+b = charge ki
+x+y = shield
+c = fireball
+z = teleport(crouch and in air too)
+s = taunt
+c(in air) = fly
+
+a+a+a = combo 1
+b+b+b = combo 2
+x+x+x = combo 3
+y+y = combo 4
+(note you can use more combos by pressing random a,b,x and y)
+
+
+D + a = crouch punch
+D + b = crouch punch
+D + x = crouch punch 
+D + y = crouch punch
+
+
+in air/fly : 
+a = punch 
+b = punch
+c = punch
+x = punch
+y = punch
+
+;-|supers|---------------------------------------------------------
+D,F,a = throw rocks 
+D,B,a = supercombo
+D,F,b = beam 
+D,B,b = telekinesis
+D,F,c = summon helper : Zarbon
+D,B,c = summon helper : Dodoria
+D,F,x = death beam
+D,B,x = rush
+D,F,y = kiezan
+D,B,y = chargable fireball (3 levels)
+D,F,z = eye beams
+
+in fly:
+D,F,a = air beam
+;-|hypers|---------------------------------------------------------
+
+
+D,F,D,F,a = telekinesis explod 
+D,F,D,F,b = supernova
+D,F,D,F,x = death beam barrage
+D,F,D,F,y = kiezans( they follow the opponent bcan hit both players)
+D,F,D,F,z = deathball(note the death ball goes into the ground and after some time it explodes
+
+
+
+in fly
+D,F,D,F,b = supernova
+D,F,D,F,z = death ball
+
+
+
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+;-|www.csmugen.ucoz.com-------------------------------------------
+
+hope you liked the char
+thanks hamza 

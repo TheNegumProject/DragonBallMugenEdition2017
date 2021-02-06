@@ -1,0 +1,30 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Gohan Mystic"
+displayname = "Gohan Mystic"
+versiondate = 04,14,2002
+mugenversion = 04,14,2002
+author = "Tapion & Nahue77, sprites edits mephistopheles"
+pal.defaults = 1,2
+
+[Files]
+sprite = Mistic_Gohan.sff
+anim = Mistic_Gohan.air
+sound = Mistic_Gohan.snd
+cmd = Mistic_Gohan.cmd
+cns = Mistic_Gohan.cns
+stcommon = common1.cns
+st = Basics.cns
+st1 = Specials.cns
+st2 = Supers.cns
+st3 = Helpers.cns
+st4 = Artifcial_intelligence.cns
+pal1 = Mistic_Gohan_final.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

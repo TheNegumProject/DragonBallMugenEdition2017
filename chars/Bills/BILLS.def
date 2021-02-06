@@ -1,0 +1,53 @@
+;=================================================
+;                                                =
+;                 Char: BILLS                    =   
+;                                                =
+;   Version HR                                   =
+;                By: Hélder Santos               =
+;                                                =
+;                  28/09/2015                    =
+;                                                =
+;=================================================
+;                     ||||||
+;                     ||||||
+;=================================================
+;
+;        ================================
+;        =      CHAR INFORMATION :      =
+;        =                              =
+;        =   Resolution : 320 * 240     =
+;        =   Mugen Version:             =
+;        =                 WinMugenPlus =
+;        =    Mugen 1.0 and Mugen 1.1   =
+;        =                              =
+;        ================================
+;
+;=================================================
+
+
+[Info]
+name="Bills"
+displayname="Bills"
+versiondate = 17,04,2001
+mugenversion = 04,01,2001
+author="MugenMundo"
+pal.defaults=1,3,2
+
+[Files]
+sprite=BILLS_HR.sff
+sound=Bills_PT-BR.snd
+anim=Bills.air
+cmd=Bills.cmd
+cns=Bills.cns
+st=Bills.cns
+stcommon=common1.cns
+pal1=ACT/Bills_1.act
+pal2=ACT/Bills_2.act
+pal3=ACT/Bills_3.act
+pal4=
+pal5=
+pal6=
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

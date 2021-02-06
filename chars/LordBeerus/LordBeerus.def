@@ -1,0 +1,23 @@
+[Info]
+name="Beerus by Rahlonnir"
+displayname="Lord Beerus"
+versiondate=7/12/15
+mugenversion=1.0
+author="RAHLONNIR"
+pal.defaults=`
+[Files]
+sprite=B.sff
+sound=B.snd
+anim=B.air
+cmd=B.cmd
+cns=B.cns
+st=B.cns
+stcommon=common1.cns
+pal1=B.act
+pal2=anubis.act
+st1=throws.cns
+st2=specials.cns
+st3=hypers.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=

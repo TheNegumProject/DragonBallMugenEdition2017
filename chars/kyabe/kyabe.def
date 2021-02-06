@@ -1,0 +1,44 @@
+;...........................................................................................
+;...........................................................................................
+
+; Player information
+[Info]
+name ="Kyabe"
+displayname ="Kyabe"
+versiondate =3,07,2008
+mugenversion =04,14,2002
+author ="D-GENERACIONZ - Team, kyabe edit by joe flizz"
+pal.defaults =1;,2,3,4,5,6,7,8,9,10
+
+; Files for the player
+[Files]
+cmd=saiyajin.cmd
+cns=saiyajin.cns
+st=saiyajin.cns
+stcommon=common1.cns
+sprite=saiyajin.sff
+anim=saiyajin.air
+sound=saiyajin.snd
+pal1=saiyajin.act
+;pal2=saiyajin2.act
+;pal3=saiyajin3.act
+;pal4=saiyajin4.act
+;pal5=saiyajin5.act
+;pal6=saiyajin6.act
+;pal7=saiyajin7.act
+;pal8=saiyajin8.act
+;pal9=saiyajin9.act
+;pal10=saiyajin10.act
+
+
+; Arcade mode
+[Arcade]
+intro.storyboard=
+ending.storyboard=final/final.def
+;...........................................................................................
+;...........................................................................................
+
+                                ; Feito no Brasil           
+;                              Autor: equipe D-GENERACIONZ - Team
+
+;[[[[[[[[[[[[[[[[[[[[[[E-mail& msn: superkakarotto@hotmail.com]]]]]]]]]]]]]]]]]]]]]]]]]]]]]

@@ -1,0 +1,43 @@
+[StateDef -3]
+
+[State 0]
+type = DefenceMulSet
+trigger1 = 1
+value = 1-(var(7)/10.0)
+
+[State 0]
+type = AttackMulSet
+trigger1 = 1
+value = 1+(var(7)/5.0)
+
+[State 0]
+type = AngleSet
+trigger1 = stateno != 50
+value = 0
+
+[state -3]
+type = playsnd
+triggerall = stateno = [5000,5035]
+trigger1 = time = 0
+trigger1 = (random%100 < 10)
+value = S0,13+random%2
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 190
+channel = 1
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 6010
+channel = 2
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 6010
+channel = 3
+
+[state -3]
+type = removeexplod
+trigger1 = stateno != 6010
+id = 6010

@@ -1,0 +1,29 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Chuck_Norris"
+displayname ="Whis"
+versiondate =06,07,2010
+mugenversion =14,04,2002
+author ="Gaelik"
+pal.defaults =1
+
+[Files]
+sprite =norris.sff
+anim =norris.air
+sound =norris.snd
+cmd =norris.cmd
+cns =norris.cns
+stcommon =common1.cns
+st =norris.cns
+pal1=norris.act
+st1=norriscommon.cns
+st2=norriskiller.cns
+st3=norris-2-3.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

@@ -1,0 +1,21 @@
+[Info]
+name ="Goku"
+displayname ="Goku Transform 2"
+versiondate =2015.05.29
+mugenversion =1.0
+author ="LegendTTA"
+pal.defaults =1
+
+[Files]
+cmd     =Goku.cmd
+cns     =Goku.cns
+st      =Goku.cns
+stcommon =common1.cns
+sprite  =Goku.sff
+anim    =Goku.air
+sound   =Goku.snd
+pal1=Goku.act
+st1=others.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=

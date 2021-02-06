@@ -1,0 +1,27 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="TT'Vegeta AF"
+displayname ="Vegeta SSJ3"
+versiondate =04,14,2002
+mugenversion =1.0
+author ="TT"
+pal.defaults =1,2
+
+; Files for the player
+[Files]
+cmd     =TT'Vegeta SSJ4.cmd
+cns     =TT'Vegeta SSJ4.cns
+st      =TT'Vegeta SSJ4.cns
+stcommon =common1.cns
+sprite  =TT'Vegeta SSJ4.sff
+anim    =TT'Vegeta SSJ4.air
+sound   =TT'Vegeta SSJ4.snd
+pal1=TT'Vegeta SSJ4.act
+pal2=TT'Vegeta SSJ4.act
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=..\data\final.def

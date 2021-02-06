@@ -1,0 +1,42 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "SSJ3 Gokou by gabe555"
+displayname = "Goku SSJ3"
+versiondate = 04,14,2002
+mugenversion = 04,14,2002
+author = "gabe555"
+pal.defaults = 1,2,3,4,5,6
+
+[Files]
+sprite = SSJ3Gokou.sff
+anim = SSJ3Gokou.air
+sound = SSJ3Gokou.snd
+cmd = SSJ3Gokou.cmd
+cns = SSJ3Gokou.cns
+stcommon = common1.cns
+st = SSJ3Gokou.cns
+st1 = System.cns
+st2 = Specials.cns
+st3 = EX.cns
+st4 = Supers.cns
+pal1 = Palettes\SSJ3Gokou.act
+pal2 = Palettes\Ultimate Tenkaichi.act
+pal3 = Palettes\Vegetto.act
+pal4 = Palettes\SSJ3Gokou.act
+;pal5 = Palettes\GohanAF.act
+;pal6 = Palettes\.act
+;pal7 = Palettes\.act
+;pal8 = Palettes\.act
+pal9 = Palettes\MV.act
+pal10 = Palettes\C16.act
+pal11 = Palettes\Zayko.act
+pal12 = Palettes\Evil.act
+
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

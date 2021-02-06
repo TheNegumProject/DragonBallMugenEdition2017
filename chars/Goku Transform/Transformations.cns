@@ -1,0 +1,858 @@
+;---------------------------------------------------------------------------
+[StateDef 7000]
+type = S
+physics = S
+ctrl = 0
+velset = 0,0
+anim = 7000
+poweradd = -1000
+
+[State 0]
+type = SuperPause
+trigger1 = time = 0
+time = 100
+anim = -1
+movetime = 100
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+trigger2 = animelem = 3
+anim = 5995
+pos = 0,-40
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+ownpal = 1
+scale = 1,1
+removetime = -2
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 6007
+pos = 5,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+removetime = 90
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 6004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 30
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 16004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 5
+anim = 16005
+pos = 2,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+scale = 0.9,0.9
+ownpal = 1
+supermove = 1
+
+[state 0]
+type = envshake
+trigger1 = animelem = 2
+ampl = 2
+time = 80
+
+[state 0]
+type = playsnd
+trigger1 = animelemtime(2) = 5
+value = S0,43
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 2
+value = S0,7
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 3
+value = S0,6
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,8
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,9
+
+[state 0]
+type = varset
+trigger1 = animtime = 0
+v = 7
+value = 1
+
+[state 0]
+type = lifeadd
+trigger1 = animelem = 3
+value = 50
+
+[state 0]
+type = changestate
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[StateDef 7001]
+type = S
+physics = S
+ctrl = 0
+velset = 0,0
+anim = 7001
+poweradd = -2000
+
+[State 0]
+type = SuperPause
+trigger1 = time = 0
+time = 100
+anim = -1
+movetime = 100
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+trigger2 = animelem = 3
+anim = 5995
+pos = 0,-40
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+ownpal = 1
+scale = 1,1
+removetime = -2
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 6007
+pos = 5,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+removetime = 90
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 6004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 30
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 16004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 26004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+sprpriority = -5
+ontop = 1
+scale = 0.6,0.6
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 5
+anim = 16005
+pos = 2,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+scale = 0.9,0.9
+ownpal = 1
+supermove = 1
+
+[state 0]
+type = envshake
+trigger1 = animelem = 2
+ampl = 2
+time = 80
+
+[state 0]
+type = playsnd
+trigger1 = animelemtime(2) = 5
+value = S0,43
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 2
+value = S0,7
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 3
+value = S0,6
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,8
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,9
+
+[state 0]
+type = varset
+trigger1 = animtime = 0
+v = 7
+value = 2
+
+[state 0]
+type = lifeadd
+trigger1 = animelem = 3
+value = 100
+
+[state 0]
+type = changestate
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[StateDef 7002]
+type = S
+physics = S
+ctrl = 0
+velset = 0,0
+anim = 7002
+poweradd = -3000
+
+[State 0]
+type = SuperPause
+trigger1 = time = 0
+time = 100
+anim = -1
+movetime = 100
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+trigger2 = animelem = 3
+anim = 5995
+pos = 0,-40
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+ownpal = 1
+scale = 1,1
+removetime = -2
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 6007
+pos = 5,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+removetime = 90
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 6004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 30
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 16004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 26004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+sprpriority = -5
+ontop = 1
+scale = 0.6,0.6
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 5
+anim = 16005
+pos = 2,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+scale = 0.9,0.9
+ownpal = 1
+supermove = 1
+
+[state 0]
+type = envshake
+trigger1 = animelem = 2
+ampl = 2
+time = 80
+
+[state 0]
+type = playsnd
+trigger1 = animelemtime(2) = 5
+value = S0,43
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 2
+value = S0,7
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 3
+value = S0,6
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,8
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,9
+
+[state 0]
+type = varset
+trigger1 = animtime = 0
+v = 7
+value = 3
+
+[state 0]
+type = lifeadd
+trigger1 = animelem = 3
+value = 150
+
+[state 0]
+type = changestate
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[StateDef 7003]
+type = S
+physics = S
+ctrl = 0
+velset = 0,0
+anim = 7003
+poweradd = -1000
+
+[State 0]
+type = SuperPause
+trigger1 = time = 0
+time = 100
+anim = -1
+movetime = 100
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+trigger2 = animelem = 3
+anim = 5995
+pos = 0,-40
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+ownpal = 1
+scale = 1,1
+removetime = -2
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 6007
+pos = 5,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+removetime = 90
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 16004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 30
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 16004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 26004
+pos = 0,5
+postype = p1  ;p2,front,back,left,right
+sprpriority = -5
+ontop = 1
+scale = 0.6,0.6
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 5
+anim = 16005
+pos = 2,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+scale = 0.9,0.9
+ownpal = 1
+supermove = 1
+
+[state 0]
+type = envshake
+trigger1 = animelem = 2
+ampl = 2
+time = 80
+
+[state 0]
+type = playsnd
+trigger1 = animelemtime(2) = 5
+value = S0,43
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 2
+value = S0,7
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 3
+value = S0,6
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,8
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,9
+
+[state 0]
+type = varset
+trigger1 = animtime = 0
+v = 7
+value = 2
+
+[state 0]
+type = lifeadd
+trigger1 = animelem = 3
+value = 50
+
+[state 0]
+type = changestate
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[StateDef 7004]
+type = S
+physics = S
+ctrl = 0
+velset = 0,0
+anim = 7004
+poweradd = -2000
+
+[State 0]
+type = SuperPause
+trigger1 = time = 0
+time = 100
+anim = -1
+movetime = 100
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+trigger2 = animelem = 3
+anim = 5995
+pos = 0,-40
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+ownpal = 1
+scale = 1,1
+removetime = -2
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 6007
+pos = 5,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+removetime = 90
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 16004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 30
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 16004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 26004
+pos = 0,5
+postype = p1  ;p2,front,back,left,right
+sprpriority = -5
+ontop = 1
+scale = 0.6,0.6
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 5
+anim = 16005
+pos = 2,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+scale = 0.9,0.9
+ownpal = 1
+supermove = 1
+
+[state 0]
+type = envshake
+trigger1 = animelem = 2
+ampl = 2
+time = 80
+
+[state 0]
+type = playsnd
+trigger1 = animelemtime(2) = 5
+value = S0,43
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 2
+value = S0,7
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 3
+value = S0,6
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,8
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,9
+
+[state 0]
+type = varset
+trigger1 = animtime = 0
+v = 7
+value = 3
+
+[state 0]
+type = lifeadd
+trigger1 = animelem = 3
+value = 100
+
+[state 0]
+type = changestate
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[StateDef 7005]
+type = S
+physics = S
+ctrl = 0
+velset = 0,0
+anim = 7005
+poweradd = -1000
+
+[State 0]
+type = SuperPause
+trigger1 = time = 0
+time = 100
+anim = -1
+movetime = 100
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+trigger2 = animelem = 3
+anim = 5995
+pos = 0,-40
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+ownpal = 1
+scale = 1,1
+removetime = -2
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 6007
+pos = 5,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+removetime = 90
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 16004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 30
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 16004
+pos = 1,5
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 3
+ownpal = 1
+scale = 0.85,0.85
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 2
+anim = 26004
+pos = 0,5
+postype = p1  ;p2,front,back,left,right
+sprpriority = -5
+ontop = 1
+scale = 0.6,0.6
+bindtime = -1
+removetime = 30
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 3
+anim = 26004
+pos = 0,5
+postype = p1  ;p2,front,back,left,right
+sprpriority = -5
+ontop = 1
+scale = 0.6,0.6
+bindtime = -1
+removetime = 50
+supermove = 1
+
+[State 0]
+type = Explod
+trigger1 = animelem = 5
+anim = 16005
+pos = 2,10
+postype = p1  ;p2,front,back,left,right
+facing = 1
+sprpriority = 5
+scale = 0.9,0.9
+ownpal = 1
+supermove = 1
+
+[state 0]
+type = envshake
+trigger1 = animelem = 2
+ampl = 2
+time = 80
+
+[state 0]
+type = playsnd
+trigger1 = animelemtime(2) = 5
+value = S0,43
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 2
+value = S0,7
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 3
+value = S0,6
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,8
+
+[state 0]
+type = playsnd
+trigger1 = animelem = 5
+value = S0,9
+
+[state 0]
+type = varset
+trigger1 = animtime = 0
+v = 7
+value = 3
+
+[state 0]
+type = lifeadd
+trigger1 = animelem = 3
+value = 50
+
+[state 0]
+type = changestate
+trigger1 = animtime = 0
+value = 0
+ctrl = 1

@@ -1,0 +1,26 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Goku Transform"
+displayname ="Goku"
+versiondate =2013.07.15
+mugenversion =1.0
+author ="LegendTTA"
+pal.defaults =6,3,4,2
+
+; Files for the player
+[Files]
+cmd     =Goku.cmd
+cns     =Goku.cns
+st      =Goku.cns
+stcommon =common1.cns
+sprite  =Goku.sff
+anim    =Goku.air
+sound   =Goku.snd
+pal1=Goku.act
+st1=Transformations.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=

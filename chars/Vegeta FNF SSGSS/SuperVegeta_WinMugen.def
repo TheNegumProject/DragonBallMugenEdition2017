@@ -1,0 +1,32 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "OS USSJ Vegeta"
+displayname = "Super Vegeta"
+versiondate = 04,14,2002
+mugenversion = 04,14,2002
+author = "Emiliano 01 && Team OS"
+pal.defaults = 1,2
+
+[Files]
+sprite = VegetaUSSJ.sff
+anim = VegetaUSSJ.air
+sound = VegetaUSSJ.snd
+cmd = VegetaUSSJ1.cmd
+cns = VegetaUSSJ1.cns
+stcommon = common1.cns
+st = basico1.cns
+st1 = Especiales1.cns
+st2 = supers1.cns
+st3 = boludeces.cns
+pal1 = PaletaOficialSRL2.act
+pal2 = PaletaOficialSRL3.act
+pal3 = PaletaOficialSRL.act
+pal4 = PaletaOficialSRL4.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

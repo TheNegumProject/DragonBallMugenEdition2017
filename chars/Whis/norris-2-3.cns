@@ -1,0 +1,2341 @@
+[State -2, Reset]
+type = VarRangeSet
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&roundstate = [2,3]
+fvalue = 0
+first = 0
+last = 39
+ignorehitpause = 1
+persistent = 1
+
+[State -2, Reset]
+type = SelfState
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&stateno!=0&&!ishelper&&roundstate = [2,3]
+value = 0
+ctrl = 1
+ignorehitpause = 1
+persistent = 1
+
+[State -2, StateTypeSet]
+type = StateTypeSet
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&!ishelper&&roundstate = [2,3]
+statetype = S
+movetype = I
+physics = S
+ignorehitpause = 1
+persistent = 1
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&!ishelper&&roundstate = [2,3]
+x = 0
+y = 0
+ignorehitpause = 1
+persistent = 1
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&!ishelper&&roundstate = [2,3]
+x = 0
+y = 0
+ignorehitpause = 1
+persistent = 1
+
+[State 0, DestroySelf]
+type = DestroySelf
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&ishelper&&roundstate = [2,3]
+ignorehitpause = 1
+persistent = 1
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&roundstate = [2,3]
+ignorehitpause = 1
+persistent = 1
+
+[State 0, StopSnd]
+type = StopSnd
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&roundstate = [2,3]
+channel = -1
+ignorehitpause = 1
+persistent = 1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&roundstate = [2,3]
+flag = nomusic
+flag2 = nowalk
+flag3 = noko
+ignorehitpause = 1
+persistent = 1
+
+[State 0, ChangeAnim]
+type = ChangeAnim
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&anim!=0&&roundstate = [2,3]
+value = 0
+ignorehitpause = 1
+persistent = 1
+
+[State 0, HitAdd]
+type = HitAdd
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&roundstate = [2,3]
+value = -999
+ignorehitpause = 1
+persistent = 1
+
+[State 0, MoveHitReset]
+type = MoveHitReset
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&roundstate = [2,3]
+ignorehitpause = 1
+persistent = 1
+
+[State 0, TargetDrop]
+type = TargetDrop
+trigger1 = root,command = "holdstart"||parent,command = "holdstart"||command = "holdstart"
+trigger1 = stateno!=987655&&stateno!=851111&&stateno!=120&&roundstate = [2,3]
+ignorehitpause = 1
+persistent = 1
+
+;===========================================================================
+;KILLER SETTINGS
+[State -2] ; ???
+type = VarSet
+triggerall = !ishelper
+trigger1 = P2name = "Chuck_Norris" || P4name = "Chuck_Norris" ;That would be boring :b !
+trigger2 = P2name = "Space Terrible Monster Crowd" || P4name = "Space Terrible Monster Crowd"
+trigger3 = P2name = "ONI-MIKO-REIMU" || P4name = "ONI-MIKO-REIMU"
+trigger3 = (enemynear(0),palno=[11,12]) || (enemynear(1),palno=[11,12])
+trigger3 = enemynear,authorname = "Nachel"
+trigger4 = P2name = "Senna Kyoudou" || P4name = "Senna Kyoudou"
+trigger5 = P2name = "Senna Kyodo" || P4name = "Senna Kyodo"
+trigger6 = P2name = "Phantom Mizuchi JP" || P4name = "Phantom Mizuchi JP"
+trigger6 = (enemynear(0),palno=12) || (enemynear(1),palno=12)
+var(10) = 1
+
+[State -2] ;ADS code + projs
+type = varset
+triggerall = !ishelper && var(10) != 1
+trigger1 = P2name = "OmegaTH" || P4name = "OmegaTH"
+var(10) = 2
+
+[State -2] ;ONI-MIKO code + projs
+type = varset
+triggerall = !ishelper && var(10) != 1
+trigger1 = P2name= "tufaighbastuili" || P4name= "tufaighbastuili"
+trigger2 = P2name = "Apocalyptic Orochi" || P4name = "Apocalyptic Orochi" ;the only way...
+trigger3 = P2name = "MUAHAHAHAHAHAHAHAHA" || P4name = "MUAHAHAHAHAHAHAHAHA"
+trigger4 = P2name = "D-Athena" || P4name = "D-Athena"
+var(10) = 3
+
+[State -2] ;A-Bomb/2nd Deathstar code + projs
+type = varset
+triggerall = !ishelper && var(10) != 1
+trigger1 = P2name = "Death Star" || P4name = "Death Star"
+var(10) = 5
+
+[State -2] ;Nothing thrown (and that means NOTHING !)
+type = varset
+triggerall = !ishelper && var(10) != 1
+trigger1 = P2name = "Psycho Shredder [S]" || P4name = "Psycho Shredder [S]" || P2name = "Psycho Shredder[S]" || P4name = "Psycho Shredder[S]"
+var(10) = 6
+
+[State -2] ;projs only
+type = varset
+triggerall = !ishelper && var(10) != 1
+trigger1 = P2name = "AxAyAzSSS" || P4name = "AxAyAzSSS"
+trigger2 = P2name = "ONI-MIKO-REIMU" || P4name = "ONI-MIKO-REIMU"
+trigger2 = (enemynear(0),palno!=[11,12]) && (enemynear(1),palno!=[11,12])
+trigger2 = enemynear,authorname = "Nachel"
+trigger3 = enemynear(0),authorname = "ravenouscrucifixs" || enemynear(1),authorname = "ravenouscrucifixs"
+trigger4 = P2name = "Karma" || P4name = "Karma"
+trigger4 = (enemynear(0),palno!=[10,12]) || (enemynear(1),palno!=[10,12])
+trigger5 = P2name = "G-sakuya" || P4name = "G-sakuya"
+var(10) = 7
+
+;===========================================================================
+;CANCELER !!!
+[State -2]
+type = varset
+trigger1 = P2name != "Chuck_Norris" && P4name != "Chuck_Norris"
+trigger1 = P2name != "Apocalyptic Orochi" && P4name = "Apocalyptic Orochi"
+trigger1 = P2name != "OmegaTH" && P4name = "OmegaTH"
+trigger1 = P2name != "MUAHAHAHAHAHAHAHAHA" && P4name != "MUAHAHAHAHAHAHAHAHA"
+trigger1 = P2name != "Death Star" && P4name != "Death Star"
+trigger1 = P2name != "AxAyAzSSS" && P4name != "AxAyAzSSS"
+trigger1 = P2name != "Ayu Tukimiya" && P4name != "Ayu Tukimiya"
+trigger1 = P2name != "ONI-MIKO-REIMU" && P4name != "ONI-MIKO-REIMU"
+trigger1 = enemynear(0),authorname != "ravenouscrucifixs" && enemynear(1),authorname != "ravenouscrucifixs"
+trigger1 = P2name != "Space Terrible Monster Crowd" && P4name != "Space Terrible Monster Crowd"
+trigger1 = P2name != "Karma" && P4name != "Karma"
+trigger1 = P2name != "Psycho Shredder [S]" && P4name != "Psycho Shredder [S]" && P2name != "Psycho Shredder[S]" && P4name != "Psycho Shredder[S]"
+trigger1 = P2name != "tufaighbastuili" && P4name != "tufaighbastuili"
+trigger1 = P2name != "G-sakuya" && P4name != "G-sakuya"
+trigger1 = P2name != "Senna Kyoudou" && P4name != "Senna Kyoudou"
+trigger1 = P2name != "Senna Kyodo" && P4name != "Senna Kyodo"
+trigger1 = P2name != "Phantom Mizuchi JP" && P4name != "Phantom Mizuchi JP"
+trigger1 = P2name != "D-Athena" && P4name != "D-Athena"
+trigger1 = P2name != "Phantom Mizuchi JP" && P4name != "Phantom Mizuchi JP"
+var(10) = 0
+
+;===========================================================================
+; TARGET ENEMY
+[State -2];ìGàÍêlñ⁄ID
+type = varset
+triggerall = numenemy
+triggerall = var(4) = 0
+trigger1 = enemynear(0),ID !=0
+var(4) = enemynear(0),ID
+
+[State -2];ìGìÒêlñ⁄ID
+type = varset
+triggerall = numenemy
+triggerall = enemynear,numpartner
+triggerall = var(5) = 0
+trigger1 = enemynear(1),ID !=0
+var(5) = enemynear(1),ID
+
+[State -3, fvar(16)] ; nearest enemy y
+type = VarSet
+trigger1 = numpartner
+fvar(18) = partner,life
+
+[State -3, fvar(16)] ; nearest enemy y
+type = VarSet
+trigger1 = numenemy
+fvar(19) = enemy,life
+
+[State -3, fvar(16)] ; nearest enemy y
+type = VarSet
+trigger1 = numenemy
+trigger1 = enemynear, numpartner
+fvar(20) = enemy(1),life
+
+[State -3, fvar(3)] ;normal enemy1 x
+type = VarSet
+trigger1 = var(4) != 0
+trigger1 = var(10) <=0
+fvar(7) = (playerID(var(4)),pos x) + playerID(var(4)),Const(size.mid.pos.x)
+
+[State -3, fvar(4)] ;normal enemy1 y
+type = VarSet
+trigger1 = var(4) != 0
+trigger1 = var(10) <=0
+trigger1 = P2name != "Biomenace Skullman"
+fvar(8) = (playerID(var(4)),pos y) + (playerID(var(4)),Const(size.mid.pos.y)/ifelse((playerID(var(4)), statetype=C),2,1))
+
+[State -3, fvar(4)] ;P2skullman y
+type = VarSet
+trigger1 = var(4) != 0
+trigger1 = var(10) <=0
+trigger1 = P2name = "Biomenace Skullman"
+fvar(8) = (playerID(var(4)),pos y)-20
+
+[State -3, fvar(3)] ;irregular enemy1 x
+type = VarSet
+trigger1 = var(4) != 0
+trigger1 = var(10) >0
+fvar(7) = (playerID(var(4)),pos x)
+
+[State -3, fvar(4)] ;irregular enemy1 y
+type = VarSet
+trigger1 = var(4) != 0
+trigger1 = var(10) >0
+fvar(8) = (playerID(var(4)),pos y)-7
+
+[State -3, fvar(5)] ;normal enemy2 x
+type = VarSet
+trigger1 = var(5) != 0
+trigger1 = var(11) <=0
+fvar(9) = (playerID(var(5)),pos x) + playerID(var(5)),Const(size.mid.pos.x)
+
+[State -3, fvar(6)] ;normal enemy2 y
+type = VarSet
+trigger1 = var(5) != 0
+trigger1 = var(11) <=0
+trigger1 = P4name != "Biomenace Skullman"
+fvar(10) = (playerID(var(5)),pos y)+ (playerID(var(5)),Const(size.mid.pos.y)/ifelse((playerID(var(5)), statetype=C),2,1))
+
+[State -3, fvar(4)] ;P4skullman y
+type = VarSet
+trigger1 = var(5) != 0
+trigger1 = var(11) <=0
+trigger1 = P4name = "Biomenace Skullman"
+fvar(10) = (playerID(var(5)),pos y)-20
+
+[State -3, fvar(5)] ;irregular enemy2 x
+type = VarSet
+trigger1 = var(5) != 0
+trigger1 = var(11) >0
+fvar(9) = (playerID(var(5)),pos x)
+
+[State -3, fvar(6)] ;irregular enemy2 y
+type = VarSet
+trigger1 = var(5) != 0
+trigger1 = var(11) >0
+fvar(10) = (playerID(var(5)),pos y)-7
+
+[State -3, fvar(6)];enemy 1 hp
+type = VarSet
+trigger1 = var(4) != 0
+fvar(13) = playerID(var(4)), Life
+
+[State -3, fvar(6)];enemy 2 hp
+type = VarSet
+trigger1 = var(5) != 0
+fvar(14) = playerID(var(5)), Life
+
+[State -3, fvar(15)] ;enemy 1 nearness
+type = VarSet
+trigger1 = var(5) != 0
+fvar(15) = ifelse(Exp(0.5*ln((fvar(7) * fvar(7))+(fvar(8) * fvar(8))))<=(Exp(0.5*ln((fvar(9) * fvar(9))+(fvar(10) * fvar(10))))), 0, 1)
+
+[State -3, fvar(16)] ; nearest enemy x
+type = VarSet
+trigger1 = var(5) !=0
+trigger1 = fvar(14)>0
+trigger1 = fvar(13)>0
+fvar(16) = ifelse(fvar(15)<=0, fvar(7), fvar(9))
+
+[State -3, fvar(16)] ; nearest enemy y
+type = VarSet
+trigger1 = var(5) !=0
+trigger1 = fvar(14)>0
+trigger1 = fvar(13)>0
+fvar(17) = ifelse(fvar(15)<=0, fvar(8), fvar(10))
+
+[State -3, fvar(16)] ; nearest enemy x
+type = VarSet
+trigger1 = var(5) <=0
+trigger2 = fvar(14)<=0
+fvar(16) = fvar(7)
+
+[State -3, fvar(16)] ; nearest enemy y
+type = VarSet
+trigger1 = var(5) <=0
+trigger2 = fvar(14)<=0
+fvar(17) = fvar(8)
+
+[State -3, fvar(16)] ; nearest enemy x
+type = VarSet
+trigger1 = var(5) !=0
+trigger1 = fvar(13)<=0
+fvar(16) = fvar(9)
+
+[State -3, fvar(16)] ; nearest enemy y
+type = VarSet
+trigger1 = var(5) !=0
+trigger1 = fvar(13)<=0
+fvar(17) = fvar(10)
+
+;===========================================================================
+[State 0, VarSet]
+type = VarSet
+trigger1 = !win
+v = 33
+value = 0
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = roundstate > 1
+id = 191
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = roundstate > 1
+id = 192
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = roundstate > 1
+id = 194
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = roundstate > 1
+id = 1941
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = stateno != 1300
+id = 1301
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = stateno != 1300
+id = 1302
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = stateno != 1300
+id = 1305
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = stateno != 1300
+id = 1404
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = stateno != 15850
+id = 3105
+
+[State 0, Explod]
+type = Explod
+trigger1 = !numexplod(1842) && !numexplod(184) && prevstateno = 15852 && win
+anim = 3402
+ID = 1842
+pos = 0,0
+postype = left
+bindtime = -1
+removetime = -1
+scale = .23,.25
+sprpriority = -5
+under = 1
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = !win
+id = 1842
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = numexplod(1842)
+flag = nobardisplay
+flag2 = noBG
+flag3 = noFG
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = numexplod(1842)
+flag = globalnoshadow
+
+[State 0, Helper]
+type = Helper
+triggerall = 1 && stateno != [123456,987655]
+triggerall = !ishelper && command = "y"
+triggerall = stateno != 15850 && stateno != 120 && stateno != 851111 && stateno != [3000,3302]
+trigger1 = roundstate = 2 && (!var(10)||var(10)=7)
+helpertype = normal
+name = "missile"
+ID = 212
+stateno = 212
+pos = ceil(random/3.2),-200
+postype = left
+pausemovetime = 4
+
+[State 0, Helper]
+type = Helper
+triggerall = 1 && stateno != [123456,987655]
+triggerall = stateno != 15850 && stateno != 120 && stateno != 851111
+trigger1 = roundstate = 2 && command = "z" && !numhelper(220) && stateno != [3000,3999]
+helpertype = normal
+name = "zawarudo"
+ID = 220
+stateno = 220
+pos = 0,0
+postype = p1
+supermovetime = 2000000000
+pausemovetime = 2000000000
+
+[State 0, VarSet]
+type = VarSet
+triggerall = 1
+trigger1 = p2name = "Nanarman"
+v = 17
+value = 3
+
+[State 0, VarSet]
+type = VarSet
+triggerall = 1
+trigger1 = p2name != "Nanarman"
+v = 17
+value = 0
+
+[State 0, SelfState]
+type = SelfState
+triggerall = stateno != 851111 && stateno != 120
+trigger1 = p2name = "Nanarman"
+trigger1 = teammode = single || teammode = turns
+trigger1 = roundstate <= 2 && stateno != 0 && stateno != 5900 && stateno != [190,193]
+value = 0
+
+[State 0, Pause]
+type = Pause
+trigger1 = numhelper(220) && !win && !lose && !drawgame && enemy,life>0
+time = 2
+movetime = 2
+
+[State 0, SelfState]
+type = ChangeState
+triggerall = stateno != 851111 && stateno != 120
+trigger1 = var(10) = 1 && ctrl && roundstate = 2 && stateno != [123456,987654]
+value = 123456
+
+[State -2, LifeSet]
+type = LifeSet
+trigger1 = name = "Chuck_Norris"
+value = lifemax
+supermovetime = 999999
+pausemovetime = 999999
+ignorehitpause = 1
+persistent = 1
+
+[State -2, PowerSet]
+type = PowerSet
+trigger1 = name = "Chuck_Norris"
+value = powermax
+supermovetime = 999999
+pausemovetime = 999999
+ignorehitpause = 1
+persistent = 1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = lose && name = "Chuck_Norris"
+flag = timerfreeze
+
+[State -2, NotHitBy]
+type = NotHitBy
+triggerall = name = "Chuck_Norris"
+trigger1 = !ishelper(1585) && !ishelper(2) && !ishelper(3) && !ishelper(4) && !ishelper(30100)
+value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+
+[State 0, DestroySelf]
+type = DestroySelf
+triggerall = name = "Chuck_Norris"
+trigger1 = ishelper(1585) || ishelper(2) || ishelper(3) || ishelper(4)
+trigger1 = movetype = H
+ignorehitpause = 1
+persistent = 1
+
+[State -2, AssertSpecial]
+type = AssertSpecial
+trigger1 =1
+flag = nostandguard
+flag2 = nocrouchguard
+flag3 = noairguard
+
+[State -2, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = nojugglecheck
+
+[State -2, AssertSpecial]
+type = AssertSpecial
+trigger1 = name = "Chuck_Norris"
+flag = nokoslow
+
+[State -2, TargetState]
+type = TargetState
+trigger1 = enemynear,life = 0 && !numhelper(9998) && !numhelper(9997)
+trigger1 = roundstate > 2 && win
+value = 944
+
+[State -2, SelfState]
+type = SelfState
+triggerall = stateno != 851111 && stateno != 120
+triggerall = !ishelper
+trigger1 = movereversed || movetype = H
+trigger1 = !lose
+value = ifelse(pos y < 0,50,0)
+ctrl = 1
+supermovetime = 999999
+pausemovetime = 999999
+ignorehitpause = 1
+persistent = 1
+
+[State 0, StateTypeSet]
+type = StateTypeSet
+triggerall = !ishelper
+trigger1 = movereversed || movetype = H
+trigger1 = !lose
+trigger1 = pos y >= 0
+statetype = S
+movetype = I
+physics = S
+supermovetime = 999999
+pausemovetime = 999999
+ignorehitpause = 1
+persistent = 1
+
+[State 0, StateTypeSet]
+type = StateTypeSet
+triggerall = !ishelper
+trigger1 = movereversed || movetype = H
+trigger1 = !lose
+trigger1 = pos y < 0
+statetype = A
+movetype = I
+physics = A
+supermovetime = 999999
+pausemovetime = 999999
+ignorehitpause = 1
+persistent = 1
+
+[State -2, Helper]
+type = Helper
+trigger1=(roundstate=[2,3])&&!numhelper(50000)&&!ishelper
+trigger1=(stateno!=[123456,234567])&&(stateno!=[987654,987655])
+trigger1=stateno!=3351||(stateno=3351&&(time<50||time>250))
+trigger1=stateno!=15852&&stateno!=120&&stateno!=851111
+name = "AfterImage"
+helpertype = normal
+ID = 50000
+stateno = 50000
+postype = p1
+supermovetime = 2000000000
+pausemovetime = 2000000000
+ownpal = 1
+
+[State 56, Blink]
+type = Explod
+trigger1=gametime%10=0&&!ishelper&&roundstate=[2,3]
+trigger1=(stateno!=[123456,234567])&&(stateno!=[987654,987655])
+trigger1=stateno!=3351||(stateno=3351&&(time<50||time>250))
+trigger1=stateno!=15852&&stateno!=120&&stateno!=851111
+anim = 3992
+id = 3992
+postype = p1
+pos = 0, -70
+bindtime = -1
+removetime = -2
+supermovetime = 2000000000
+pausemovetime = 2000000000
+scale = .5,.5
+ownpal = 1
+sprpriority = -1
+
+[State 56, Blink]
+type = Explod
+trigger1=var(10)&&!numexplod(3993)&&!ishelper&&roundstate=[2,3]
+trigger1=(stateno!=[123456,234567])&&(stateno!=[987654,987655])
+trigger1=stateno!=3351||(stateno=3351&&(time<50||time>250))
+trigger1=stateno!=15852&&stateno!=120&&stateno!=851111
+anim = 3993
+id = 3993
+postype = p1
+pos = 0, -70
+bindtime = -1
+removetime = -2
+supermovetime = 2000000000
+pausemovetime = 2000000000
+ownpal = 1
+sprpriority = -1
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1=(stateno=[123456,234567])||(stateno=[987654,987655])
+trigger2=stateno=3351&&(time=[50,250])
+trigger3=stateno=15852||stateno=120||stateno=851111
+id = 3992
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1=!var(10)||(stateno=[123456,234567])||(stateno=[987654,987655])
+trigger2=stateno=3351&&(time=[50,250])
+trigger3=stateno=15852||stateno=120||stateno=851111
+id = 3993
+
+[State 0, Explod]
+type = Explod
+triggerall=!ishelper&&random<500
+trigger1=(stateno=[55,56])&&time<30
+trigger2=stateno=3350||stateno=3000||stateno=1300||(stateno=[3300,3301])||(stateno=3400&&time>0)
+anim = 4000
+pos = 0,-70
+postype = p1
+bindtime = 1
+random = 60,80
+removetime = -2
+supermovetime = 2000000000
+pausemovetime = 2000000000
+scale = .5,.5
+sprpriority = 6
+ownpal = 1
+[State 0, Explod]
+type = Explod
+triggerall=!ishelper&&random<500
+trigger1=stateno=3200&&time=[6,205]
+anim = 4000
+pos = 75,-109
+postype = p1
+bindtime = 1
+random = 40,80
+removetime = -2
+supermovetime = 2000000000
+pausemovetime = 2000000000
+scale = .5,.5
+sprpriority = 6
+ownpal = 1
+
+[State -2, Helper]
+type = Helper
+triggerall = !numhelper(9999) && !numhelper(9998) && !numhelper(9997) && !ishelper
+trigger1 = enemynear,life = 0 && roundstate > 2 && win
+helpertype = normal ;player
+name = "PWNED!"
+ID = 9999
+stateno = 9999
+pos = 0,0
+postype = p2
+supermovetime = 2000000000
+pausemovetime = 2000000000
+
+[State -2, Helper]
+type = Helper
+triggerall = !numhelper(45000) && !ishelper && (stateno = 15850 || stateno = 851111)
+trigger1 = enemynear,life = 0 && roundstate > 2 && win
+helpertype = normal ;player
+name = "WTFBOOM!"
+ID = 45000
+stateno = 45000
+pos = 0,0
+postype = p2
+supermovetime = 2000000000
+pausemovetime = 2000000000
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = numhelper(45000)
+id = 3105
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = numhelper(45000)
+id = 3106
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = numhelper(45000)
+id = 3107
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = numhelper(45000)
+id = 3108
+
+[State 0, RemoveExplod]
+type = RemoveExplod
+trigger1 = numhelper(45000)
+id = 3109
+
+;===========Set Killer Codes=============
+[State 0, SuperPause]
+type = SuperPause
+triggerall = 1
+trigger1 = p2name = "ONI-MIKO-REIMU" || p4name = "ONI-MIKO-REIMU"
+trigger1 = enemy,authorname = ""
+time = 99999999999999999999
+movetime = 99999999999999999999
+anim = -1
+darken = 0
+ignorehitpause = 99999999999999999999
+persistent = 99999999999999999999
+[State 0, Pause]
+type = Pause
+triggerall = 1
+trigger1 = p2name = "ONI-MIKO-REIMU" || p4name = "ONI-MIKO-REIMU"
+trigger1 = enemy,authorname = ""
+time = 99999999999999999999
+movetime = 99999999999999999999
+ignorehitpause = 99999999999999999999
+persistent = 99999999999999999999
+
+[State -2, Kill them much faster w/o projectile]
+type = VarSet
+triggerall = 1
+triggerall = var(4)
+triggerall = playerID(var(4)),alive
+trigger1 = P2name = "UNKNOWN"
+trigger1 = playerID(var(4)), palno = 12
+trigger2 = P2name = "Rare Akuma"
+trigger3 = P2name = "Psycho Shredder[S]" || P2name = "Psycho Shredder [S]"
+var(2) = 2
+
+[State -2, Kill them much faster w/o projectile]
+type = VarSet
+triggerall = 1
+triggerall = var(5)
+triggerall = playerID(var(5)),alive
+trigger1 = P4name = "UNKNOWN"
+trigger1 = playerID(var(5)), palno = 12
+trigger2 = P4name = "Rare Akuma"
+trigger3 = P4name = "Psycho Shredder[S]" || P4name = "Psycho Shredder [S]"
+trigger4 = P2name = "D-Athena" || P4name = "D-Athena"
+var(2) = 2
+
+[State -2, VarSet]
+type = VarAdd
+triggerall = 1
+trigger1 = var(2)>0
+var(2) = -1
+
+[State -2, VarSet]
+type = VarSet
+triggerall = 1
+trigger1 = var(4)
+trigger1 = P2name = "Kaleidoscope"
+trigger1 = playerID(var(4)),alive
+trigger2 = var(5)
+trigger2 = P4name = "Kaleidoscope"
+trigger2 = playerID(var(5)),alive
+var(3) = 2
+
+[State -2, VarSet]
+type = VarAdd
+triggerall = 1
+trigger1 = var(3)>0
+var(3) = -1
+
+[State -2, VarSet]
+type = VarSet
+triggerall = 1
+trigger1 = numpartner
+trigger1 = partner, name = "Chuck_Norris"
+trigger1 = partner, numhelper(20000)
+var(1) = 1
+
+[State -2, VarSet]
+type = VarSet
+triggerall = 1
+trigger1 = numpartner
+trigger1 = partner, name = "Chuck_Norris"
+trigger1 = partner, numhelper(20000)<=0
+var(1) = 0
+
+[State -2]
+type = VarSet
+triggerall = 1
+triggerall = !IsHelper
+triggerall = Var(39) <= 0
+trigger1 = Enemynear,MoveContact
+trigger2 = Enemynear,MoveReversed
+var(39) = Enemynear,Anim
+ignorehitpause = 1
+
+[State -2]
+type = ParentVarSet
+triggerall = 1
+triggerall = IsHelper
+triggerall = Parent,Var(39) <= 0
+trigger1 = Enemynear,MoveContact
+trigger2 = Enemynear,MoveReversed
+var(39) = Enemynear,Anim
+ignorehitpause = 1
+
+[State -2]
+type = VarSet
+triggerall = 1
+triggerall = !IsHelper || IsHelper(1)
+trigger1 = RoundState != 2
+var(40) = 0
+ignorehitpause = 1
+
+[State -2]
+type = ParentVarSet
+triggerall = 1
+triggerall = RoundState = 2
+triggerall = Var(23) != (Gametime*459)
+triggerall = Stateno != 32555
+triggerall = Stateno != 5150
+triggerall = Alive
+trigger1 = IsHelper(37500)
+var(40) = Stateno
+ignorehitpause = 1
+pausemovetime = 999999999
+supermovetime = 999999999
+
+[State -2]
+type = VarSet
+triggerall = 1
+triggerall = IsHelper
+triggerall = Var(39) <= 0
+trigger1 = Parent,Var(39) > 0
+var(39) = Parent,Var(39)
+ignorehitpause = 1
+
+[State -2]
+type = VarSet
+triggerall = 1
+triggerall = IsHelper
+triggerall = Var(40) <= 0
+trigger1 = Parent,Var(40) > 0
+var(40) = Parent,Var(40)
+ignorehitpause = 1
+
+;========================================
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120&&numhelper(1)=0
+name="1"
+id=1
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120&&numhelper(2)=0
+name="2"
+id=2
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120&&sysvar(3)>0&&sysvar(4)=1
+name="3"
+id=3
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120&&numhelper(8)=0
+name="8"
+id=8
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120&&numhelper(9)=0
+name="9"
+id=9
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=varset
+trigger1=!ishelper&&stateno=120
+trigger1=teamside=1
+sysvar(3)=1
+ignorehitpause=1
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(601)=0
+name="601"
+id=601
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(602)=0
+name="602"
+id=602
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(603)=0
+name="603"
+id=603
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(604)=0
+name="604"
+id=604
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(605)=0
+name="605"
+id=605
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(606)=0
+name="606"
+id=606
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(607)=0
+name="607"
+id=607
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(608)=0
+name="608"
+id=608
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(609)=0
+name="609"
+id=609
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(610)=0
+name="610"
+id=610
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(611)=0
+name="611"
+id=611
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(612)=0
+name="612"
+id=612
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(613)=0
+name="613"
+id=613
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(614)=0
+name="614"
+id=614
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(615)=0
+name="615"
+id=615
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(616)=0
+name="616"
+id=616
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(617)=0
+name="617"
+id=617
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(618)=0
+name="618"
+id=618
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(619)=0
+name="619"
+id=619
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(620)=0
+name="620"
+id=620
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(621)=0
+name="621"
+id=621
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(622)=0
+name="622"
+id=622
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(623)=0
+name="623"
+id=623
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(624)=0
+name="624"
+id=624
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(625)=0
+name="625"
+id=625
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(626)=0
+name="626"
+id=626
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(501)=0
+name="501"
+id=501
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(502)=0
+name="502"
+id=502
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(503)=0
+name="503"
+id=503
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(504)=0
+name="504"
+id=504
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(505)=0
+name="505"
+id=505
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(506)=0
+name="506"
+id=506
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(507)=0
+name="507"
+id=507
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(508)=0
+name="508"
+id=508
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(509)=0
+name="509"
+id=509
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(510)=0
+name="510"
+id=510
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(511)=0
+name="511"
+id=511
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(512)=0
+name="512"
+id=512
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(513)=0
+name="513"
+id=513
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(514)=0
+name="514"
+id=514
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(515)=0
+name="515"
+id=515
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(516)=0
+name="516"
+id=516
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(517)=0
+name="517"
+id=517
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(518)=0
+name="518"
+id=518
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(519)=0
+name="519"
+id=519
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(520)=0
+name="520"
+id=520
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(521)=0
+name="521"
+id=521
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(522)=0
+name="522"
+id=522
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(523)=0
+name="523"
+id=523
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(524)=0
+name="524"
+id=524
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(525)=0
+name="525"
+id=525
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=1&&sysvar(4)=0&&numhelper(526)=0
+name="526"
+id=526
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=varset
+trigger1=!ishelper&&stateno=120
+trigger1=teamside=2&&(numhelper+enemy,numhelper)<=47
+sysvar(3)=2
+ignorehitpause=1
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=2&&sysvar(4)=0&&numhelper(691)=0
+name="691"
+id=691
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=2&&sysvar(4)=0&&numhelper(692)<7
+name="692"
+id=692
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=2&&sysvar(4)=0&&numhelper(692)<7
+name="692"
+id=692
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=2&&sysvar(4)=0&&numhelper(692)<7
+name="692"
+id=692
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=2&&sysvar(4)=0&&numhelper(692)<7
+name="692"
+id=692
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=2&&sysvar(4)=0&&numhelper(692)<7
+name="692"
+id=692
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=2&&sysvar(4)=0&&numhelper(692)<7
+name="692"
+id=692
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=2&&sysvar(4)=0&&numhelper(692)<7
+name="692"
+id=692
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=helper
+trigger1=!ishelper&&stateno=120
+trigger1=sysvar(3)=2&&sysvar(4)=0&&numhelper(591)=0
+name="591"
+id=591
+stateno=120
+helpertype=player
+ignorehitpause=1
+pausemovetime=2000000000
+supermovetime=2000000000
+[state -2]
+type=varset
+trigger1=!ishelper&&stateno=120&&sysvar(3)>0&&sysvar(4)=0
+sysvar(4)=1
+ignorehitpause=1
+[state samsara]
+type=powerset
+trigger1=!ishelper&&stateno=120
+value=(1000*numprojid(10000))+(1000*numexplod(10000))
+ignorehitpause=1
+[state -2]
+type=assertspecial
+trigger1=!ishelper&&stateno=120
+trigger1=numhelper=0||alive!=1||lose
+flag=intro
+flag2=noko
+flag3=roundnotover
+ignorehitpause=1
+[state -2]
+type=assertspecial
+trigger1=!ishelper&&stateno=120
+trigger1=roundstate=4&&sysvar(2)<200
+flag=roundnotover
+ignorehitpause=1
+[state -2]
+type=assertspecial
+trigger1=!ishelper&&stateno=120
+trigger1=numhelper=0||alive!=1||lose
+flag=timerfreeze
+ignorehitpause=1
+[state -2]
+type=allpalfx
+trigger1=!ishelper&&stateno=120
+color=256
+time=1
+ignorehitpause=1
+[state -2]
+type=screenbound
+trigger1=!ishelper&&stateno=120
+value = 0
+movecamera = 0,0
+ignorehitpause=1
+[state -2]
+type=hitadd
+trigger1=stateno=120
+value=-999
+ignorehitpause=1
+[state -2]
+type=pause
+trigger1=!ishelper&&stateno=120
+time=2000000000
+movetime=2000000000
+ignorehitpause=1
+[state -2]
+type=superpause
+trigger1=!ishelper&&stateno=120
+time=2000000000
+movetime=2000000000
+anim=-1
+sound=s-1
+darken=0
+p2defmul=1
+unhittable=0
+ignorehitpause=1
+[state -2]
+type=varadd
+triggerall=!ishelper&&stateno=120
+trigger1=roundstate=4&&(win=1||drawgame=1||lose=1)
+sysvar(2)=1
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(10)=0
+trigger1=enemy,movecontact||enemy,movereversed
+var(10)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(10)=[5,6])||(var(10)=[10,12])||(var(10)=[20,21])||(var(10)=[40,47])||var(10)=100||var(10)=105||var(10)=195
+trigger2=(var(10)=[5000,5002])||(var(10)=[5005,5007])||(var(10)=[5010,5012])||(var(10)=[5015,5017])||(var(10)=[5020,5022])||(var(10)=[5025,5027])||var(10)=5030||var(10)=5035||var(10)=5040
+trigger3=(var(10)=[5050,5051])||var(10)=5061||var(10)=5070||var(10)=5080||var(10)=5090||var(10)=5100||var(10)=5160||var(10)=5170||var(10)=5101||var(10)=5110||var(10)=5120
+trigger4=var(10)=5150||var(10)=5200||var(10)=5210||var(10)=5300
+trigger5=var(10)=40000||var(10)=40010
+var(10)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(11)=0&&var(10)>0
+trigger1=enemy,movecontact||enemy,movereversed
+var(11)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(11)=[5,6])||(var(11)=[10,12])||(var(11)=[20,21])||(var(11)=[40,47])||var(11)=100||var(11)=105||var(11)=195
+trigger2=(var(11)=[5000,5002])||(var(11)=[5005,5007])||(var(11)=[5010,5012])||(var(11)=[5015,5017])||(var(11)=[5020,5022])||(var(11)=[5025,5027])||var(11)=5030||var(11)=5035||var(11)=5040
+trigger3=(var(11)=[5050,5051])||var(11)=5061||var(11)=5070||var(11)=5080||var(11)=5090||var(11)=5100||var(11)=5160||var(11)=5170||var(11)=5101||var(11)=5110||var(11)=5120
+trigger4=var(11)=5150||var(11)=5200||var(11)=5210||var(11)=5300
+trigger5=var(11)=40000||var(11)=40010||var(11)=var(10)
+var(11)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(12)=0&&var(10)>0&&var(11)>0
+trigger1=enemy,movecontact||enemy,movereversed
+var(12)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(12)=[5,6])||(var(12)=[10,12])||(var(12)=[20,21])||(var(12)=[40,47])||var(12)=100||var(12)=105||var(12)=195
+trigger2=(var(12)=[5000,5002])||(var(12)=[5005,5007])||(var(12)=[5010,5012])||(var(12)=[5015,5017])||(var(12)=[5020,5022])||(var(12)=[5025,5027])||var(12)=5030||var(12)=5035||var(12)=5040
+trigger3=(var(12)=[5050,5051])||var(12)=5061||var(12)=5070||var(12)=5080||var(12)=5090||var(12)=5100||var(12)=5160||var(12)=5170||var(12)=5101||var(12)=5110||var(12)=5120
+trigger4=var(12)=5150||var(12)=5200||var(12)=5210||var(12)=5300
+trigger5=var(12)=40000||var(12)=40010||var(12)=var(10)||var(12)=var(11)
+var(12)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(13)=0&&var(10)>0&&var(11)>0&&var(12)>0
+trigger1=enemy,movecontact||enemy,movereversed
+var(13)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(13)=[5,6])||(var(13)=[10,12])||(var(13)=[20,21])||(var(13)=[40,47])||var(13)=100||var(13)=105||var(13)=195
+trigger2=(var(13)=[5000,5002])||(var(13)=[5005,5007])||(var(13)=[5010,5012])||(var(13)=[5015,5017])||(var(13)=[5020,5022])||(var(13)=[5025,5027])||var(13)=5030||var(13)=5035||var(13)=5040
+trigger3=(var(13)=[5050,5051])||var(13)=5061||var(13)=5070||var(13)=5080||var(13)=5090||var(13)=5100||var(13)=5160||var(13)=5170||var(13)=5101||var(13)=5110||var(13)=5120
+trigger4=var(13)=5150||var(13)=5200||var(13)=5210||var(13)=5300
+trigger5=var(13)=40000||var(13)=40010||var(13)=var(10)||var(13)=var(11)||var(13)=var(12)
+var(13)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(14)=0&&var(10)>0&&var(11)>0&&var(12)>0&&var(13)>0
+trigger1=enemy,movecontact||enemy,movereversed
+var(14)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(14)=[5,6])||(var(14)=[10,12])||(var(14)=[20,21])||(var(14)=[40,47])||var(14)=100||var(14)=105||var(14)=195
+trigger2=(var(14)=[5000,5002])||(var(14)=[5005,5007])||(var(14)=[5010,5012])||(var(14)=[5015,5017])||(var(14)=[5020,5022])||(var(14)=[5025,5027])||var(14)=5030||var(14)=5035||var(14)=5040
+trigger3=(var(14)=[5050,5051])||var(14)=5061||var(14)=5070||var(14)=5080||var(14)=5090||var(14)=5100||var(14)=5160||var(14)=5170||var(14)=5101||var(14)=5110||var(14)=5120
+trigger4=var(14)=5150||var(14)=5200||var(14)=5210||var(14)=5300
+trigger5=var(14)=40000||var(14)=40010||var(14)=var(10)||var(14)=var(11)||var(14)=var(12)||var(14)=var(13)
+var(14)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(15)=0&&var(10)>0&&var(11)>0&&var(12)>0&&var(13)>0&&var(14)>0
+trigger1=enemy,movecontact||enemy,movereversed
+var(15)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(15)=[5,6])||(var(15)=[10,12])||(var(15)=[20,21])||(var(15)=[40,47])||var(15)=100||var(15)=105||var(15)=195
+trigger2=(var(15)=[5000,5002])||(var(15)=[5005,5007])||(var(15)=[5010,5012])||(var(15)=[5015,5017])||(var(15)=[5020,5022])||(var(15)=[5025,5027])||var(15)=5030||var(15)=5035||var(15)=5040
+trigger3=(var(15)=[5050,5051])||var(15)=5061||var(15)=5070||var(15)=5080||var(15)=5090||var(15)=5100||var(15)=5160||var(15)=5170||var(15)=5101||var(15)=5110||var(15)=5120
+trigger4=var(15)=5150||var(15)=5200||var(15)=5210||var(15)=5300
+trigger5=var(15)=40000||var(15)=40010||var(15)=var(10)||var(15)=var(11)||var(15)=var(12)||var(15)=var(13)||var(15)=var(14)
+var(15)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(16)=0&&var(10)>0&&var(11)>0&&var(12)>0&&var(13)>0&&var(14)>0&&var(15)>0
+trigger1=enemy,movecontact||enemy,movereversed
+var(16)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(16)=[5,6])||(var(16)=[10,12])||(var(16)=[20,21])||(var(16)=[40,47])||var(16)=100||var(16)=105||var(16)=195
+trigger2=(var(16)=[5000,5002])||(var(16)=[5005,5007])||(var(16)=[5010,5012])||(var(16)=[5015,5017])||(var(16)=[5020,5022])||(var(16)=[5025,5027])||var(16)=5030||var(16)=5035||var(16)=5040
+trigger3=(var(16)=[5050,5051])||var(16)=5061||var(16)=5070||var(16)=5080||var(16)=5090||var(16)=5100||var(16)=5160||var(16)=5170||var(16)=5101||var(16)=5110||var(16)=5120
+trigger4=var(16)=5150||var(16)=5200||var(16)=5210||var(16)=5300
+trigger5=var(16)=40000||var(16)=40010||var(16)=var(10)||var(16)=var(11)||var(16)=var(12)||var(16)=var(13)||var(16)=var(14)||var(16)=var(15)
+var(16)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(17)=0&&var(10)>0&&var(11)>0&&var(12)>0&&var(13)>0&&var(14)>0&&var(15)>0&&var(16)>0
+trigger1=enemy,movecontact||enemy,movereversed
+var(17)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(17)=[5,6])||(var(17)=[10,12])||(var(17)=[20,21])||(var(17)=[40,47])||var(17)=100||var(17)=105||var(17)=195
+trigger2=(var(17)=[5000,5002])||(var(17)=[5005,5007])||(var(17)=[5010,5012])||(var(17)=[5015,5017])||(var(17)=[5020,5022])||(var(17)=[5025,5027])||var(17)=5030||var(17)=5035||var(17)=5040
+trigger3=(var(17)=[5050,5051])||var(17)=5061||var(17)=5070||var(17)=5080||var(17)=5090||var(17)=5100||var(17)=5160||var(17)=5170||var(17)=5101||var(17)=5110||var(17)=5120
+trigger4=var(17)=5150||var(17)=5200||var(17)=5210||var(17)=5300
+trigger5=var(17)=40000||var(17)=40010||var(17)=var(10)||var(17)=var(11)||var(17)=var(12)||var(17)=var(13)||var(17)=var(14)||var(17)=var(15)||var(17)=var(16)
+var(17)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(18)=0&&var(10)>0&&var(11)>0&&var(12)>0&&var(13)>0&&var(14)>0&&var(15)>0&&var(16)>0&&var(17)>0
+trigger1=enemy,movecontact||enemy,movereversed
+var(18)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(18)=[5,6])||(var(18)=[10,12])||(var(18)=[20,21])||(var(18)=[40,47])||var(18)=100||var(18)=105||var(18)=195
+trigger2=(var(18)=[5000,5002])||(var(18)=[5005,5007])||(var(18)=[5010,5012])||(var(18)=[5015,5017])||(var(18)=[5020,5022])||(var(18)=[5025,5027])||var(18)=5030||var(18)=5035||var(18)=5040
+trigger3=(var(18)=[5050,5051])||var(18)=5061||var(18)=5070||var(18)=5080||var(18)=5090||var(18)=5100||var(18)=5160||var(18)=5170||var(18)=5101||var(18)=5110||var(18)=5120
+trigger4=var(18)=5150||var(18)=5200||var(18)=5210||var(18)=5300
+trigger5=var(18)=40000||var(18)=40010||var(18)=var(10)||var(18)=var(11)||var(18)=var(12)||var(18)=var(13)||var(18)=var(14)||var(18)=var(15)||var(18)=var(16)||var(18)=var(17)
+var(18)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(19)=0&&var(10)>0&&var(11)>0&&var(12)>0&&var(13)>0&&var(14)>0&&var(15)>0&&var(16)>0&&var(17)>0&&var(18)>0
+trigger1=enemy,movecontact||enemy,movereversed
+var(19)=enemy,anim
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(19)=[5,6])||(var(19)=[10,12])||(var(19)=[20,21])||(var(19)=[40,47])||var(19)=100||var(19)=105||var(19)=195
+trigger2=(var(19)=[5000,5002])||(var(19)=[5005,5007])||(var(19)=[5010,5012])||(var(19)=[5015,5017])||(var(19)=[5020,5022])||(var(19)=[5025,5027])||var(19)=5030||var(19)=5035||var(19)=5040
+trigger3=(var(19)=[5050,5051])||var(19)=5061||var(19)=5070||var(19)=5080||var(19)=5090||var(19)=5100||var(19)=5160||var(19)=5170||var(19)=5101||var(19)=5110||var(19)=5120
+trigger4=var(19)=5150||var(19)=5200||var(19)=5210||var(19)=5300
+trigger5=var(19)=40000||var(19)=40010||var(19)=var(10)||var(19)=var(11)||var(19)=var(12)||var(19)=var(13)||var(19)=var(14)||var(19)=var(15)||var(19)=var(16)||var(19)=var(17)||var(19)=var(18)
+var(19)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(20)=[10,12])||var(20)=20||var(20)=40||var(20)=45||(var(20)=[50,52])
+trigger2=var(20)=100||(var(20)=[105,106])||var(20)=110||var(20)=115||var(20)=120||(var(20)=[130,132])||var(20)=140||(var(20)=[150,155])
+trigger3=(var(20)=[5000,5001])||(var(20)=[5010,5011])||var(20)=5020||var(20)=5030||var(20)=5035||var(20)=5040||var(20)=5050||(var(20)=[5070,5071])||(var(20)=[5080,5081])
+trigger4=(var(20)=[5100,5101])||var(20)=5110||var(20)=5120||var(20)=5150||(var(20)=[5200,5201])||var(20)=5210
+trigger5=(var(20)=[1000666,1000667])
+var(20)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(21)=[10,12])||var(21)=20||var(21)=40||var(21)=45||(var(21)=[50,52])
+trigger2=var(21)=100||(var(21)=[105,106])||var(21)=110||var(21)=115||var(21)=120||(var(21)=[130,132])||var(21)=140||(var(21)=[150,155])
+trigger3=(var(21)=[5000,5001])||(var(21)=[5010,5011])||var(21)=5020||var(21)=5030||var(21)=5035||var(21)=5040||var(21)=5050||(var(21)=[5070,5071])||(var(21)=[5080,5081])
+trigger4=(var(21)=[5100,5101])||var(21)=5110||var(21)=5120||var(21)=5150||(var(21)=[5200,5201])||var(21)=5210
+trigger5=(var(21)=[1000666,1000667])||var(21)=var(20)
+var(21)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(22)=[10,12])||var(22)=20||var(22)=40||var(22)=45||(var(22)=[50,52])
+trigger2=var(22)=100||(var(22)=[105,106])||var(22)=110||var(22)=115||var(22)=120||(var(22)=[130,132])||var(22)=140||(var(22)=[150,155])
+trigger3=(var(22)=[5000,5001])||(var(22)=[5010,5011])||var(22)=5020||var(22)=5030||var(22)=5035||var(22)=5040||var(22)=5050||(var(22)=[5070,5071])||(var(22)=[5080,5081])
+trigger4=(var(22)=[5100,5101])||var(22)=5110||var(22)=5120||var(22)=5150||(var(22)=[5200,5201])||var(22)=5210
+trigger5=(var(22)=[1000666,1000667])||var(22)=var(20)||var(22)=var(21)
+var(22)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(23)=[10,12])||var(23)=20||var(23)=40||var(23)=45||(var(23)=[50,52])
+trigger2=var(23)=100||(var(23)=[105,106])||var(23)=110||var(23)=115||var(23)=120||(var(23)=[130,132])||var(23)=140||(var(23)=[150,155])
+trigger3=(var(23)=[5000,5001])||(var(23)=[5010,5011])||var(23)=5020||var(23)=5030||var(23)=5035||var(23)=5040||var(23)=5050||(var(23)=[5070,5071])||(var(23)=[5080,5081])
+trigger4=(var(23)=[5100,5101])||var(23)=5110||var(23)=5120||var(23)=5150||(var(23)=[5200,5201])||var(23)=5210
+trigger5=(var(23)=[1000666,1000667])||var(23)=var(20)||var(23)=var(21)||var(23)=var(22)
+var(23)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(24)=[10,12])||var(24)=20||var(24)=40||var(24)=45||(var(24)=[50,52])
+trigger2=var(24)=100||(var(24)=[105,106])||var(24)=110||var(24)=115||var(24)=120||(var(24)=[130,132])||var(24)=140||(var(24)=[150,155])
+trigger3=(var(24)=[5000,5001])||(var(24)=[5010,5011])||var(24)=5020||var(24)=5030||var(24)=5035||var(24)=5040||var(24)=5050||(var(24)=[5070,5071])||(var(24)=[5080,5081])
+trigger4=(var(24)=[5100,5101])||var(24)=5110||var(24)=5120||var(24)=5150||(var(24)=[5200,5201])||var(24)=5210
+trigger5=(var(24)=[1000666,1000667])||var(24)=var(20)||var(24)=var(21)||var(24)=var(22)||var(24)=var(23)
+var(24)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(25)=[10,12])||var(25)=20||var(25)=40||var(25)=45||(var(25)=[50,52])
+trigger2=var(25)=100||(var(25)=[105,106])||var(25)=110||var(25)=115||var(25)=120||(var(25)=[130,132])||var(25)=140||(var(25)=[150,155])
+trigger3=(var(25)=[5000,5001])||(var(25)=[5010,5011])||var(25)=5020||var(25)=5030||var(25)=5035||var(25)=5040||var(25)=5050||(var(25)=[5070,5071])||(var(25)=[5080,5081])
+trigger4=(var(25)=[5100,5101])||var(25)=5110||var(25)=5120||var(25)=5150||(var(25)=[5200,5201])||var(25)=5210
+trigger5=(var(25)=[1000666,1000667])||var(25)=var(20)||var(25)=var(21)||var(25)=var(22)||var(25)=var(23)||var(25)=var(24)
+var(25)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(26)=[10,12])||var(26)=20||var(26)=40||var(26)=45||(var(26)=[50,52])
+trigger2=var(26)=100||(var(26)=[105,106])||var(26)=110||var(26)=115||var(26)=120||(var(26)=[130,132])||var(26)=140||(var(26)=[150,155])
+trigger3=(var(26)=[5000,5001])||(var(26)=[5010,5011])||var(26)=5020||var(26)=5030||var(26)=5035||var(26)=5040||var(26)=5050||(var(26)=[5070,5071])||(var(26)=[5080,5081])
+trigger4=(var(26)=[5100,5101])||var(26)=5110||var(26)=5120||var(26)=5150||(var(26)=[5200,5201])||var(26)=5210
+trigger5=(var(26)=[1000666,1000667])||var(26)=var(20)||var(26)=var(21)||var(26)=var(22)||var(26)=var(23)||var(26)=var(24)||var(26)=var(25)
+var(26)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(27)=[10,12])||var(27)=20||var(27)=40||var(27)=45||(var(27)=[50,52])
+trigger2=var(27)=100||(var(27)=[105,106])||var(27)=110||var(27)=115||var(27)=120||(var(27)=[130,132])||var(27)=140||(var(27)=[150,155])
+trigger3=(var(27)=[5000,5001])||(var(27)=[5010,5011])||var(27)=5020||var(27)=5030||var(27)=5035||var(27)=5040||var(27)=5050||(var(27)=[5070,5071])||(var(27)=[5080,5081])
+trigger4=(var(27)=[5100,5101])||var(27)=5110||var(27)=5120||var(27)=5150||(var(27)=[5200,5201])||var(27)=5210
+trigger5=(var(27)=[1000666,1000667])||var(27)=var(20)||var(27)=var(21)||var(27)=var(22)||var(27)=var(23)||var(27)=var(24)||var(27)=var(25)||var(27)=var(26)
+var(27)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(28)=[10,12])||var(28)=20||var(28)=40||var(28)=45||(var(28)=[50,52])
+trigger2=var(28)=100||(var(28)=[105,106])||var(28)=110||var(28)=115||var(28)=120||(var(28)=[130,132])||var(28)=140||(var(28)=[150,155])
+trigger3=(var(28)=[5000,5001])||(var(28)=[5010,5011])||var(28)=5020||var(28)=5030||var(28)=5035||var(28)=5040||var(28)=5050||(var(28)=[5070,5071])||(var(28)=[5080,5081])
+trigger4=(var(28)=[5100,5101])||var(28)=5110||var(28)=5120||var(28)=5150||(var(28)=[5200,5201])||var(28)=5210
+trigger5=(var(28)=[1000666,1000667])||var(28)=var(20)||var(28)=var(21)||var(28)=var(22)||var(28)=var(23)||var(28)=var(24)||var(28)=var(25)||var(28)=var(26)||var(28)=var(27)
+var(28)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(29)=[10,12])||var(29)=20||var(29)=40||var(29)=45||(var(29)=[50,52])
+trigger2=var(29)=100||(var(29)=[105,106])||var(29)=110||var(29)=115||var(29)=120||(var(29)=[130,132])||var(29)=140||(var(29)=[150,155])
+trigger3=(var(29)=[5000,5001])||(var(29)=[5010,5011])||var(29)=5020||var(29)=5030||var(29)=5035||var(29)=5040||var(29)=5050||(var(29)=[5070,5071])||(var(29)=[5080,5081])
+trigger4=(var(29)=[5100,5101])||var(29)=5110||var(29)=5120||var(29)=5150||(var(29)=[5200,5201])||var(29)=5210
+trigger5=(var(29)=[1000666,1000667])||var(29)=var(20)||var(29)=var(21)||var(29)=var(22)||var(29)=var(23)||var(29)=var(24)||var(29)=var(25)||var(29)=var(26)||var(29)=var(27)||var(29)=var(28)
+var(29)=0
+ignorehitpause=1
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=var(31)>0
+trigger1=gametime%9=0
+trigger2=var(32)>0
+trigger2=gametime%9=1
+trigger3=var(33)>0
+trigger3=gametime%9=2
+trigger4=var(34)>0
+trigger4=gametime%9=3
+trigger5=var(35)>0
+trigger5=gametime%9=4
+trigger6=var(36)>0
+trigger6=gametime%9=5
+trigger7=var(37)>0
+trigger7=gametime%9=6
+trigger8=var(38)>0
+trigger8=gametime%9=7
+trigger9=var(39)>0
+trigger9=gametime%9=8
+var(30)=var(31+1*(gametime%9=1)+2*(gametime%9=2)+3*(gametime%9=3)+4*(gametime%9=4)+5*(gametime%9=5)+6*(gametime%9=6)+7*(gametime%9=7)+8*(gametime%9=8))
+ignorehitpause=1
+[state -2]
+type=parentvarset
+triggerall=ishelper(9)&&stateno=120
+trigger1=root,var(31)=0
+trigger1=sysvar(0)!=gametime
+var(31)=stateno
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(31)=[10,12])||var(31)=20||var(31)=40||var(31)=45||(var(31)=[50,52])
+trigger2=var(31)=100||(var(31)=[105,106])||var(31)=110||var(31)=115||var(31)=120||(var(31)=[130,132])||var(31)=140||(var(31)=[150,155])
+trigger3=(var(31)=[5000,5001])||(var(31)=[5010,5011])||var(31)=5020||var(31)=5030||var(31)=5035||var(31)=5040||var(20)=5050||(var(31)=[5070,5071])||(var(31)=[5080,5081])
+trigger4=(var(31)=[5100,5101])||var(31)=5110||var(31)=5120||var(31)=5150||(var(31)=[5200,5201])||var(31)=5210
+trigger5=(var(31)=[1000666,1000667])
+var(31)=0
+ignorehitpause=1
+[state -2]
+type=parentvarset
+triggerall=ishelper(9)&&stateno=120
+trigger1=root,var(32)=0&&root,var(31)>0
+trigger1=sysvar(0)!=gametime
+var(32)=stateno
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(32)=[10,12])||var(32)=20||var(32)=40||var(32)=45||(var(32)=[50,52])
+trigger2=var(32)=100||(var(32)=[105,106])||var(32)=110||var(32)=115||var(32)=120||(var(32)=[130,132])||var(32)=140||(var(32)=[150,155])
+trigger3=(var(32)=[5000,5001])||(var(32)=[5010,5011])||var(32)=5020||var(32)=5030||var(32)=5035||var(32)=5040||var(21)=5050||(var(32)=[5070,5071])||(var(32)=[5080,5081])
+trigger4=(var(32)=[5100,5101])||var(32)=5110||var(32)=5120||var(32)=5150||(var(32)=[5200,5201])||var(32)=5210
+trigger5=(var(32)=[1000666,1000667])||var(32)=var(31)
+var(32)=0
+ignorehitpause=1
+[state -2]
+type=parentvarset
+triggerall=ishelper(9)&&stateno=120
+trigger1=root,var(33)=0&&root,var(31)>0&&root,var(32)>0
+trigger1=sysvar(0)!=gametime
+var(33)=stateno
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(33)=[10,12])||var(33)=20||var(33)=40||var(33)=45||(var(33)=[50,52])
+trigger2=var(33)=100||(var(33)=[105,106])||var(33)=110||var(33)=115||var(33)=120||(var(33)=[130,132])||var(33)=140||(var(33)=[150,155])
+trigger3=(var(33)=[5000,5001])||(var(33)=[5010,5011])||var(33)=5020||var(33)=5030||var(33)=5035||var(33)=5040||var(22)=5050||(var(33)=[5070,5071])||(var(33)=[5080,5081])
+trigger4=(var(33)=[5100,5101])||var(33)=5110||var(33)=5120||var(33)=5150||(var(33)=[5200,5201])||var(33)=5210
+trigger5=(var(33)=[1000666,1000667])||var(33)=var(31)||var(33)=var(32)
+var(33)=0
+ignorehitpause=1
+[state -2]
+type=parentvarset
+triggerall=ishelper(9)&&stateno=120
+trigger1=root,var(34)=0&&root,var(31)>0&&root,var(32)>0&&root,var(33)>0
+trigger1=sysvar(0)!=gametime
+var(34)=stateno
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(34)=[10,12])||var(34)=20||var(34)=40||var(34)=45||(var(34)=[50,52])
+trigger2=var(34)=100||(var(34)=[105,106])||var(34)=110||var(34)=115||var(34)=120||(var(34)=[130,132])||var(34)=140||(var(34)=[150,155])
+trigger3=(var(34)=[5000,5001])||(var(34)=[5010,5011])||var(34)=5020||var(34)=5030||var(34)=5035||var(34)=5040||var(23)=5050||(var(34)=[5070,5071])||(var(34)=[5080,5081])
+trigger4=(var(34)=[5100,5101])||var(34)=5110||var(34)=5120||var(34)=5150||(var(34)=[5200,5201])||var(34)=5210
+trigger5=(var(34)=[1000666,1000667])||var(34)=var(31)||var(34)=var(32)||var(34)=var(33)
+var(34)=0
+ignorehitpause=1
+[state -2]
+type=parentvarset
+triggerall=ishelper(9)&&stateno=120
+trigger1=root,var(35)=0&&root,var(31)>0&&root,var(32)>0&&root,var(33)>0&&root,var(34)>0
+trigger1=sysvar(0)!=gametime
+var(35)=stateno
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(35)=[10,12])||var(35)=20||var(35)=40||var(35)=45||(var(35)=[50,52])
+trigger2=var(35)=100||(var(35)=[105,106])||var(35)=110||var(35)=115||var(35)=120||(var(35)=[130,132])||var(35)=140||(var(35)=[150,155])
+trigger3=(var(35)=[5000,5001])||(var(35)=[5010,5011])||var(35)=5020||var(35)=5030||var(35)=5035||var(35)=5040||var(24)=5050||(var(35)=[5070,5071])||(var(35)=[5080,5081])
+trigger4=(var(35)=[5100,5101])||var(35)=5110||var(35)=5120||var(35)=5150||(var(35)=[5200,5201])||var(35)=5210
+trigger5=(var(35)=[1000666,1000667])||var(35)=var(31)||var(35)=var(32)||var(35)=var(33)||var(35)=var(34)
+var(35)=0
+ignorehitpause=1
+[state -2]
+type=parentvarset
+triggerall=ishelper(9)&&stateno=120
+trigger1=root,var(36)=0&&root,var(31)>0&&root,var(32)>0&&root,var(33)>0&&root,var(34)>0&&root,var(35)>0
+trigger1=sysvar(0)!=gametime
+var(36)=stateno
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(36)=[10,12])||var(36)=20||var(36)=40||var(36)=45||(var(36)=[50,52])
+trigger2=var(36)=100||(var(36)=[105,106])||var(36)=110||var(36)=115||var(36)=120||(var(36)=[130,132])||var(36)=140||(var(36)=[150,155])
+trigger3=(var(36)=[5000,5001])||(var(36)=[5010,5011])||var(36)=5020||var(36)=5030||var(36)=5035||var(36)=5040||var(25)=5050||(var(36)=[5070,5071])||(var(36)=[5080,5081])
+trigger4=(var(36)=[5100,5101])||var(36)=5110||var(36)=5120||var(36)=5150||(var(36)=[5200,5201])||var(36)=5210
+trigger5=(var(36)=[1000666,1000667])||var(36)=var(31)||var(36)=var(32)||var(36)=var(33)||var(36)=var(34)||var(36)=var(35)
+var(36)=0
+ignorehitpause=1
+[state -2]
+type=parentvarset
+triggerall=ishelper(9)&&stateno=120
+trigger1=root,var(37)=0&&root,var(31)>0&&root,var(32)>0&&root,var(33)>0&&root,var(34)>0&&root,var(35)>0&&root,var(36)>0
+trigger1=sysvar(0)!=gametime
+var(37)=stateno
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(37)=[10,12])||var(37)=20||var(37)=40||var(37)=45||(var(37)=[50,52])
+trigger2=var(37)=100||(var(37)=[105,106])||var(37)=110||var(37)=115||var(37)=120||(var(37)=[130,132])||var(37)=140||(var(37)=[150,155])
+trigger3=(var(37)=[5000,5001])||(var(37)=[5010,5011])||var(37)=5020||var(37)=5030||var(37)=5035||var(37)=5040||var(26)=5050||(var(37)=[5070,5071])||(var(37)=[5080,5081])
+trigger4=(var(37)=[5100,5101])||var(37)=5110||var(37)=5120||var(37)=5150||(var(37)=[5200,5201])||var(37)=5210
+trigger5=(var(37)=[1000666,1000667])||var(37)=var(31)||var(37)=var(32)||var(37)=var(33)||var(37)=var(34)||var(37)=var(35)||var(37)=var(36)
+var(37)=0
+ignorehitpause=1
+[state -2]
+type=parentvarset
+triggerall=ishelper(9)&&stateno=120
+trigger1=root,var(38)=0&&root,var(31)>0&&root,var(32)>0&&root,var(33)>0&&root,var(34)>0&&root,var(35)>0&&root,var(36)>0&&root,var(37)>0
+trigger1=sysvar(0)!=gametime
+var(38)=stateno
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(38)=[10,12])||var(38)=20||var(38)=40||var(38)=45||(var(38)=[50,52])
+trigger2=var(38)=100||(var(38)=[105,106])||var(38)=110||var(38)=115||var(38)=120||(var(38)=[130,132])||var(38)=140||(var(38)=[150,155])
+trigger3=(var(38)=[5000,5001])||(var(38)=[5010,5011])||var(38)=5020||var(38)=5030||var(38)=5035||var(38)=5040||var(27)=5050||(var(38)=[5070,5071])||(var(38)=[5080,5081])
+trigger4=(var(38)=[5100,5101])||var(38)=5110||var(38)=5120||var(38)=5150||(var(38)=[5200,5201])||var(38)=5210
+trigger5=(var(38)=[1000666,1000667])||var(38)=var(31)||var(38)=var(32)||var(38)=var(33)||var(38)=var(34)||var(38)=var(35)||var(38)=var(36)||var(38)=var(37)
+var(38)=0
+ignorehitpause=1
+[state -2]
+type=parentvarset
+triggerall=ishelper(9)
+trigger1=root,var(39)=0&&root,var(31)>0&&root,var(32)>0&&root,var(33)>0&&root,var(34)>0&&root,var(35)>0&&root,var(36)>0&&root,var(37)>0&&root,var(38)>0
+trigger1=sysvar(0)!=gametime
+var(39)=stateno
+[state -2]
+type=varset
+triggerall=!ishelper&&stateno=120
+trigger1=(var(39)=[10,12])||var(39)=20||var(39)=40||var(39)=45||(var(39)=[50,52])
+trigger2=var(39)=100||(var(39)=[105,106])||var(39)=110||var(39)=115||var(39)=120||(var(39)=[130,132])||var(39)=140||(var(39)=[150,155])
+trigger3=(var(39)=[5000,5001])||(var(39)=[5010,5011])||var(39)=5020||var(39)=5030||var(39)=5035||var(39)=5040||var(28)=5050||(var(39)=[5070,5071])||(var(39)=[5080,5081])
+trigger4=(var(39)=[5100,5101])||var(39)=5110||var(39)=5120||var(39)=5150||(var(39)=[5200,5201])||var(39)=5210
+trigger5=(var(39)=[1000666,1000667])||var(39)=var(31)||var(39)=var(32)||var(39)=var(33)||var(39)=var(34)||var(39)=var(35)||var(39)=var(36)||var(39)=var(37)||var(39)=var(38)
+var(39)=0
+ignorehitpause=1
+[state -2]
+type = selfstate
+triggerall = !ishelper&&stateno!=120&&roundstate<3
+trigger1 = P2name="Weegee"||P4name="Weegee"
+trigger1 = enemynear(0),authorname="ravenboy9"||enemynear(1),authorname="ravenboy9"
+trigger2 = P2name="genjitsu"||P4name="genjitsu"
+trigger3 = P2name="Rare Akuma"||P4name="Rare Akuma"
+trigger4 = P2name="Kaleidoscope"||P4name="Kaleidoscope"
+trigger5 = P2name="AxAyAzSSS"||P4name="AxAyAzSSS"
+trigger5 = (enemynear(0),palno=[10,12])||(enemynear(1),palno=[10,12])
+trigger6 = P2name="Ayu Tukimiya"||P4name="Ayu Tukimiya"
+trigger7 = P2name="cheapest KFM!!!"||P4name="cheapest KFM!!!"
+trigger8 = P2name="DarkOswald"||P4name="DarkOswald"
+trigger9 = P2name="Karma"||P4name ="Karma"
+trigger9 = (enemynear(0),palno=[10,12])||(enemynear(1),palno=[10,12])
+trigger10 = P2name = "G Magaki" || P4name = "G Magaki"
+trigger10 = (enemynear(0),palno=12) || (enemynear(1),palno=12)
+trigger11 = P2name = "Phantom Mizuchi Elisir" || P4name = "Phantom Mizuchi Elisir"
+trigger11 = (enemynear(0),palno=12) || (enemynear(1),palno=12)
+trigger12 = P2name = "Phantom Mizuchi JP" || P4name = "Phantom Mizuchi JP"
+trigger12 = (enemynear(0),palno<12) || (enemynear(1),palno<12)
+value = 120
+ctrl = 0
+ignorehitpause = 1
+movetime = 5
+supermovetime = 5
+[state -2]
+type=selfstate
+triggerall = alive!=1&&hitpausetime>=2&&roundstate<3
+trigger1 = P2name="Weegee"||P4name="Weegee"
+trigger1 = enemynear(0),authorname="ravenboy9"||enemynear(1),authorname="ravenboy9"
+trigger2 = P2name="genjitsu"||P4name="genjitsu"
+trigger3 = P2name="Rare Akuma"||P4name="Rare Akuma"
+trigger4 = P2name="Kaleidoscope"||P4name="Kaleidoscope"
+trigger5 = P2name="AxAyAzSSS"||P4name="AxAyAzSSS"
+trigger5 = (enemynear(0),palno=[10,12])||(enemynear(1),palno=[10,12])
+trigger6 = P2name="Ayu Tukimiya"||P4name="Ayu Tukimiya"
+trigger7 = P2name="cheapest KFM!!!"||P4name="cheapest KFM!!!"
+trigger8 = P2name="DarkOswald"||P4name="DarkOswald"
+trigger9 = P2name="Karma"||P4name ="Karma"
+trigger9 = (enemynear(0),palno=[10,12])||(enemynear(1),palno=[10,12])
+trigger10 = P2name = "G Magaki" || P4name = "G Magaki"
+trigger10 = (enemynear(0),palno=12) || (enemynear(1),palno=12)
+trigger11 = P2name = "Phantom Mizuchi Elisir" || P4name = "Phantom Mizuchi Elisir"
+trigger11 = (enemynear(0),palno=12) || (enemynear(1),palno=12)
+trigger12 = P2name = "Phantom Mizuchi JP" || P4name = "Phantom Mizuchi JP"
+trigger12 = (enemynear(0),palno<12) || (enemynear(1),palno<12)
+value=121
+ctrl=0
+ignorehitpause=1
+[state -2]
+type=selfstate
+triggerall = alive=1&&hitpausetime>=2&&roundstate<3
+trigger1 = P2name="Weegee"||P4name="Weegee"
+trigger1 = enemynear(0),authorname="ravenboy9"||enemynear(1),authorname="ravenboy9"
+trigger2 = P2name="genjitsu"||P4name="genjitsu"
+trigger3 = P2name="Rare Akuma"||P4name="Rare Akuma"
+trigger4 = P2name="Kaleidoscope"||P4name="Kaleidoscope"
+trigger5 = P2name="AxAyAzSSS"||P4name="AxAyAzSSS"
+trigger5 = (enemynear(0),palno=[10,12])||(enemynear(1),palno=[10,12])
+trigger6 = P2name="Ayu Tukimiya"||P4name="Ayu Tukimiya"
+trigger7 = P2name="cheapest KFM!!!"||P4name="cheapest KFM!!!"
+trigger8 = P2name="DarkOswald"||P4name="DarkOswald"
+trigger9 = P2name="Karma"||P4name ="Karma"
+trigger9 = (enemynear(0),palno=[10,12])||(enemynear(1),palno=[10,12])
+trigger10 = P2name = "G Magaki" || P4name = "G Magaki"
+trigger10 = (enemynear(0),palno=12) || (enemynear(1),palno=12)
+trigger11 = P2name = "Phantom Mizuchi Elisir" || P4name = "Phantom Mizuchi Elisir"
+trigger11 = (enemynear(0),palno=12) || (enemynear(1),palno=12)
+trigger12 = P2name = "Phantom Mizuchi JP" || P4name = "Phantom Mizuchi JP"
+trigger12 = (enemynear(0),palno<12) || (enemynear(1),palno<12)
+value=122
+ctrl=0
+ignorehitpause=1
+
+[state ResetRound];from AxAyAzSSS
+type = assertspecial
+triggerall = roundstate = 2 && name = "Chuck_Norris"
+triggerall = enemy,life>0
+trigger1 = !ishelper
+trigger1 = !alive
+trigger2 = ishelper
+trigger2 = root,alive=0
+flag = noko
+flag2= roundnotover
+flag3= TimerFreeze
+ignorehitpause = 1
+
+[state -2]
+type = assertspecial
+trigger1 = (roundstate = [2,3]) && name = "Chuck_Norris"
+trigger1 = enemy,life>0
+flag = noko
+ignorehitpause = 1
+
+;---------------------------------------------------------------------------
+[Statedef -3]
+
+[state -3]
+type = selfstate
+triggerall = !ishelper && stateno != 851111
+trigger1 = P2name="F1"||P4name="F1"
+trigger2 = P2name="Weegee"||P4name="Weegee"
+trigger2 = enemynear(0),authorname="Luigi356"||enemynear(1),authorname="Luigi356"
+trigger3 = P2name=""||P4name=""
+value = 851111
+ctrl = 0
+ignorehitpause = 1
+movetime = 5
+supermovetime = 5
+[State -3]
+type=helper
+triggerall = stateno = 851111 && roundstate < 3
+trigger1=numhelper < 8
+helpertype=normal
+stateno=30100
+ID = 1
+name="Aura"
+postype=p1
+pos = 0,0
+movetime = 5
+supermovetime = 5
+ownpal=1
+ignorehitpause = 1
+[State -3]
+type=helper
+triggerall = stateno = 851111 && roundstate < 3
+trigger1=numhelper < 8
+helpertype=normal
+stateno=30100
+ID = 1
+name="Aura"
+postype=p1
+pos = 0,0
+movetime = 5
+supermovetime = 5
+ownpal=1
+ignorehitpause = 1
+[State -3]
+type=helper
+triggerall = stateno = 851111 && roundstate < 3
+trigger1=numhelper < 8
+helpertype=normal
+stateno=30100
+ID = 1
+name="Aura"
+postype=p1
+pos = 0,0
+movetime = 5
+supermovetime = 5
+ownpal=1
+ignorehitpause = 1
+[State -3]
+type=helper
+triggerall = stateno = 851111 && roundstate < 3
+trigger1=numhelper < 8
+helpertype=normal
+stateno=30100
+ID = 1
+name="Aura"
+postype=p1
+pos = 0,0
+movetime = 5
+supermovetime = 5
+ownpal=1
+ignorehitpause = 1
+[State -3]
+type=helper
+triggerall = stateno = 851111 && roundstate < 3
+trigger1=numhelper < 8
+helpertype=normal
+stateno=30100
+ID = 1
+name="Aura"
+postype=p1
+pos = 0,0
+movetime = 5
+supermovetime = 5
+ownpal=1
+ignorehitpause = 1
+[State -3]
+type=helper
+triggerall = stateno = 851111 && roundstate < 3
+trigger1=numhelper < 8
+helpertype=normal
+stateno=30100
+ID = 1
+name="Aura"
+postype=p1
+pos = 0,0
+movetime = 5
+supermovetime = 5
+ownpal=1
+ignorehitpause = 1
+[State -3]
+type=helper
+triggerall = stateno = 851111 && roundstate < 3
+trigger1=numhelper < 8
+helpertype=normal
+stateno=30100
+ID = 1
+name="Aura"
+postype=p1
+pos = 0,0
+movetime = 5
+supermovetime = 5
+ownpal=1
+ignorehitpause = 1
+[State -3]
+type=helper
+triggerall = stateno = 851111 && roundstate < 3
+trigger1=numhelper < 8
+helpertype=normal
+stateno=30100
+ID = 1
+name="Aura"
+postype=p1
+pos = 0,0
+movetime = 5
+supermovetime = 5
+ownpal=1
+ignorehitpause = 1
+
+;========================================

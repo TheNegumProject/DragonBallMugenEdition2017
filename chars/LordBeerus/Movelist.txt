@@ -1,0 +1,39 @@
+LORD BEERUS by RAHLONNIR
+
+MOVESET 
+
+6 buttons
+Crouching Strong Punch Launcher
+Crouching Strong Kick sweep
+
+Can cancel from normals to special
+Can cancel from special to hyper
+
+MOVEMENT
+
+Down,Up/up after launcher hits - Super Jump
+Fwd/Back while down - Recover
+Up/a+b while hit in air - Recover
+
+FF - DASH - CAN DO IN AIR
+BB - HOP BACK - CAN DO IN AIR
+
+X+Y = Charge - CAN DO IN AIR
+
+A+B in air = Float
+
+
+
+Specials
+
+Df,x - RUSH1 
+Df,y - RUSH2
+Df,z - RUSH3
+
+Db,x/y/z - Flick Counter
+
+Df,x - Energy Blast volley 1 - 500 pwr - tap x for continous blast
+Df,y - Energy Blast volley 2 - 500 pwr - tap y for continous blast
+Df,z - WIP
+
+Hypers(WIP)

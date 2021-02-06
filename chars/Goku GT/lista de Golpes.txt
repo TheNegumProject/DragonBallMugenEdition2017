@@ -1,0 +1,298 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===LEIA-ME===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+                                     kakarotto gt ssj
+
+                                   Leia-Me em português
+;a inteligencia artificial dele esta media no jogo completo vai estar melhor aguardem
+
+
+===FICHA===
+
+Nome : son goku
+Anime : Dragon Ball gt
+Versão do Mugen :04,14,2003 win mugen
+Versão : 2.0
+Completo : 200%
+Data de Lançamento : 8/5/2007
+personagem - editado
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,historia do goku gt ssj adulto,,,,,,,,,,,,,,,,,,,,,,,,,
+goku estava treinando o seu aluno ubu na sala do templo ubu estava usando o seu poder ao maximo ubu pediu para goku se trasforma em ssj para ver ate onde ele aguenteria o treinamento enquanto isso pilaf e seus comparsas estavam tentando roubar as esferas do dragao do templo de repente ubu aremeça o goku para fora da sala do templo com um de seus golpes poderosisimos nao sobrou quase nada do templo sagrado goku muito ferido com o atack do ubu pede para dende o curalo enquanto isso ubu salvava o pilaf e sua gang eles estavam caindo do templo e iriam morre se ubu nao tivese salvado eles ubu deixo eles em um lugar seguro sem saber que eles eram viloes e inimigos antigos de goku e volto para termina o treino com goku graças ao golpe do ubu que estrasalho o templo e quase matou goku  o goku continua adulto e muito poderoso entao goku e ubu vao para um deserto treinar durante 2 semanas ubu pede para goku se trasforma em ssj 3 para eles lutarem no mesmo nivel
+
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===novidade===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+agora ele se trasforma em ssj e usa o super kaioken aumentado 20x
+goku tambem se trasforma em ssj antes de morrer mais se estiver usando o kaioken ele nao trasforma eu achei melhor deixar assim
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===Programas utilizado===,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+.Fight factory
+.foto shop 8.0
+.zsnes
+.mame
+.Chankast Alpha 025
+.paint
+.gravador de som do windows
+o som foi ripado do meu dbz e gt
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===CRÉDITOS===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+                              Autor:equipe FRS GAMES 
+                            E-mail: superkakarotto@hotmail.com
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===INSTALAÇÃO===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Para colocar o goku no seu M.U.G.E.N. primeiro tenha certeza de que há espaço
+no seu System.def abrindo-o com um editor de texto(como Wordpad)e aumentando
+o número de Columns e Rows se necessário.
+Se já tiver espaço,bom.
+Mande todos os arquivos para uma pasta de nome kakarotto gt ssj e coloque-a na pasta
+CHARS de seu M.U.G.E.N.
+Agora, entre no arquivo Select.def e procure por uma parte com [Characters]
+escrito.
+Logo embaixo escreva:
+kakarotto gt ssj (se quiser que ele esteja no seu jogo)
+kkakarotto gt ssj, stages/estagio.def (se quiser que ele tenha uma fase própria no ArcadeMode) 
+kakarotto gt ssj, stages/estagio.def, music=sound/nomedamusica.def (se quiser que a fase do modoArcade tenha música própria) 
+Se quiser que ela seja o último chefe de seu jogo, acrescente , order=10 logo
+após a música ou o estágio(vindo em últmo lugar),senão, coloque :, order=9
+para que esteja num nível anterior a último chefe.
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===O QUE FALTA===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                                        
+ssj 2 e ssj 3 mais ja estamos fazendo ele trasformado em ssj 2 e 3
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===O QUE TEM===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                                       .22 golpes
+                                       .16 especiais
+                                       .Sistema de combos
+                                       .Extras
+                                       .3 poses de vitória
+                                       .3 intro
+                                       .Carregamento de ki 
+                                       . teleporte
+                                       . voo
+                                       .Muitos sons todos em portugues
+                                       .2 Paletas
+                                       . final 
+                                       . sequencia aerea
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===son goku===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Raça : Saiyajin
+Familiares:que morerao (bardock pai),(selipa mae), (raditz irmao mais velho),(son gohan avô de criaçao)
+Familiares: (chichi esposa),(gohan filho mais velho),(goten filho mais novo),(pan neta),(videl nora),( paz  nora), ( goku jr tataraneto)
+Olhos : pretos muda de cor quando transforma
+Cabelo : grisalho,pretos muda de cor quando transforma
+Séries : dragon ball dragon ball z dragon ball gt dragon ball af
+Diciplina: artes marciais 
+ 
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===MODOS DE JOGO===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+normal kaioken 20x e ssj
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===COMANDOS===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+-------
+Legenda
+-------
+
+F - Frente
+B - Trás
+D - Baixo
+U - Cima
+DF - Baixo frente
+DB - Baixo trás
+UF - Cima frente
+UB - Cima Traz
+
+-------
+Básicos
+-------
+a - botão a chute fraco
+b - botão b chute medio
+c - botão c chute forte
+x - botão x soco fraco
+y - botão y soco medio
+z - botão z soco forte
+------
+Extras
+------
+.Balão - é só chegar perto do aponente e apertar  x ou y ou z
+
+.DASH - e so apertar B,B tras F,F frente
+
+.AIR JUMP - Um pulo comum no ar em qualquer direção
+Um pulo aéreo
+
+.Sistema de Combos - Vá apertando os botões de golpes básicos rapidamente
+goku vai espancando seu inimigo do jeito que você quiser da para juntar todos os golpes com sequencia !
+
+.Super Pulo - D, U
+Um pulo mais forte e mais auto pra cima.
+
+.Super Pulo Foward- D, UF
+Um pulo mais forte e mais auto pra frente.
+
+.Super Pulo Backward- D, U
+Um pulo mais forte e mais auto pra trás.
+-------------
+CARREGAMENTOS
+-------------
+CHARGE - a+b pode ser feito no ar
+goku carrega seu Ki.(3 barras)
+teleporte - x+a pode ser feito no ar
+voar - y+b
+provocaçao - start
+
+--------------------
+Golpes
+--------------------
+
+[Command]
+name = "teleport"
+command = x+a
+[Command]
+name = "meteor1"
+command = D, DB, B, c
+time = 15
+[Command]
+name = "meteor2"
+command = D, DB, B, z
+time = 15
+[Command]
+name = "kiaiho"
+command = D, DF, F, c
+[Command]
+name = "bola seguidora"
+command = ~D, DF, F, z
+[Command]
+name = "sequence3"
+command = ~D, DB, B, y
+[Command]
+name =  "cutuvelada"
+command = ~D, DF, F, y
+[Command]
+name =   "cutuvelada2"
+command = ~D, DB, B, x
+[Command]
+name = "sequence"
+command = ~D, DB, B, b
+[Command]
+name = "sequence2"
+command = ~D, DB, B, a
+[Command]
+name = "roling kick"
+command = ~D, DF, F, a
+[Command]
+name = "cutuvelada fraca"
+command = ~B, F, x
+[Command]
+name = "cutuvelada forte"
+command = ~B, F, y
+[Command]
+name = "super roling kick"
+command = ~D, DF, F, b
+[Command]
+name = "triple kick"
+command = ~B, F, b
+[Command]
+name = "ki expulsão"
+command = ~B, F, z
+time = 10
+[Command]
+name = "double kick"
+command = ~B, F, a
+[Command]
+name = "cutuvelada3"
+command = ~D, DF, F, x
+[Command]
+name = "taioken"
+command = ~B, F, c
+[Command]
+name = "kamehameha"
+command = ~D, DB, B, F, x
+time = 30
+[Command]
+name = "power kamehameha"
+command = ~D, DB, B, F, y
+time = 30
+[Command]
+name = "chou kamehameha"
+command = ~D, DB, B, F, z
+time = 30
+[Command]
+name = "kaioken"
+command = x+y
+time = 30
+[Command]
+name = "power balls"
+command = ~D, DB, B, F, a
+time = 30
+[Command]
+name = "kienzan"
+command = ~D, DB, B, F, b
+time = 30
+[Command]
+name = "genkidama"
+command = ~D, DB, B, F, c
+time = 30
+[Command]
+name = "combo com kaioken"
+command = ~D, DB, B, F, c
+time = 30
+[Command]
+name = "ssj"
+command = a+b
+time = 1
+[Command]
+name = "especial ssj"
+command = D, DB, B, F, a
+time = 30
+[Command]
+name = "furia de kakaroto"
+command = D, DB, B, F, b
+time = 30
+[Command]
+name = "especial do tenkaichi 2"
+command = D, DB, B, F, c
+time = 30
+[Command]
+name = "Agarrando"
+command = /F,x
+[Command]
+name = "Agarrando"
+command = /F,y
+[Command]
+name = "Agarrando"
+command = /F,z
+[Command]
+name = "super jump"
+command = ~D, U
+[Command]
+name = "super voadora 2"
+command = ~D, b
+[Command]
+name = "super voadora 3"
+command = ~D, a
+[Command]
+name = "super voadora"
+command = ~D, c
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===Algumas sequencias que podem ser feitas===,,,,,,,,,,,,,,,,,
+x,x,x,y,y,y,z,z,z
+a,a,a,b,b,b,c,c,c
+x,a,y,b,z,c
+aperte z e solte o camehameha fraco segurando paracima
+
+                               TEM MAIS UM MONTE TENTEM FAZER
+                                  
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,(((((( AGRADECIMENTOS))))),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ ... ao meu pc AMD ATLON 64 3800+ super veloz que me permite terminar meus personagems mais rapido
+ ... Ao grande akira toriama criador do melhor anime do mundo db dbz e gt e os 26 filmes e ovas
+ ... a bandai e a atari pelos jogos de ps2 hehehe  recomendo que joguem o dragon ball sparking neo do ps2 eu zerei 100% tem 130 personagems e d++++++++++++++++++++++++
+ ... ao kurihan que fez o primeiro goku gt em 2001
+ ... ao ryudo por ter feito uma stand do goku eu aproveitei para editar o goku gt na stand dele
+ ... e minha equipe FRS GAMES que me ajuda muito com os chars e outras coisas
+ ... e a todos que eu usei varios efeitos sem permiçao
+  
+                            
+

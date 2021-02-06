@@ -1,0 +1,13 @@
+Teleport Punch: Down,Back,a
+Teleport Kick: Down,Back,b
+Galick Gun: Down,a
+Big Bang Attack: Down,b
+Final Flash: Down,c
+10 Ki balls: Dwon,x
+Meele combo(Normal): Down,y
+Meele combo(SSJ): Down,y
+Final Kamehameha(SSJ2): Down,y
+Follow This(SSJ3): Down,y
+Counter Attack: c
+Transformations(Long): z
+Transformations(Short): Down,z

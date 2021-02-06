@@ -1,0 +1,9 @@
+Ki balls: Down,a
+Kamehameha: Down,b
+Super Kamehameha: Down,c
+Dragon Fist: Dwon,x
+Spirit Bomb(Normal): Down,y
+Instant transmission Kamehameha(SSJ): Down,y
+Meteor Combination(SSJ2): Down,y
+Ultimate Dragon Fist(SSJ3): Down,y
+Transformations: z

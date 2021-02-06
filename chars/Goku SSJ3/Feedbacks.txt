@@ -1,0 +1,76 @@
+Leyenda: 
+
+(*) Arreglado
+(+) Agregado
+(-) Quitado
+(/) Mejorado
+ 
+
+Vieja:
+
+-fireballs: parece que explotan un poco antes de llegar al p2
+-Ryu Ken: Me lo esperaba con más emoción por ser uno de los ataques más fuertes del anime. Aunque está muy bien hecho, me parece muy común.
+-Chou/Kame Hame Ha: No me convencen los FX y me parecen muy chicos más siendo ssj3. Tampoco digo que lo hagas como mugenmundo XD.
+*En el chou kame hame no tiene el sonido del cuando lo lanza, el kame si lo tiene.
+-Elbow Dash: No le veo mucha diferencia entre el Light, Medium y Ex .
+*Al débil lo podés dejar como está pero sin que tire al p2. Podes hacer que haga un combo repitiendo el mismo comando.
+*Al medio podés hacer que tire o arrastre horizontalmente al p2.
+*Al ex podés hacer que pase de largo al p2 y vuelva y lo golpee.
+-Air Fang:
+*Light: que sea de un hit.
+*Medium: como está
+*Ex: dos hit y lo remate en el aire pegandole con las dos manos hacia abajo.
+-Fire Kick:
+*Light: que golpee abajo solamente.
+*Medium: como está.
+*Ex: Como está más que se teletransporte arriba del p2 y lo remate.
+-Rage: Tenés que explicar mejor que hace para criticarlo :P. Podés en éste modo los ataques comunes sean ex.
+
+-------------------------
+
+Into:
+
+cada vez esta mejor gabe!
+aca te mensiono lo q encontre
+*"Ryu Ken";me gusta mucho como te kedo pero yo pensaba q el atake del dragon hiba a ser el move mas fuerte del personaje pero no importa,kedo muy bien decorado con esas particulas q le salen
+*"Fire Flip Kick";concuerdo con vieja q termine rematando con los 2 brazos hacia abajo,aah y agregale fuego tambien a la segunda patada y al remate(si es q se lo agregas) para q kede mas piola Wink
+*"Meteor Attack";va kedando muy bien,lo unico q no me convense es q al dar la segunda ñapi empiezen a subir los 2 despacitoXD
+*"Chou Kame Hame Ha";esta bien logrado lo unico q el sonido de lanzamiento se escucha muy bajo
+*"EX,light,strong Elbow Dash";en el light podes hacer q le pegue el codazo pero no lo voltee y repitiendo el comando podes rematar con un golpe q la mande lejos como el codazo de andy en kof,
+en el strong q lo voltee de una
+y en el EX tal y como dijo vieja q lo traspase y vuelva con una patada(como el 17 de crhono)
+*"EX Flip Kick";fijate q tiene los sparks violetas cuando deberia tener los azules
+*"EX Air Fang";diferenciar el EX,no se me ocurre nada
+*"EX Fire Kick";en los comunes no buscaria diferenciarlos pero si en el EX,lo q podes hacer es q al golpear con la segunda patada lo levante un poco (con fall en el hitdef) y luego lo remate con la patada de la animacion 250
+*"zanzoken";al terminar el move falta cuando se juntan las 2 imagenes de goku
+
+------------------------
+
+Emi:
+
+Feedback
+Bugs, cositas y toda esas yerbas:
+Fijate bien los juggles de los golpes, se puede abusar del p2 cuando está tirado en el suelo.
+Cuando "choca" la fireball común, la explosión queda un poco deformada (porque toma la scale de la fireball en sí).
+Cuando, en el meteor, levanta al p2, éste se encuentra en un estado type = S, por lo que si es golpedeado por un tercer player o algo así, quedaría parado en el aire.
+Cuando se cubre en el aire tiene los mismo sprites que de parado. Cortar y meterle otras piernas y listo.
+Veo al charge un poco, incompleto.
+Los charges de los kames los veo un poco quemados ya.
+Capaz que me fumé algo, o me pareció ver que las fireballs le pegaban cuando hacía el dodge?
+Fijate que el Parry tiene algo raro, cuando le pega un proyectil con muchos hits, éste pasa de largo en lugar de tener que "parriarle" varios hits.
+Añadir un pequeño velset a los golpes que inician el teleport.
+
+Sugerencias
+ShoryukenEX: Shoryuken y le pega un puñetazo que lo envía horizontalmente.
+RyuKen: Que tenga una versión con 2 botones, que lo haga pasear al p2 por toda la pantallas, o que pasee el dragón nomás. Así se vuelve un deleite visual para el espectador.
+Mmm, en lugar de 2 kames, que tenga 1 solo cargable (que sea diferenciado según los niveles) y que tire el rayo ese simple con que casi mata a Majin Bu pendejito (lo tira con una mano nomás, creo que luego daba el efecto de que el rayo salía de la asmósfera, pero en este caso hacelo de nivel 1).
+GenkiDama: Para flashear un poquito, que cuando se vuelva SSJ3 la genkidama tenga algo así como una dragón celeste o similar.
+Meteor: líneas más veloces.
+Tayoken?
+Choque de Golpeees eeeoooo.
+SuperPortrait LVL3?
+
+Bueno, está quedando muy bueno el char, será el mejor Goku SSJ3 por un largo tiempo.
+
+
+------------------------

@@ -1,0 +1,33 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Trunks"
+displayname ="Trunks SSJ"
+versiondate =April 2010
+mugenversion =1.0
+author ="Jailuis (DGZ Team)"
+pal.defaults =1,2,3
+
+[Files]
+sprite =Trunks.sff
+anim =Trunks.air
+sound =Trunks.snd
+cmd =Trunks.cmd
+cns =Trunks.cns
+stcommon =common1.cns
+st =Basico.cns
+pal1=Trunks1.act
+pal2=Trunks2.act
+pal3=Trunks3.act
+pal4=Trunks4.act
+st1=Helpers.cns
+st2=Moves.cns
+st3=Specials.cns
+
+[Arcade]
+
+intro.storyboard=
+ending.storyboard=

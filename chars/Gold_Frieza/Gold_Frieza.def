@@ -1,0 +1,23 @@
+[Info]
+name="Gold Frieza"
+displayname="Gold Frieza"
+versiondate=29/04/2015
+mugenversion = 
+author="ace-sama, Edit: danteg9"
+pal.defaults=1,2,3,4,5,6
+
+[Files]
+sprite=CS-Freezer'AS.sff
+sound=CS-Freezer'AS.snd
+anim=CS-Freezer'AS.air
+cmd=CS-Freezer'AS.cmd
+cns=CS-Freezer'AS.cns
+st=CS-Freezer'AS.cns
+stcommon=common1.cns
+pal1=CS-Freezer'AS1.act
+pal2=CS-Freezer'AS.act
+st1=zarbon-dodoria.cns
+st2=AI.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=..\data\final.def

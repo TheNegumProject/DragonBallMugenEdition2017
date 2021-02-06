@@ -1,0 +1,29 @@
+;...........................................................................................
+
+[Info]
+name    ="Goku"
+displayname ="Goku GT"
+author ="FRS GAMES"     
+pal.defaults =1,2
+versiondate=08,05,2007
+mugenversion=06,14,2003
+[Files]
+cmd =gokuGT.cmd     
+cns =gokuGT.cns     
+st  =gokuGT.cns   
+stcommon=common1.cns   
+sprite =gokuGT(classic).sff      
+anim =gokuGT.air      
+sound =gokuGT.snd
+pal1=gokuGT.act
+pal2=gokuGT2.act
+st1=kaioken.cns
+[Arcade]
+intro.storyboard  =
+ending.storyboard=final/final.def
+;...........................................................................................
+;a inteligencia artificial dele esta media no jogo completo vai estar melhor aguarde
+                                ; Feito no Brasil (Brasilia)                
+;                              Autor: RistaR87
+;[[[[[[[[[[[[[[[[[[[[[[[[[[[[E-mail: superkakarotto@hotmail.com]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+

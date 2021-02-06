@@ -1,0 +1,35 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Goku"
+displayname ="Goku"
+versiondate =04,10,2008
+mugenversion =14,04,2002
+author =" Neocide"
+pal.defaults =1,2
+
+; Files for the player
+[Files]
+cmd     =Coding/Goku.cmd
+cns     =Coding/Goku.cns
+st      =Coding/Goku.cns
+stcommon =Coding/Common.cns
+sprite  =Graphics/Goku.sff
+anim    =Graphics/Goku.air
+sound   =Graphics/Goku.snd
+pal1=Graphics/Goku.act
+pal2=Graphics/Vegito.act
+st1=Coding/specials.cns
+st2=Coding/basics.cns
+st3=Coding/helpers.cns
+st4=Coding/combos.cns
+st5=Coding/supers.cns
+st6=
+
+
+; Arcade mode
+[Arcade]
+intro.storyboard =
+ending.storyboard = ..\data\final.def

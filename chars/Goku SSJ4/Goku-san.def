@@ -1,0 +1,53 @@
+;================================
+;Goku Type-Z
+;================================
+
+;------------------------------------------------------
+;Author:	Roken & ZGTeam
+;		http://www.zgtm.tk
+;------------------------------------------------------
+
+;=============================================================
+
+;---------------------
+;Character Information
+;---------------------
+[Info]
+name            ="Goku-san"
+displayname     ="Goku-san"
+;versiondate    = 
+;mugenversion    =01.04.14
+author          ="Roken"
+versiondate=7/4/2008
+pal.defaults=1,2,3,4,5
+;pal.defaults   = 
+
+;---------------------
+;Character Files
+;---------------------
+
+[Files]
+cns             =CNS.cns
+st              =Basic.st
+cmd             =CMD.cmd
+stcommon        =common1.cns
+
+;---------------------
+;Sprite/Sound
+;---------------------
+sprite          =Sprite.sff
+anim            =Air.air
+sound           =Sound.snd
+pal1=Goku2.act
+st1=Special.st
+st2=Ki.st
+st3=Super.st
+st4=Helper.st
+st5=Finishers.st
+
+;---------------------
+;Palletes
+;---------------------
+[Arcade]
+intro.storyboard=
+ending.storyboard=

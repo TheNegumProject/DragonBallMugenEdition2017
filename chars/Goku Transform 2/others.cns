@@ -1,0 +1,49 @@
+[StateDef -3]
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 190
+channel = 1
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 6010
+channel = 2
+
+[state -3]
+type = stopsnd
+trigger1 = stateno != 6010
+channel = 3
+
+[State 0]
+type = AngleSet
+trigger1 = stateno != 50
+trigger1 = stateno != 6150
+trigger1 = stateno != 6290
+value = 0
+
+[state -3]
+type = removeexplod
+trigger1 = stateno != 6010
+id = 6010
+
+[State 0]
+type = DefenceMulSet
+trigger1 = 1
+value = 1-(var(7)/4.0)
+
+[State 0]
+type = Helper
+triggerall = var(7) >= 1
+triggerall = numhelper(6205) = 0
+triggerall = life > 0
+triggerall = stateno != 5110
+trigger1 = 1
+helpertype = normal
+name = "Effect"
+ID = 6205
+stateno = 6205
+pos = 0,0
+postype = p1
+ownpal = 1
+supermovetime = 60000

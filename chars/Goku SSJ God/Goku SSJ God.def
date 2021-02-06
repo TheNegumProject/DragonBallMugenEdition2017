@@ -1,0 +1,31 @@
+[Info]
+name="Goku Deus"
+displayname="Goku SSJ God"
+versiondate=
+mugenversion=
+author="MugenMundo"
+pal.defaults=1.2.3.4.5.6
+[Files]
+sprite=Goku Deus.sff
+sound=Goku Deus.snd
+anim=Goku Deus.air
+cmd=Goku Deus.cmd
+cns=Goku Deus.cns
+st=Goku Deus.cns
+stcommon=common1.cns
+pal13=
+pal1=a
+pal2=2
+pal3=alternative
+pal4=3
+pal5=ssj
+pal6=original
+pal7=normal
+pal8=roxa
+pal9=walpaper
+pal10=Special
+pal11=Zumbi
+pal12=ssj11
+[Arcade]
+intro.storyboard = 
+ending.storyboard = final\final.def

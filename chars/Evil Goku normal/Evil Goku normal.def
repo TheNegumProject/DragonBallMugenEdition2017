@@ -1,0 +1,32 @@
+;.............................................................................................
+[Info]
+name ="son goku by Franciynaldo"
+displayname ="Evil Goku"
+versiondate =16,1,2008
+mugenversion =06,14,2003
+author ="FRS GAMES"
+pal.defaults =1,2,3,4,5,6
+
+; Files for the player
+[Files]
+cmd     =kakarotto.cmd
+cns     =kakarotto.cns
+st      =kakarotto.cns
+stcommon =common1.cns
+sprite  =kakarotto.sff
+anim    =kakarotto.air
+sound   =kakarotto.snd
+pal1=1.act
+pal2=Evil.act
+
+; Arcade mode
+[Arcade]
+intro.storyboard =
+ending.storyboard=final/final.def
+;...........................................................................................
+
+                                ; Feito no Brasil           
+;                              Autor: equipe FRS GAMES
+
+;[[[[[[[[[[[[[[[[[[[[[[E-mail& msn: superkakarotto@hotmail.com]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+

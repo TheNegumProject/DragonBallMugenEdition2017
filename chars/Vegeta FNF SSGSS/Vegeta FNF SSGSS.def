@@ -1,0 +1,47 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="OS USSJ Vegeta"
+displayname ="Vegeta SSGSS"
+versiondate =04,14,2002
+mugenversion =1.0
+author ="DenisMUGENDBZYMAS"
+pal.defaults =1,2
+localcoord = 320,240
+
+[Files]
+sprite =VegetaUSSJ.sff
+anim =VegetaUSSJ.air
+sound =VegetaUSSJ.snd
+cmd =VegetaUSSJ.cmd
+cns =VegetaUSSJ.cns
+stcommon =common1.cns
+st =basico.cns
+pal1=PaletaOficialSRL2.act
+pal2=PaletaOficialSRL3.act
+pal3=PaletaOficialSRL.act
+pal4=PaletaOficialSRL4.act
+st1=Especiales.cns
+st2=supers.cns
+st3=boludeces.cns
+
+[Palette Keymap]
+a = 1
+b = 2
+c = 3
+x = 4
+y = 5
+z = 6
+a2 = 7
+b2 = 8
+c2 = 9
+x2 = 10
+y2 = 11
+z2 = 12
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

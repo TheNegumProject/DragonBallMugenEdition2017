@@ -1,0 +1,25 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Vegeta Transform"
+displayname ="Vegeta Transform"
+versiondate =2013.06.13
+mugenversion =1.0
+author ="LegendTTA"
+pal.defaults =6,3,4,2
+
+; Files for the player
+[Files]
+cmd     =Vegeta Transform.cmd
+cns     =Vegeta Transform.cns
+st      =Vegeta Transform.cns
+stcommon =common1.cns
+sprite  =Vegeta Transform.sff
+anim    =Vegeta Transform.air
+sound   =Vegeta Transform.snd
+pal1=Vegeta Transform.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

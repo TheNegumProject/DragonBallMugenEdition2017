@@ -1,0 +1,31 @@
+
+[Info]
+name ="Hit"        
+displayname ="Hit" 
+versiondate =01.01.2011   
+mugenversion =14,04,2002   
+author ="joe flizz,Team SB"       
+pal.defaults =1 
+localcoord = 440    
+
+;Character Files
+[Files]
+cmd     =hit.cmd
+cns     =hit.cns
+st      =hit.cns
+stcommon =common1.cns
+sprite  =hit.sff
+anim    =hit.air
+sound   =hit.snd
+pal1=normal.act
+st1=basic.cns
+st2=supers.cns
+st3=AI.cns
+
+;Arcade mode
+[Arcade]
+;intro.storyboard = intro.def
+;ending.storyboard = ending.def
+
+intro.storyboard=
+ending.storyboard=
